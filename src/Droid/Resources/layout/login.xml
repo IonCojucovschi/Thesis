@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+  <ImageView
+    android:id="@+id/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop" />
+  <LinearLayout
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="667">
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="100" />
+    <FFImageLoading.Views.ImageViewAsync
+      android:id="@+id/logo"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="41"
+      android:scaleType="fitCenter" />
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="199" />
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="52"
+      android:weightSum="375"
+      android:gravity="center">
+      <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="315"
+        android:weightSum="36"
+        android:gravity="center"
+        android:id="@+id/username_background">
+        <EditText
+          android:id="@+id/email"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="25"
+          android:hint="_Email_"
+          android:textColor="@android:color/black"
+          android:textColorHint="@android:color/black"
+          android:gravity="center"
+          android:background="@null" />
+      </LinearLayout>
+    </LinearLayout>
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="22" />
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="52"
+      android:weightSum="375"
+      android:gravity="center">
+      <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="315"
+        android:weightSum="36"
+        android:gravity="center"
+        android:id="@+id/password_background">
+        <EditText
+          android:id="@+id/password"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="25"
+          android:hint="_Password_"
+          android:textColor="@android:color/black"
+          android:textColorHint="@android:color/black"
+          android:gravity="center"
+          android:background="@null"
+          android:inputType="textPassword" />
+      </LinearLayout>
+    </LinearLayout>
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="21" />
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="23"
+      android:weightSum="375">
+      <Space
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30" />
+      <LinearLayout
+        android:id="@+id/remember_me_touch_area"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="157.5"
+        android:weightSum="157.5">
+        <RelativeLayout
+          android:gravity="center"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="18"
+          android:weightSum="18">
+          <FFImageLoading.Views.ImageViewAsync
+            android:id="@+id/image_remember_wrapper"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+          <FFImageLoading.Views.ImageViewAsync
+            android:padding="2dp"
+            android:id="@+id/remember_me_image"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+        </RelativeLayout>
+        <Space
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="12" />
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:id="@+id/remember_me_text"
+          android:gravity="center_vertical"
+          android:text="_remember_me_"
+          android:layout_weight="127.5" />
+      </LinearLayout>
+    </LinearLayout>
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="32" />
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="48"
+      android:weightSum="375"
+      android:orientation="horizontal"
+      android:gravity="center">
+      <TextView
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="315"
+        android:gravity="center"
+        android:background="#ff0b650f"
+        android:text="_Login_" />
+    </LinearLayout>
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="30" />
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="21.5"
+      android:orientation="horizontal"
+      android:gravity="center">
+      <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:weightSum="21.5">
+        <TextView
+          android:text="_Forgot password_"
+          android:textColor="@android:color/black"
+          android:gravity="center"
+          android:id="@+id/text_view_forgot_password"
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="18.3" />
+        <Space
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="2.2" />
+        <View
+          android:id="@+id/forgot_password_underline"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>

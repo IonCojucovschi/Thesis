@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    <Space
+        android:id="@+id/top_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contract_list_item_height_space"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:id="@+id/label"
+        android:text="C.IDENTITY"
+        android:layout_gravity="left"
+        android:singleLine="true" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contract_label_value_height_space" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="10">
+        <View
+            android:layout_width="@dimen/list_item_in_card_dash_width"
+            android:layout_height="1dp"
+            android:background="#ffdf0f0f"
+            android:id="@+id/dash" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:id="@+id/value"
+            android:text="C.VALUE"
+            android:lineSpacingMultiplier="0.8"
+            android:maxLines="2" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contract_list_item_height_space" />
+</LinearLayout>

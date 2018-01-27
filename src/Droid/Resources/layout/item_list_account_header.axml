@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="327"
+    android:layout_marginTop="@dimen/account_item_list_header_space"
+    android:layout_marginBottom="@dimen/account_item_list_header_space"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/hedaer_label"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="287"
+        android:lineSpacingMultiplier="0.8" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+  <dimen name="splash_view_logo_horizontal_padding">95dp</dimen>
+  <dimen name="splash_view_logo_vertical_padding">418dp</dimen>
+  <dimen name="list_item_menu_height">85.5dp</dimen>
+  <dimen name="list_vertical_gap">26.6dp</dimen>
+  <dimen name="list_item_dashboard_height">285dp</dimen>
+  <dimen name="list_item_in_card_horizontal_space">34.2dp</dimen>
+  <dimen name="list_item_in_card_dash_width">20.9dp</dimen>
+  <dimen name="list_item_in_card_arrow_image_size">34.2dp</dimen>
+  <dimen name="contract_list_item_height_space">26.6dp</dimen>
+  <dimen name="contract_label_value_height_space">11.4dp</dimen>
+  <dimen name="account_item_list_header_space">26.6dp</dimen>
+  <dimen name="account_item_list_space">11.4dp</dimen>
+  <dimen name="invoices_download_pdf_padding">22.8dp</dimen>
+  <dimen name="invoices_padding_left">34.2dp</dimen>
+  <dimen name="shadow_image_height">38dp</dimen>
+  <dimen name="document_underline_margin">38dp</dimen>
+  <dimen name="margin_dash">15.2dp</dimen>
+  <dimen name="item_menu_view_height">3.8dp</dimen>
+  <dimen name="comunication_middle_space">28.5dp</dimen>
+  <dimen name="shadow_image_height_comunication">19dp</dimen>
+  <dimen name="contact_item_space">57dp</dimen>
+  <dimen name="product_document_type_dimensions">45.6dp</dimen>
+  <dimen name="list_product_vertical_gap">19dp</dimen>
+  <dimen name="list_product_separator_space">11.4dp</dimen>
+  <dimen name="product_item_height">138.7dp</dimen>
+</resources>

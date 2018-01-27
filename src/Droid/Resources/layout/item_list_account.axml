@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cell_content_root_view"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:weightSum="10">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8.6"
+        android:gravity="center">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/contact_item_space" />
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text=""
+            android:inputType="textMultiLine"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/contact_item_space" />
+        <View
+            android:id="@+id/dash"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+</LinearLayout>

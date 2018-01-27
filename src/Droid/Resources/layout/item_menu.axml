@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_menu_height">
+    <LinearLayout
+        android:id="@+id/cell_root_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="53">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="28"
+            android:weightSum="316">
+            <View
+                android:id="@+id/selection_indicating_view"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_menu_view_height"
+                android:layout_weight="16"
+                android:background="#ffd23838"
+                android:layout_gravity="center_vertical" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="44" />
+            <TextView
+                android:id="@+id/cell_text_view"
+                android:text="Some text"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="220" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="48" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

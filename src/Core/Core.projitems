@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{8619121D-C7B7-4339-8450-D2101203E1BB}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\Contacts\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\Locales\en\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\Locales\it\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\Contract\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Helpers\Manager\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Library\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\Window\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\Account\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Repository\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Repository\User\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\Dashboard\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\Account\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\BeContractsInProgress\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\Documents\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\BE\">
+    </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\Settings\">
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BeContractsListItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\EnergySourceType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\IItemContract.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\ItemContract.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contacts\IItemContact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\IItemInvoices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\IItemInvoicesDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\ItemInvoices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\ItemInvoicesDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contacts\ItemContact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\ItemComunication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\ItemProducts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\ProfileModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\ChangeUserDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BeComunicationModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Drawables\DrawableConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RContact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RInvoices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RLogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RMenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RStatusProduct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RUserManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IComunicationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\ComunicationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\DocumentService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Service.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\ProjectBaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FontsConstant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ComunicationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ContactViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SplashViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RShare.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Rest\RestCalls.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Rest\RestConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Rest\RestRutes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Response\IResponseWithMeta.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Response\MResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Colors\ColorConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\AuthenticateServiceMock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Manager\UserManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Contract\IUserRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DashboardViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\UserModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Window\LogoutViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Window\ForgotPasswordViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Account\AccountViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Account\AccountDescriptionsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Repository\User\UserRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\ProjectNavigationBaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\MenuService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\PageConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\MenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Manager\MenuManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\LoginModelServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\LogouDeviceModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\RestoreEmailModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\AuthenticateService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Dashboard\ItemDashboard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Dashboard\ItemDashboard.implement.cs">
+      <DependentUpon>ItemDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Account\ItemAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Documents\IItemDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Documents\ItemDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\ChangePasswordModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RDetailItems.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\ContractService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Manager\ContractManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IContractService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BeContractsInProgress\BeItemContract.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IDocumentService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\Documents\BeItemDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BE\EntityBaseBE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Settings\ProjectSettingWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\en\en.txt" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\it\it.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\archive_icon.png" />
+    <None Include="$(MSBuildThisFileDirectory)Models\DTO\info.txt" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\ArrowDown.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\ArrowUp.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\menu_close.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\logo.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\logo_red.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Password.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\PDF_status_ok.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\User.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Logout.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\menu.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\back.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\logo_png.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Email.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\line.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\ConfirmPass.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Electricity.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Fire.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Shadow.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\PDF.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\bg_image.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\bg_dashboard.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\uncheck.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-Bold.otf" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-ExtraBold.otf" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-ExtraLight.otf" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-Light.otf" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-Medium.otf" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-Regular.otf" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-SemiBold.otf" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logout_background_image_view"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="667"
+        android:id="@+id/background_view">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="213"
+            android:weightSum="375"
+            android:gravity="center">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/main_window_view"
+                android:layout_weight="327"
+                android:gravity="center"
+                android:weightSum="327">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="279"
+                    android:gravity="center"
+                    android:weightSum="213">
+                    <TextView
+                        android:text="Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/label_message"
+                        android:gravity="center"
+                        android:layout_weight="80" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="24" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:weightSum="213">
+                        <TextView
+                            android:text="Text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/label_yes"
+                            android:layout_weight="94"
+                            android:gravity="center" />
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="24" />
+                        <TextView
+                            android:text="Text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/label_no"
+                            android:layout_weight="94"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:weightSum="10"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/Shadow"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/shadow_image_height"
+                android:layout_weight="8.6"
+                android:scaleType="fitCenter"
+                android:id="@+id/shadow_image_view" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

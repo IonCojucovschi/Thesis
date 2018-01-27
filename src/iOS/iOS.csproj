@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{9F9DA645-8438-4B9D-A89B-1CB03595F208}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>iOS</RootNamespace>
+    <AssemblyName>iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <LangVersion>latest</LangVersion>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: grierosu alina (DHH46245KZ)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>57507</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <CodesignProvision>VS: com.bss.energiaspaclient Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <LangVersion>latest</LangVersion>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: grierosu alina (DHH46245KZ)</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <CodesignProvision>VS: com.bss.energiaspaclient Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <LangVersion>latest</LangVersion>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: grierosu alina (DHH46245KZ)</CodesignKey>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <CodesignProvision>VS: com.bss.energiaspaclient Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: grierosu alina (DHH46245KZ)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <CodesignProvision>VS: com.bss.energiaspaclient Development</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="FabricSdk">
+      <HintPath>..\..\packages\Fabric.1.4\lib\Xamarin.iOS10\FabricSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="FabricSdk.Platform">
+      <HintPath>..\..\packages\Fabric.1.4\lib\Xamarin.iOS10\FabricSdk.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="I18NPortable">
+      <HintPath>..\..\packages\I18NPortable.0.6.0\lib\netstandard1.1\I18NPortable.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\..\packages\Splat.1.6.0\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\..\packages\reactiveui-core.7.4.0\lib\Xamarin.iOS10\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache">
+      <HintPath>..\..\packages\akavache.core.5.0.0\lib\Xamarin.iOS10\Akavache.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Sqlite3">
+      <HintPath>..\..\packages\akavache.sqlite3.5.0.0\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.Sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SDWebImage">
+      <HintPath>..\..\packages\Xamarin.SDWebImage.3.7.5\lib\Xamarin.iOS\SDWebImage.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions.Abstractions">
+      <HintPath>..\..\packages\Plugin.Permissions.2.1.0\lib\Xamarin.iOS10\Plugin.Permissions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\..\packages\Plugin.Permissions.2.1.0\lib\Xamarin.iOS10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugin.Connectivity.3.0.3\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\..\packages\Xam.Plugin.Connectivity.3.0.3\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Com.OneSignal.Abstractions">
+      <HintPath>..\..\packages\Com.OneSignal.3.0.1\lib\Xamarin.iOS10\Com.OneSignal.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Com.OneSignal">
+      <HintPath>..\..\packages\Com.OneSignal.3.0.1\lib\Xamarin.iOS10\Com.OneSignal.dll</HintPath>
+    </Reference>
+    <Reference Include="OneSignal.iOS.Binding">
+      <HintPath>..\..\packages\Com.OneSignal.3.0.1\lib\Xamarin.iOS10\OneSignal.iOS.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MemoryCache">
+      <HintPath>..\..\packages\MemoryCache.1.2.0\lib\MemoryCache.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\..\packages\WebSocket4Net.0.14.1\lib\Xamarin.iOS10\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EngineIoClientDotNet">
+      <HintPath>..\..\packages\EngineIoClientDotNet.0.9.22\lib\xamarinios10\EngineIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketIoClientDotNet">
+      <HintPath>..\..\packages\SocketIoClientDotNet.0.9.13\lib\xamarinios10\SocketIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI.Fody.Helpers">
+      <HintPath>..\..\packages\ReactiveUI.Fody.2.2.11\lib\Xamarin.iOS10\ReactiveUI.Fody.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\..\packages\SkiaSharp.1.59.2\lib\XamariniOS\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.3\lib\Xamarin.iOS10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.3\lib\Xamarin.iOS10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\packages\RestSharp.106.1.0\lib\netstandard2.0\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\..\packages\SQLitePCLRaw.core.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.lib.e_sqlite3">
+      <HintPath>..\..\packages\SQLitePCLRaw.lib.e_sqlite3.ios_unified.static.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.lib.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.internal">
+      <HintPath>..\..\packages\SQLitePCLRaw.provider.internal.ios_unified.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.provider.internal.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_e_sqlite3">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="WebP.Touch">
+      <HintPath>..\..\packages\WebP.Touch.1.0.7\lib\Xamarin.iOS10\WebP.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\..\packages\HockeySDK.Xamarin.5.1.1\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\..\packages\HockeySDK.Xamarin.5.1.1\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugin.Media.3.1.1\lib\Xamarin.iOS10\Plugin.Media.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media">
+      <HintPath>..\..\packages\Xam.Plugin.Media.3.1.1\lib\Xamarin.iOS10\Plugin.Media.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ItunesArtwork%402x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="CellView\Comunication\">
+    </Folder>
+    <Folder Include="Views\Cell\Account\">
+    </Folder>
+    <Folder Include="CellView\Product\">
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Storyboard\Main.storyboard" />
+    <InterfaceDefinition Include="Storyboard\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Views\Window\Menu\CellView\MenuViewCell.xib" />
+    <InterfaceDefinition Include="Views\Window\Menu\SideMenuView.xib" />
+    <InterfaceDefinition Include="Views\Window\Logout\LogoutView.xib" />
+    <InterfaceDefinition Include="Views\Window\Forgot\ForgotEmailView.xib" />
+    <InterfaceDefinition Include="Views\Cell\Account\AccountSaveDataView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Page\BasePage\BasePage.cs" />
+    <Compile Include="Page\Splash.cs" />
+    <Compile Include="Page\Splash.designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AkavacheSqliteLinkerOverride.cs" />
+    <Compile Include="Page\Dashboard.cs" />
+    <Compile Include="Page\Dashboard.designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Login.cs" />
+    <Compile Include="Page\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\BasePage\HeaderPage.cs" />
+    <Compile Include="Page\BasePage\HeaderPage.designer.cs">
+      <DependentUpon>HeaderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Account\AccountDescriptions.cs" />
+    <Compile Include="Page\Account\AccountDescriptions.designer.cs">
+      <DependentUpon>AccountDescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Account\Account.cs" />
+    <Compile Include="Page\Account\Account.designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Window\Menu\CellView\MenuViewCell.cs" />
+    <Compile Include="Views\Window\Menu\CellView\MenuViewCell.designer.cs">
+      <DependentUpon>MenuViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Window\Menu\SideMenuView.cs" />
+    <Compile Include="Views\Window\Menu\SideMenuView.designer.cs">
+      <DependentUpon>SideMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\BasePage\BasePageSideMenu.cs" />
+    <Compile Include="Views\Window\LogoutWindow.cs" />
+    <Compile Include="Views\Window\Logout\LogoutView.cs" />
+    <Compile Include="Views\Window\Logout\LogoutView.designer.cs">
+      <DependentUpon>LogoutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Window\Base\ProjectBaseWindow.cs" />
+    <Compile Include="Views\Window\Forgot\ForgotEmailView.cs" />
+    <Compile Include="Views\Window\Forgot\ForgotEmailView.designer.cs">
+      <DependentUpon>ForgotEmailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Window\ForgotPasswordWindow.cs" />
+    <Compile Include="Views\Cell\Custom\ConcreteUIShadowCastingView.cs" />
+    <Compile Include="Views\Cell\Custom\ConcreteUIShadowCastingView.designer.cs">
+      <DependentUpon>ConcreteUIShadowCastingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellView\AccountCell.cs" />
+    <Compile Include="CellView\AccountCell.designer.cs">
+      <DependentUpon>AccountCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Comunication.cs" />
+    <Compile Include="Page\Comunication.designer.cs">
+      <DependentUpon>Comunication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Contact.cs" />
+    <Compile Include="Page\Contact.designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Product.cs" />
+    <Compile Include="Page\Product.designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Window\Menu\SideMenuViewWindow.cs" />
+    <Compile Include="CellView\ContactCell.cs" />
+    <Compile Include="CellView\ContactCell.designer.cs">
+      <DependentUpon>ContactCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellView\Comunication\ComunicationCell.cs" />
+    <Compile Include="CellView\Comunication\ComunicationCell.designer.cs">
+      <DependentUpon>ComunicationCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cell\Account\AccountSaveDataView.cs" />
+    <Compile Include="Views\Cell\Account\AccountSaveDataView.designer.cs">
+      <DependentUpon>AccountSaveDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cell\Account\AccountSaveData.cs" />
+    <Compile Include="CellView\Product\ProductChildCell.cs" />
+    <Compile Include="CellView\Product\ProductChildCell.designer.cs">
+      <DependentUpon>ProductChildCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellView\Product\ProductHeaderCell.cs" />
+    <Compile Include="CellView\Product\ProductHeaderCell.designer.cs">
+      <DependentUpon>ProductHeaderCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellView\Product\ProductSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-Bold.ttf" />
+    <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-ExtraBold.ttf" />
+    <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-ExtraLight.ttf" />
+    <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-Light.ttf" />
+    <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-Medium.ttf" />
+    <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-Regular.ttf" />
+    <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-SemiBold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\Core\Resources\Drawables\archive_icon.png">
+      <Link>Resources\archive_icon.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\menu_close.svg">
+      <Link>Resources\menu_close.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\logo.svg">
+      <Link>Resources\logo.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\logo_red.svg">
+      <Link>Resources\logo_red.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\Password.svg">
+      <Link>Resources\Password.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\User.svg">
+      <Link>Resources\User.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\back.svg">
+      <Link>Resources\back.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\Logout.svg">
+      <Link>Resources\Logout.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\menu.svg">
+      <Link>Resources\menu.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\logo_png.png">
+      <Link>Resources\logo_png.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\Email.svg">
+      <Link>Resources\Email.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\line.svg">
+      <Link>Resources\line.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\ConfirmPass.svg">
+      <Link>Resources\ConfirmPass.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\Electricity.svg">
+      <Link>Resources\Electricity.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\Fire.svg">
+      <Link>Resources\Fire.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\ArrowDown.svg">
+      <Link>Resources\ArrowDown.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\ArrowUp.svg">
+      <Link>Resources\ArrowUp.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\Shadow.png">
+      <Link>Resources\Shadow.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\PDF.svg">
+      <Link>Resources\PDF.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\bg_image.png">
+      <Link>Resources\bg_image.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\bg_dashboard.png">
+      <Link>Resources\bg_dashboard.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Fonts\Montserrat-Bold.otf">
+      <Link>Resources\Fonts\Montserrat-Bold.otf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Fonts\Montserrat-ExtraBold.otf">
+      <Link>Resources\Fonts\Montserrat-ExtraBold.otf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Fonts\Montserrat-ExtraLight.otf">
+      <Link>Resources\Fonts\Montserrat-ExtraLight.otf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Fonts\Montserrat-Light.otf">
+      <Link>Resources\Fonts\Montserrat-Light.otf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Fonts\Montserrat-Medium.otf">
+      <Link>Resources\Fonts\Montserrat-Medium.otf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Fonts\Montserrat-Regular.otf">
+      <Link>Resources\Fonts\Montserrat-Regular.otf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Fonts\Montserrat-SemiBold.otf">
+      <Link>Resources\Fonts\Montserrat-SemiBold.otf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\check.png">
+      <Link>Resources\check.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\uncheck.png">
+      <Link>Resources\uncheck.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Core\Resources\Drawables\PDF_status_ok.svg">
+      <Link>Resources\PDF_status_ok.svg</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\Int.Core\Int.Core.csproj">
+      <Project>{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}</Project>
+      <Name>Int.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\Int.iOS\Int.iOS.csproj">
+      <Project>{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}</Project>
+      <Name>Int.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork">
+      <DependentUpon>iTunesArtwork</DependentUpon>
+    </ITunesArtwork>
+    <ITunesArtwork Include="iTunesArtwork%402x">
+      <DependentUpon>iTunesArtwork%402x</DependentUpon>
+    </ITunesArtwork>
+  </ItemGroup>
+  <Import Project="..\Core\Core.projitems" Label="Shared" Condition="Exists('..\Core\Core.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\..\packages\Fody.2.3.2\build\netstandard1.0\Fody.targets" Condition="Exists('..\..\packages\Fody.2.3.2\build\netstandard1.0\Fody.targets')" />
+</Project>

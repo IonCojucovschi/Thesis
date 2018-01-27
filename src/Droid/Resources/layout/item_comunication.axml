@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.5"
+            android:paddingBottom="@dimen/list_vertical_gap"
+            android:paddingTop="@dimen/list_vertical_gap"
+            android:background="@android:color/white"
+            android:id="@+id/cell_content_root_view">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Texttextetetxtxtetetetxttetetettetxtettxetxetxetxtetxettxetet"
+                    android:textColor="@android:color/black"
+                    android:maxLines="150"
+                    android:layout_weight="8.5"
+                    android:lineSpacingMultiplier="1.6"
+                    android:id="@+id/comunication_text" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comunication_middle_space" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="03/30/2017"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="8.5"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:id="@+id/comunication_date" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/Shadow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/shadow_image_height_comunication"
+            android:layout_weight="9"
+            android:scaleType="fitCenter"
+            android:id="@+id/shadow_image_view" />
+    </LinearLayout>
+</LinearLayout>
