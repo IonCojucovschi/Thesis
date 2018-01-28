@@ -28,7 +28,7 @@ namespace Core.Services
 {
     public static partial class RestConstants
     {
-        public const string PostLogin = "api/client/auth/login";
+        public const string PostLogin = "api/login/login/";///"api/client/auth/login";
         public const string PostSetTokenDevice = "api/client/auth/set_token";
         public const string PostLogout = "api/client/auth/logout";
         public const string PostRestorePassword = "api/client/auth/reset_password";

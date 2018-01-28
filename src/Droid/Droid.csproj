@@ -451,7 +451,6 @@
     </AndroidResource>
     <AndroidResource Include="Resources\drawable-xxhdpi\splash_logo.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\splash_logo.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\splash_logo.png" />
     <AndroidResource Include="Resources\drawable-mdpi\splash_logo.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\splash_logo.png" />
     <AndroidResource Include="Resources\drawable-ldpi\splash_logo.png" />
@@ -527,6 +526,9 @@
     <AndroidAsset Include="..\Core\Resources\Fonts\Montserrat-SemiBold.otf">
       <Link>Assets\Fonts\Montserrat-SemiBold.otf</Link>
     </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\splash_logo.png" />
   </ItemGroup>
   <Import Project="..\Core\Core.projitems" Label="Shared" Condition="Exists('..\Core\Core.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

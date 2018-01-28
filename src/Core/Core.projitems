@@ -139,11 +139,11 @@
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\logo_red.svg" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Password.svg" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\PDF_status_ok.svg" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\logo_png.png" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\User.svg" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Logout.svg" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\menu.svg" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\back.svg" />
-    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\logo_png.png" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\Email.svg" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\line.svg" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\ConfirmPass.svg" />

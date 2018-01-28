@@ -29,9 +29,9 @@ namespace Core.Services
     public static partial class RestConstants
     {
 #if DEBUG
-        public const string BaseUrl = "http://synapsi2.digitalweb.cloud/";
+        public const string BaseUrl = "http://readabook.16mb.com/";
 #else
-        public const string BaseUrl = "http://synapsi2.digitalweb.cloud/";
+        public const string BaseUrl = "http://readabook.16mb.com/";
 #endif
 
         public const string MediaType = "application/x-www-form-urlencoded";

@@ -41,7 +41,8 @@ namespace Core.Services
     {
         public IRestCallbackClient Login(LoginModelServer model)
         {
-            return Request(RestConstants.PostLogin, Method.POST,
+            string postlogin = RestConstants.PostLogin + model.Username + "/password/" + model.Password;
+            return Request(postlogin, Method.POST,
                 JsonConvert.SerializeObject(model),
                 RestConstants.MediaTypeJson);
         }
