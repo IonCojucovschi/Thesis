@@ -11,16 +11,16 @@ namespace Core.Models.DAL
 
         public string TokenDevice { get; set; }
 
-        public string NameAgent => Profile.Agent;
+       // public string NameAgent => Profile.Agent;
 
         public string Name => Profile.Name;
         public string Surname => Profile.Surname;
 
-        public string Phone => Profile.Phone;
+       // public string Phone => Profile.Phone;
         public string Email => Profile.Email;
-        public string VatNumber => Profile.VatNumber;
-        public string Language => Profile.Language;
-        public string Address => Profile.Address;
+      //  public string VatNumber => Profile.VatNumber;
+      //  public string Language => Profile.Language;
+        //public string Address => Profile.Address;
         public string Mobile => Profile.Mobile;
 
         public string FullName => Profile.Name + " " + Profile.Surname;

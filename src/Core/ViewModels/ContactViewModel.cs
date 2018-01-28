@@ -51,7 +51,7 @@ namespace Core.ViewModels
                 new ItemContact
                 {
                     Label = Consultant,
-                    Value = ConcreteCurrentUser.NameAgent,
+                    Value = ConcreteCurrentUser.Name,
                     ContactType = ContactType.None,
                     ContactActivity = ""
                 },

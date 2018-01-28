@@ -97,16 +97,16 @@ namespace Core.Helpers.Manager
                         new ItemAccount
                         {
                             LabelName = Adress,
-                            LabelValue = user.Address,
+                            LabelValue = user.Name,
                             TypeLabel = LabelName.Address
                         },
 
                         new ItemAccount
                         {
                             LabelName = Phone,
-                            LabelValue = user.Profile.Phone.IsNullOrWhiteSpace()
+                            LabelValue = user.Profile.Mobile.IsNullOrWhiteSpace()
                                 ? NoPhone
-                                : user.Profile.Phone,
+                                : user.Profile.Mobile,
                             TypeLabel = LabelName.Phone
                         },
                         new ItemAccount

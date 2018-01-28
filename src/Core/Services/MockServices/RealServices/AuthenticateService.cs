@@ -60,11 +60,11 @@ namespace Core.Services.RealServices
                     Password = myUser.Password,
                     Remember = myUser.Remember,
 
-                    Token = token,
+                   // Token = token,
                     Profile = response.Profile
                 });
 
-                SetToken();
+                //SetToken();
                 success?.Invoke("Success!");
             }, exception => error?.Invoke(exception.Message));
         }
@@ -119,13 +119,13 @@ namespace Core.Services.RealServices
                     {
                         Name = UserManager.Instance.ChangeUserModel.Name,
                         Surname = UserManager.Instance.ChangeUserModel.Lastname,
-                        Address = UserManager.Instance.ChangeUserModel.Address,
+                       // Address = UserManager.Instance.ChangeUserModel.Address,
                         Email = UserManager.Instance.ChangeUserModel.Email,
                         Mobile = UserManager.Instance.ChangeUserModel.Mobile,
-                        Phone = UserManager.Instance.ChangeUserModel.Phone,
-                        Language = currentUser.Language,
+                      //  Phone = UserManager.Instance.ChangeUserModel.Phone,
+                      //  Language = currentUser.Language,
                         Username = currentUser.Username,
-                        VatNumber = currentUser.VatNumber
+                      //  VatNumber = currentUser.VatNumber
                     };
 
                     UserManager.Instance.UpdateUser(currentUser);
