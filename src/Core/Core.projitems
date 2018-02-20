@@ -124,6 +124,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\Documents\BeItemDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BE\EntityBaseBE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Settings\ProjectSettingWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\OnLoginModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\en\en.txt" />

@@ -32,6 +32,7 @@ using Core.Services.Response;
 using Int.Core.Application.Login.Contract;
 using Int.Core.Extensions;
 using Int.Core.Network.Response;
+using Newtonsoft.Json;
 
 namespace Core.Services.RealServices
 {
@@ -49,20 +50,16 @@ namespace Core.Services.RealServices
                     Password = myUser.Password,
                     Language = "it"
                 }));
-
+                var userdataString = response.ServerContent.Item1;
+            OnLoginModel data = JsonConvert.DeserializeObject<OnLoginModel>(userdataString);
+            UserModel newUser = new UserModel() 
+            {
+                Profile=new ProfileModel(){Name=data.data.name,Surname=data.data.surname,Email=data.data.Email,Mobile=data.data.cellphone,Username=data.data.login}
+            }; 
             response.OnResponse(() =>
             {
-                var token = response.Data;
-
-                UserManager.Instance.UpdateUser(new UserModel
-                {
-                    Username = myUser.Username,
-                    Password = myUser.Password,
-                    Remember = myUser.Remember,
-
-                   // Token = token,
-                    Profile = response.Profile
-                });
+               
+               UserManager.Instance.UpdateUser(newUser);
 
                 //SetToken();
                 success?.Invoke("Success!");

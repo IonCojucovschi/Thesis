@@ -156,7 +156,7 @@ namespace Droid.Page.Base
                 // Even line order matters.
                 _viewModel.IsMenuOpened = !_isOpened;
 
-                _viewModel.CurrentActivity.HideKeyboard();
+               /// _viewModel.CurrentActivity.HideKeyboard();
 
 
                 if (_viewModel.IsMenuOpened)
