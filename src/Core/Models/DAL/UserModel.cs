@@ -40,7 +40,7 @@ namespace Core.Models.DAL
         [JsonProperty("pasword")]
         public string Password { get; set; }
         [JsonProperty("active")]
-        public int active { get; set; }
+        public int active => Profile.active;
         public bool Remember { get; set; }
     }
 }

@@ -42,7 +42,6 @@ namespace Core.Services.RealServices
         public void OnLogin(Action<string> success, Action<string> error)
         {
             if (GetValue(error, out var myUser)) return;
-
             var response = RequestFactory.ExecuteRequest<MResponse<string>>(RestCalls.Instance.Login(
                 new LoginModelServer
                 {
@@ -54,14 +53,18 @@ namespace Core.Services.RealServices
             OnLoginModel data = JsonConvert.DeserializeObject<OnLoginModel>(userdataString);
             UserModel newUser = new UserModel() 
             {
-                Profile=new ProfileModel(){Name=data.data.name,Surname=data.data.surname,Email=data.data.Email,Mobile=data.data.cellphone,Username=data.data.login}
+                Profile=new ProfileModel(){Name=data.data.name,
+                    Surname=data.data.surname,
+                    Email=data.data.Email,
+                    Mobile=data.data.cellphone,
+                    Username=data.data.login,
+                    active=Convert.ToInt32(data.data.active)}
             }; 
             response.OnResponse(() =>
             {
                
                UserManager.Instance.UpdateUser(newUser);
-
-                //SetToken();
+                ///SetToken();
                 success?.Invoke("Success!");
             }, exception => error?.Invoke(exception.Message));
         }

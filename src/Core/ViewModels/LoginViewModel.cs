@@ -222,14 +222,16 @@ namespace Core.ViewModels
                 Remember = UserManager.Instance.IsRememberMe()
             });
 
-            Show();
+            ///Show();
 
             ThreadPool.QueueUserWorkItem(_ =>
             {
                 UserManager.Instance.Login(obj =>
                 {
                     Hide();
-                    this.GoPage(PageConstants.DashboardName);
+                    var usr=UserManager.Instance.CurrentUser() as UserModel;
+                    if(usr.active==1)this.GoPage(PageConstants.DashboardName);
+                   
                 }, message => ShowError(message));
             });
         }

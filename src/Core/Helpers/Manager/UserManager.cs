@@ -185,6 +185,8 @@ namespace Core.Helpers.Manager
 
         public void Login(Action<string> success, Action<string> error)
         {
+            var sc = success;
+            var er = error;
             GetService.OnLogin(success, error);
         }
 

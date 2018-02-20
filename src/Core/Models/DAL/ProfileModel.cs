@@ -28,8 +28,8 @@ namespace Core.Models.DAL
         [JsonProperty("cellphone")]
         public string Mobile { get; set; }
 
-        //[JsonProperty("address")]///delete
-        //public string Address { get; set; }
+        [JsonProperty("active")]///delete
+        public int active { get; set; }
 
         //[JsonProperty("agent")]///delete
         //public string Agent { get; set; }
