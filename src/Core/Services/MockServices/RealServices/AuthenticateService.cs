@@ -42,7 +42,7 @@ namespace Core.Services.RealServices
         public void OnLogin(Action<string> success, Action<string> error)
         {
             if (GetValue(error, out var myUser)) return;
-            var response = RequestFactory.ExecuteRequest<MResponse<string>>(RestCalls.Instance.Login(
+            var response = RequestFactory.ExecuteRequest<MResponse<object>>(RestCalls.Instance.Login(
                 new LoginModelServer
                 {
                     Username = myUser.Username,
