@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="152" Column="1" />
-      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="45" Column="1" />
       <File FileName="src/Core/Models/DAL/UserModel.cs" Line="43" Column="41" />
       <File FileName="src/Core/Models/DAL/ProfileModel.cs" Line="30" Column="9" />
-      <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="233" Column="34" />
+      <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="233" Column="1" />
       <File FileName="src/Core/Services/Rest/RestCalls.cs" Line="154" Column="1" />
       <File FileName="src/Core/Services/Rest/RestRutes.cs" Line="1" Column="1" />
       <File FileName="src/Core/ViewModels/Account/AccountViewModel.cs" Line="106" Column="40" />
@@ -13,7 +13,7 @@
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0009a17778603f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Services/Rest/RestCalls.cs" relfile="src/Core/Services/Rest/RestCalls.cs" line="44" column="1" />
