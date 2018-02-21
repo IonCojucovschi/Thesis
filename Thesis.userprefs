@@ -1,22 +1,19 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Core/Int.Core/Data/Repository/Akavache/FeedRepository.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="116" Column="55" />
+      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="152" Column="1" />
+      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="1" Column="1" />
       <File FileName="src/Core/Models/DAL/UserModel.cs" Line="43" Column="41" />
       <File FileName="src/Core/Models/DAL/ProfileModel.cs" Line="30" Column="9" />
-      <File FileName="src/Droid/Page/Base/BasePage.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="234" Column="20" />
-      <File FileName="src/Core/Services/Rest/RestCalls.cs" Line="42" Column="65" />
+      <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="233" Column="34" />
+      <File FileName="src/Core/Services/Rest/RestCalls.cs" Line="154" Column="1" />
       <File FileName="src/Core/Services/Rest/RestRutes.cs" Line="1" Column="1" />
-      <File FileName="../Core/Int.Droid/Wrappers/Widget/FactoryConcreteProducts/CrossTextWrapper.cs" Line="113" Column="1" />
-      <File FileName="../Core/Int.Core/Data/Repository/Akavache/FeedRepository.cs" Line="52" Column="1" />
       <File FileName="src/Core/ViewModels/Account/AccountViewModel.cs" Line="106" Column="40" />
-      <File FileName="src/Core/Helpers/PageConstants.cs" Line="9" Column="2" />
-      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="152" Column="1" />
+      <File FileName="src/Core/Models/DTO/OnLoginModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Application.Droid PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Services/Rest/RestCalls.cs" relfile="src/Core/Services/Rest/RestCalls.cs" line="44" column="1" />
@@ -26,10 +23,11 @@
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="151" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="152" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="227" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="188" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/PageConstants.cs" relfile="src/Core/Helpers/PageConstants.cs" line="13" column="30" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Services/Rest/RestCalls.cs" relfile="src/Core/Services/Rest/RestCalls.cs" line="154" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Services/Rest/RestCalls.cs" relfile="src/Core/Services/Rest/RestCalls.cs" line="143" column="43" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="189" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="232" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="233" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

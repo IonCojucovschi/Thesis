@@ -363,6 +363,11 @@
     <AndroidResource Include="Resources\layout\item_library.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\boock_view.axml" />
+    <AndroidResource Include="Resources\layout\category_books_view.axml" />
+    <AndroidResource Include="Resources\layout\item_list_book.axml" />
+    <AndroidResource Include="Resources\layout\item_list_category_boock.axml" />
+    <AndroidResource Include="Resources\layout\read_book_view.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
