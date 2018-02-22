@@ -21,9 +21,9 @@ namespace Core.Services.RealServices
         }
 
         private string Dashboard => RMenu.Dashboard;
-        private string Contacts => RMenu.Contacts;
-        private string Products => RMenu.Products;
-        private string Comunication => RMenu.Comunication;
+        private string Contacts => "Contacte";//RMenu.Contacts;
+        private string Products => "Biblioteca";///RMenu.Products;
+        private string Comunication => "Cartile mele";//RMenu.Comunication;
         private string Account => RMenu.Account;
 
         public IList<IItemMenu> Items { get; }

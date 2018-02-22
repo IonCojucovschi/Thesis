@@ -42,6 +42,7 @@
     </Folder>
     <Folder Include="$(MSBuildThisFileDirectory)Resources\Settings\">
     </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\CategoryBooks\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BeContractsListItem.cs" />
@@ -125,6 +126,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BE\EntityBaseBE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Settings\ProjectSettingWindow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\OnLoginModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Manager\BooksManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\CategoryBooks\ICategoryBook.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\BooksService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IBooksService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\en\en.txt" />

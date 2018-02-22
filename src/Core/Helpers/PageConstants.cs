@@ -14,7 +14,7 @@ namespace Core.Helpers
         public static string AccountName => nameof(Account);
         public static string AccountDescriptionsName => nameof(AccountDescriptions);
         public static string ContactName => nameof(Contact);
-        public static string ComunicationName => nameof(Comunication);
-        public static string ProductName => nameof(Product);
+        public static string ComunicationName =>"";///nameof(Comunication);
+        public static string ProductName => "";/// nameof(Product);
     }
 }

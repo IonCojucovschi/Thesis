@@ -43,22 +43,22 @@ namespace Core.ViewModels
             {
                 new ItemContact
                 {
-                    Label = AdresSede,
-                    Value = "Via Sordello,23-31046",
+                    Label = "Report Bugs",///AdresSede,
+                    Value = "Cojucovschi@gmail.com",
                     ContactActivity = "",
                     ContactType = ContactType.None
                 },
                 new ItemContact
                 {
                     Label = Consultant,
-                    Value = ConcreteCurrentUser.Name,
+                    Value = ConcreteCurrentUser.Name+" "+ConcreteCurrentUser.Surname,
                     ContactType = ContactType.None,
                     ContactActivity = ""
                 },
                 new ItemContact
                 {
                     Label = GreenNumber,
-                    Value = "800-580-040",
+                    Value = "079-227-743",
                     ContactActivity = Call,
                     ContactType = ContactType.Phone
                 }
