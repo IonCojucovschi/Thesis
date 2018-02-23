@@ -2,6 +2,7 @@
 using iOS.Storyboard;
 #else
 using Droid.Page;
+using Droid.Page.Library;
 
 #endif
 
@@ -16,5 +17,6 @@ namespace Core.Helpers
         public static string ContactName => nameof(Contact);
         public static string ComunicationName =>"";///nameof(Comunication);
         public static string ProductName => "";/// nameof(Product);
+        public static string LibraryName => nameof(Library);
     }
 }

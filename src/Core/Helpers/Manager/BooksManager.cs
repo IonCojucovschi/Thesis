@@ -7,7 +7,7 @@ using Splat;
 
 namespace Core.Helpers.Manager
 {
-    public class BooksManager : Singleton<ContractManager>
+    public class BooksManager : Singleton<BooksManager>
     {
         private IList<ICategoryContent> _category_list;
 
@@ -16,6 +16,12 @@ namespace Core.Helpers.Manager
         Locator.Current.GetService<IBooksService>(App.Instance.IsMock
                                                   ? App.ServiceContractMock
                                                   : App.ServiceContract);
+
+       
+
+
+
+
 
         public void GetCategoryes(Action<IList<ICategoryContent>> success, Action<string> error)
         {
