@@ -28,6 +28,7 @@ using Core.Models.DAL;
 using Core.Services.Repository.User;
 using Core.ViewModels;
 using Core.ViewModels.Account;
+using Core.ViewModels.Library;
 using Core.ViewModels.Window;
 using Int.Core.Data.Repository.Akavache.Contract;
 using Int.Core.Data.Service;
@@ -70,6 +71,10 @@ namespace Core.Services
             ServiceViewModel.RegisterViewModel(new ContactViewModel());
             ServiceViewModel.RegisterViewModel(new ComunicationViewModel());
             ServiceViewModel.RegisterViewModel(new ProductViewModel());
+
+            ServiceViewModel.RegisterViewModel(new LibraryViewModel());
+            ServiceViewModel.RegisterViewModel(new CategoryBooksViewModel());
+            ServiceViewModel.RegisterViewModel(new BookDetailsViewModel());
         }
     }
 }
