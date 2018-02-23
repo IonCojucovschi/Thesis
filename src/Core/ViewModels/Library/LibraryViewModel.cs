@@ -7,6 +7,7 @@ using Core.Helpers.Manager;
 using Core.Models.DAL.CategoryBooks;
 using Core.Resources.Colors;
 using Core.Resources.Drawables;
+using Core.Resources.Locales.Page;
 using Core.ViewModels.Base;
 using Int.Core.Application.Widget.Contract;
 using Int.Core.Application.Widget.Contract.Table;
@@ -17,9 +18,9 @@ namespace Core.ViewModels.Library
 {
     public class LibraryViewModel : ProjectNavigationBaseViewModel
     {
-        protected override string HeaderText => throw new NotImplementedException();
+        protected override string HeaderText => RDetailItems.ComunicationHeaderText.ToUpperInvariant();///must cchange this code 
 
-        protected override HeaderAreaActionType HeaderAreaAction => throw new NotImplementedException();
+        protected override HeaderAreaActionType HeaderAreaAction => HeaderAreaActionType.RightSideMenu;
 
         private IList<ICategoryContent> ListData;
 
