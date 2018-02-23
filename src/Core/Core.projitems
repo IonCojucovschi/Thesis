@@ -130,6 +130,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\CategoryBooks\ICategoryBook.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\BooksService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IBooksService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\BookDetailsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\CategoryBooksViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\LibraryViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\en\en.txt" />

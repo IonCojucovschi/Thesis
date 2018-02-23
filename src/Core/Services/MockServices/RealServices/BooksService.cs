@@ -14,7 +14,7 @@ namespace Core.Services.MockServices.RealServices
         {
             var response =
                 RequestFactory.ExecuteRequest<MResponse<IList<ICategoryContent>>>(RestCalls.Instance
-                    .GetContractsInProgress());
+                                                                                  .GetCategoryBooks());
 
             response.OnResponse(() => { success?.Invoke(response.Data); },
                 exception => error?.Invoke(exception.Message));

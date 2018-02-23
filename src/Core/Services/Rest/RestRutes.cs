@@ -35,6 +35,14 @@ namespace Core.Services
         public const string PostChangePassword = "api/client/auth/change_password";
         public const string PostChangeInfoClient = "api/client/auth/save_info_client";
 
+        ///
+        public const string GetBooksCategory= "api/allcategory";
+
+
+
+
+        ///
+
         public const string GetProfile = "api/client/auth/info_client";
         public const string GetContractsInProgress = "api/client/contracts";
         public const string GetDocuments = "api/client/contracts/document";

@@ -107,6 +107,17 @@ namespace Core.Services
                 requestTo: RequestTo.Key);
         }
 
+        public IRestCallbackClient GetCategoryBooks()
+        {
+            return Request(RestConstants.GetBooksCategory, Method.GET,
+                RestConstants.MediaTypeJson, requestTo: RequestTo.Key);
+        }
+
+
+
+
+
+
         private static IRestCallbackClient Request(string url, Method method = Method.GET,
             string content = "", string typeMedia = "",
             ParameterType typePar = ParameterType.RequestBody,
