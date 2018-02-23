@@ -98,6 +98,9 @@ namespace Core
 
             Locator.CurrentMutable.RegisterConstant(
                  new ComunicationService(), typeof(IComunicationService), ServiceContract);
+
+            Locator.CurrentMutable.RegisterConstant(
+                new BooksService(), typeof(IBooksService), ServiceContract);
         }
 
         private static void InjectMockServices()
@@ -112,6 +115,8 @@ namespace Core
                 new DocumentService(), typeof(IDocumentService), ServiceContractMock);
             Locator.CurrentMutable.RegisterConstant(
                 new ComunicationService(), typeof(IComunicationService), ServiceContractMock);
+            Locator.CurrentMutable.RegisterConstant(
+                new BooksService(),typeof(IBooksService),ServiceContractMock);
         }
 
         private static void LogExceptionInAppOutput(Exception e)
