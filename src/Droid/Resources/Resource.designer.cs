@@ -263,7 +263,7 @@ namespace Droid
 			global::Int.Droid.Resource.Dimension.notification_top_pad = global::Droid.Resource.Dimension.notification_top_pad;
 			global::Int.Droid.Resource.Dimension.notification_top_pad_large_text = global::Droid.Resource.Dimension.notification_top_pad_large_text;
 			global::Int.Droid.Resource.Drawable.error = global::Droid.Resource.Drawable.error;
-			global::Int.Droid.Resource.Drawable.loadingDefault = global::Droid.Resource.Drawable.loadingDefault;
+			global::Int.Droid.Resource.Drawable.loading_default = global::Droid.Resource.Drawable.loading_default;
 			global::Int.Droid.Resource.Drawable.notification_action_background = global::Droid.Resource.Drawable.notification_action_background;
 			global::Int.Droid.Resource.Drawable.notification_bg = global::Droid.Resource.Drawable.notification_bg;
 			global::Int.Droid.Resource.Drawable.notification_bg_low = global::Droid.Resource.Drawable.notification_bg_low;
@@ -341,7 +341,7 @@ namespace Droid
 			global::Int.Droid.Resource.Layout.notification_template_media_custom = global::Droid.Resource.Layout.notification_template_media_custom;
 			global::Int.Droid.Resource.Layout.notification_template_part_chronometer = global::Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Int.Droid.Resource.Layout.notification_template_part_time = global::Droid.Resource.Layout.notification_template_part_time;
-			global::Int.Droid.Resource.Layout.WindowView = global::Droid.Resource.Layout.WindowView;
+			global::Int.Droid.Resource.Layout.window_view = global::Droid.Resource.Layout.window_view;
 			global::Int.Droid.Resource.Layout.ZoomView = global::Droid.Resource.Layout.ZoomView;
 			global::Int.Droid.Resource.String.library_name = global::Droid.Resource.String.library_name;
 			global::Int.Droid.Resource.String.status_bar_notification_info_overflow = global::Droid.Resource.String.status_bar_notification_info_overflow;
@@ -2515,7 +2515,7 @@ namespace Droid
 			public const int line = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int loadingDefault = 2130837630;
+			public const int loading_default = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
 			public const int logo = 2130837631;
@@ -3805,7 +3805,7 @@ namespace Droid
 			public const int window_logout = 2130968663;
 			
 			// aapt resource value: 0x7f040058
-			public const int WindowView = 2130968664;
+			public const int window_view = 2130968664;
 			
 			// aapt resource value: 0x7f040059
 			public const int ZoomView = 2130968665;
