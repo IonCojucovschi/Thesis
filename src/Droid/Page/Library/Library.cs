@@ -11,14 +11,14 @@ using Int.Core.Wrappers.Widget.CrossViewInjection;
 using Int.Droid.Factories.Adapter.RecyclerView;
 using Int.Droid.Wrappers;
 
-namespace Droid.Page.Library
+namespace Droid.Page
 {
     
     [Activity(Label = "Library",
               ScreenOrientation = ScreenOrientation.Portrait,MainLauncher = false,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         Theme = "@style/AppTheme")]
-    public partial class Library : NavigationBasePage<LibraryViewModel>
+    public partial class Library_base : NavigationBasePage<LibraryViewModel>
     {
         protected override int LayoutContentResource =>Resource.Layout.category_books_view ;
 
@@ -35,7 +35,7 @@ namespace Droid.Page.Library
         public override void OnBackPressed() { }
        
     }
-    public partial class Library
+    public partial class Library_base
     {
         [CrossView(nameof(LibraryViewModel.ListView))]
         [InjectView(Resource.Id.category_list)]

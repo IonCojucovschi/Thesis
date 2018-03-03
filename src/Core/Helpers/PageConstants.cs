@@ -17,6 +17,6 @@ namespace Core.Helpers
         public static string ContactName => nameof(Contact);
         public static string ComunicationName =>"";///nameof(Comunication);
         public static string ProductName => nameof(Product);
-        public static string LibraryName => nameof(Library);
+        public static string LibraryName => nameof(Library_base);
     }
 }
