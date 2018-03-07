@@ -10,20 +10,34 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Core.ViewModels.Library;
+using Droid.Page.Base;
+using Int.Core.Wrappers.Widget.CrossViewInjection;
+using Int.Droid.Factories.Adapter.RecyclerView;
+using Int.Droid.Wrappers;
 
-namespace Droid.Page.Library
+namespace Droid.Page
 {
     [Activity(Label = "CategoryBoocks",
         ScreenOrientation = ScreenOrientation.Portrait,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         Theme = "@style/AppTheme")]
-    public class CategoryBoocks : Activity
+    public partial class CategoryBoocks : NavigationBasePage<CategoryBooksViewModel>
     {
+        protected override int LayoutContentResource => Resource.Layout.category_books_view;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
         }
+    }
+    public partial class CategoryBoocks
+    {
+        [CrossView(nameof(CategoryBooksViewModel.ListView))]
+        [InjectView(Resource.Id.category_list)]
+        public BaseRecyclerView ListView { get; set; }
+
     }
 }

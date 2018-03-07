@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using Core.Helpers;
+using Core.Extensions;
 using Core.Helpers.Manager;
 using Core.Models.DAL.CategoryBooks;
 using Core.Resources.Colors;
 using Core.Resources.Drawables;
-using Core.Resources.Locales.Page;
 using Core.ViewModels.Base;
 using Int.Core.Application.Widget.Contract;
 using Int.Core.Application.Widget.Contract.Table;
@@ -51,9 +51,6 @@ namespace Core.ViewModels.Library
                         ListView?.UpdateDataSource(ListData);
                         Hide();
                     }, errorMessage => ShowError(errorMessage)));
-
-
-
         }
 
 
@@ -100,12 +97,21 @@ namespace Core.ViewModels.Library
                     QuantityText.SetFont(FontsConstant.MontserratLight, FontsConstant.Size15);
                     QuantityText.Text = model.quantity;
                 }
+                CellContentRootView.Tag=CategoryText.Text;
             }
-
             private void InitViews()
             {
                CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
                ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
+                CellContentRootView.Click += cellContentIsClucked;
+            }
+
+            private void cellContentIsClucked(object sender,EventArgs e)
+            {
+                if (!((sender as IView)?.Tag is string categoryName)) return;
+
+                var textsdf = categoryName;
+                _baseViewModel.GoPage(PageConstants.BooksCategory);
             }
         }
 
