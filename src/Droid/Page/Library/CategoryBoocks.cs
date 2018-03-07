@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Core.Models.DAL.CategoryBooks;
 using Core.ViewModels.Library;
 using Droid.Page.Base;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
@@ -30,6 +31,11 @@ namespace Droid.Page
         {
             base.OnCreate(savedInstanceState);
 
+            ListView.SetAdapter(ComponentAdapterRecyclerFactory.CreateAdapter((inflater, parent) =>
+                                                                          new LybraryCellViewHolder(inflater,
+                                            parent,
+                                            ModelView.CellModel)));
+
             // Create your application here
         }
     }
@@ -40,4 +46,34 @@ namespace Droid.Page
         public BaseRecyclerView ListView { get; set; }
 
     }
+
+
+    public class BooksCellViewHolder : ComponentViewHolder<IBooksList>
+    {
+        public LybraryCellViewHolder(LayoutInflater inflator, ViewGroup parent,
+                                     ICrossCellViewHolder<ICategoryContent> cellModel)
+            : base(inflator.Inflate(Resource.Layout.item_list_category_boock, parent, false), cellModel) { }
+
+        [CrossView(nameof(LibraryViewModel.LibraryCell.CategoryText))]
+        [InjectView(Resource.Id.category_name_item)]
+        public TextView CategoryText { get; set; }
+
+        [CrossView(nameof(LibraryViewModel.LibraryCell.QuantityText))]
+        [InjectView(Resource.Id.category_quantity_item)]
+        public TextView QuantityText { get; set; }
+
+        [CrossView(nameof(LibraryViewModel.LibraryCell.CellContentRootView))]
+        [InjectView(Resource.Id.category_item_content)]
+        public View CellContent { get; set; }
+
+
+
+    }
+
+
+
+
+
+
+
 }
