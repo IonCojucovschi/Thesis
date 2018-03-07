@@ -37,6 +37,7 @@ namespace Core.Services
 
         ///
         public const string GetBooksCategory= "api/allcategory";
+        public const string GetBooksForCategory = "api/books/category";
 
 
 

@@ -14,7 +14,7 @@ namespace Core.Models.DAL.CategoryBooks
 
 
     /// there is model for category content returned by  api/allcategory
-    public interface ICategoryContent
+    public interface ICategoryContent : IEntity
     {
          string category { get; set; }
          string quantity { get; set; }
@@ -24,12 +24,17 @@ namespace Core.Models.DAL.CategoryBooks
     {
         public string category { get  ; set  ; }
         public string quantity {   get; set  ; }
+        public int id { get ; set; }
     }
 
-    /// there is model returned by api/books/category/_name_category_
-    public interface IBooklist
+    public interface IEntity
     {
-         string id { get; set; }
+        int id { get; set; }
+
+    }
+    /// there is model returned by api/books/category/_name_category_
+    public interface IBooklist : IEntity
+    {
          string title { get; set; }
          string author { get; set; }
          string category { get; set; }
@@ -44,7 +49,7 @@ namespace Core.Models.DAL.CategoryBooks
     }
     public class Booklist:IBooklist
     {
-        public string id { get; set; }
+        public int id { get; set; }
         public string title { get; set; }
         public string author { get; set; }
         public string category { get; set; }

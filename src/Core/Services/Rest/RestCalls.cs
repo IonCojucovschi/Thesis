@@ -28,6 +28,7 @@ using System;
 using System.Net;
 using Core.Helpers.Manager;
 using Core.Models.DAL;
+using Core.Models.DAL.CategoryBooks;
 using Core.Models.DTO;
 using Int.Core.Network;
 using Int.Core.Network.Contract;
@@ -107,12 +108,18 @@ namespace Core.Services
                 requestTo: RequestTo.Key);
         }
 
+
+        /// Librarry callbacks
         public IRestCallbackClient GetCategoryBooks()
         {
             return Request(RestConstants.GetBooksCategory, Method.GET,
                 RestConstants.MediaTypeJson, requestTo: RequestTo.Key);
         }
-
+        public IRestCallbackClient GetBooksFromCategory(CategoryContent model)
+        {
+            return Request(RestConstants.GetBooksForCategory, Method.GET,JsonConvert.SerializeObject(model.category),
+                RestConstants.MediaTypeJson, requestTo: RequestTo.Key);
+        }
 
 
 

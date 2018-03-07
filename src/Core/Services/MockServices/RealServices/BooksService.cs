@@ -11,6 +11,8 @@ namespace Core.Services.MockServices.RealServices
 {
     public class BooksService : Service,IBooksService
     {
+        
+
         public void GetCategoryes(Action<IList<CategoryContent>> success, Action<string> error)
         {
             var response =
@@ -20,6 +22,19 @@ namespace Core.Services.MockServices.RealServices
                 exception => error?.Invoke(exception.Message));
         }
 
+
+        public void GetBooksFromCategory(Action<IList<Booklist>> success, Action<string> error)
+        {
+            CategoryContent somevalue = new CategoryContent();
+            somevalue.category = "Dragoste";
+            somevalue.id = 3;
+
+            var response =
+                RequestFactory.ExecuteRequest<MResponse<IList<Booklist>>>(RestCalls.Instance.GetBooksFromCategory(somevalue));
+            
+            response.OnResponse(() => { success?.Invoke(response.Data); },
+                exception => error?.Invoke(exception.Message));
+        }
 
     }
 }

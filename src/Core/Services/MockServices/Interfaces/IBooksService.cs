@@ -7,5 +7,6 @@ namespace Core.Services.MockServices.Interfaces
     public interface IBooksService
     {
         void GetCategoryes(Action<IList<CategoryContent>> success, Action<string> error);
+        void GetBooksFromCategory(Action<IList<Booklist>> succes, Action<string> error);
     }
 }

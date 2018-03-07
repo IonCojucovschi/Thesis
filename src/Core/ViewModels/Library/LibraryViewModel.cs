@@ -109,8 +109,8 @@ namespace Core.ViewModels.Library
             private void cellContentIsClucked(object sender,EventArgs e)
             {
                 if (!((sender as IView)?.Tag is string categoryName)) return;
-
-                var textsdf = categoryName;
+               
+                var categ=BooksManager.Instance.GetOneCategory(categoryName);
                 _baseViewModel.GoPage(PageConstants.BooksCategory);
             }
         }
