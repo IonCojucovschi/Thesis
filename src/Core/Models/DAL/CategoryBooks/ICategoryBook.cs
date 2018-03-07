@@ -7,7 +7,7 @@ namespace Core.Models.DAL.CategoryBooks
 
     public class Data<T> where T:class 
     {  
-        [JsonProperty(PropertyName =nameof(T))]
+        ///[JsonProperty(PropertyName =nameof(T))]
         public List<T> data { get ; set ; }
     }
 

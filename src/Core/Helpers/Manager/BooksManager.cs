@@ -39,7 +39,7 @@ namespace Core.Helpers.Manager
         }
         #region services
 
-        private void GetCategoryList(Action<IList<ICategoryContent>> success, Action<string> error)
+        private void GetCategoryList(Action<IList<CategoryContent>> success, Action<string> error)
         {
             GetCAtegoryServices.GetCategoryes(success,error);
         }

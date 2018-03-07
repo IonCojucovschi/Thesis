@@ -1,29 +1,18 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Helpers/Manager/BooksManager.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="src/Core/Services/MockServices/RealServices/MenuService.cs" Line="17" Column="75" />
-      <File FileName="src/Droid/Page/Library/CategoryBoocks.cs" Line="1" Column="1" />
-      <File FileName="src/Droid/Page/Product.cs" Line="47" Column="1" />
-      <File FileName="src/Droid/Page/Contact.cs" Line="25" Column="1" />
-      <File FileName="src/Droid/Page/Base/NavigationBasePage.cs" Line="33" Column="1" />
-      <File FileName="../Core/Int.Droid/Factories/Activity/ComponentActivity.cs" Line="115" Column="1" />
-      <File FileName="../Core/Int.Droid/Wrappers/Cheeseknife.cs" Line="320" Column="1" />
-      <File FileName="src/Droid/Page/Account/Account.cs" Line="49" Column="45" />
-      <File FileName="src/Droid/Page/Library/Library.cs" Line="27" Column="1" />
-      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="23" Column="1" />
-      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="58" Column="43" />
-      <File FileName="src/Core/Helpers/Manager/BooksManager.cs" Line="32" Column="1" />
+      <File FileName="src/Droid/Page/Library/Library.cs" Line="23" Column="77" />
+      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="28" Column="1" />
+      <File FileName="src/Core/Helpers/Manager/BooksManager.cs" Line="39" Column="10" />
+      <File FileName="src/Core/Services/MockServices/Interfaces/IBooksService.cs" Line="6" Column="2" />
+      <File FileName="src/Core/Services/MockServices/RealServices/BooksService.cs" Line="19" Column="1" />
+      <File FileName="src/Core/Models/DAL/CategoryBooks/ICategoryBook.cs" Line="11" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library.cs" relfile="src/Droid/Page/Library/Library.cs" line="23" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Library/LibraryViewModel.cs" relfile="src/Core/ViewModels/Library/LibraryViewModel.cs" line="23" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Library/LibraryViewModel.cs" relfile="src/Core/ViewModels/Library/LibraryViewModel.cs" line="28" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Library/LibraryViewModel.cs" relfile="src/Core/ViewModels/Library/LibraryViewModel.cs" line="34" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library.cs" relfile="src/Droid/Page/Library/Library.cs" line="27" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="29" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="23" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="41" column="1" />
@@ -31,8 +20,6 @@
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Product.cs" relfile="src/Droid/Page/Product.cs" line="47" column="79" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Contact.cs" relfile="src/Droid/Page/Contact.cs" line="25" column="6" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="27" column="9" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Library/LibraryViewModel.cs" relfile="src/Core/ViewModels/Library/LibraryViewModel.cs" line="21" column="6" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Library/LibraryViewModel.cs" relfile="src/Core/ViewModels/Library/LibraryViewModel.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

@@ -18,7 +18,7 @@ namespace Core.ViewModels.Library
 {
     public class LibraryViewModel : ProjectNavigationBaseViewModel
     {
-        protected override string HeaderText => RDetailItems.ComunicationHeaderText.ToUpperInvariant();///must cchange this code 
+        protected override string HeaderText => "Categorii".ToUpperInvariant();////RDetailItems.ComunicationHeaderText.ToUpperInvariant();///must cchange this code 
 
         protected override HeaderAreaActionType HeaderAreaAction => HeaderAreaActionType.RightSideMenu;
 
