@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Core.Models.DAL.CategoryBooks;
@@ -16,6 +9,7 @@ using Droid.Page.Base;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
 using Int.Droid.Factories.Adapter.RecyclerView;
 using Int.Droid.Wrappers;
+using Int.Core.Application.Widget.Contract.Table.Adapter;
 
 namespace Droid.Page
 {
@@ -32,9 +26,7 @@ namespace Droid.Page
             base.OnCreate(savedInstanceState);
 
             ListView.SetAdapter(ComponentAdapterRecyclerFactory.CreateAdapter((inflater, parent) =>
-                                                                          new LybraryCellViewHolder(inflater,
-                                            parent,
-                                            ModelView.CellModel)));
+                                                                          new BooksCellViewHolder(inflater, parent, ModelView.CellModel)));
 
             // Create your application here
         }
@@ -48,21 +40,29 @@ namespace Droid.Page
     }
 
 
-    public class BooksCellViewHolder : ComponentViewHolder<IBooksList>
+    public class BooksCellViewHolder : ComponentViewHolder<IBooklist>
     {
-        public LybraryCellViewHolder(LayoutInflater inflator, ViewGroup parent,
-                                     ICrossCellViewHolder<ICategoryContent> cellModel)
-            : base(inflator.Inflate(Resource.Layout.item_list_category_boock, parent, false), cellModel) { }
+        public BooksCellViewHolder(LayoutInflater inflator, ViewGroup parent,
+                                     ICrossCellViewHolder<IBooklist> cellModel)
+            : base(inflator.Inflate(Resource.Layout.item_list_book, parent, false), cellModel) { }
 
-        [CrossView(nameof(LibraryViewModel.LibraryCell.CategoryText))]
-        [InjectView(Resource.Id.category_name_item)]
-        public TextView CategoryText { get; set; }
+        [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.TitleText))]
+        [InjectView(Resource.Id.title_item)]
+        public TextView TitleText { get; set; }
 
-        [CrossView(nameof(LibraryViewModel.LibraryCell.QuantityText))]
-        [InjectView(Resource.Id.category_quantity_item)]
-        public TextView QuantityText { get; set; }
+        [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.AuthorText))]
+        [InjectView(Resource.Id.author_item)]
+        public TextView AuthorText { get; set; }
 
-        [CrossView(nameof(LibraryViewModel.LibraryCell.CellContentRootView))]
+        [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.DetailText))]
+        [InjectView(Resource.Id.detail_item)]
+        public TextView DetailText { get; set; }
+
+        [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.BookImage))]
+        [InjectView(Resource.Id.image_for_book_item)]
+        public ImageView BookImage { get; set; }
+
+        [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.CellContentRootView))]
         [InjectView(Resource.Id.category_item_content)]
         public View CellContent { get; set; }
 

@@ -5,6 +5,13 @@ using Core.Helpers.Manager;
 using Core.ViewModels.Base;
 using Int.Core.Application.Widget.Contract.Table;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
+using Int.Core.Application.Widget.Contract.Table.Adapter;
+using Core.Models.DAL.CategoryBooks;
+using Int.Core.Application.Widget.Contract;
+using Core.Resources.Colors;
+using Core.Helpers;
+using Core.Resources.Drawables;
+using Core.Extensions;
 
 namespace Core.ViewModels.Library
 {
@@ -14,19 +21,103 @@ namespace Core.ViewModels.Library
 
         protected override HeaderAreaActionType HeaderAreaAction =>HeaderAreaActionType.LeftBack;
 
+        public virtual ICrossCellViewHolder<IBooklist> CellModel { get; protected set; }
+
+        private IList<IBooklist> ListData;
+
+
         [CrossView]
         public IListView ListView { get; protected set; }
 
         public override void UpdateData()
         {
             base.UpdateData();
-
+            CellModel = new CategoryBookCell(this);
             //Test if categori is initialized  :)))
             var curentCategory = BooksManager.Instance._curentCategory;
 
 
 
         }
+
+
+        #region cell binding
+
+        public class CategoryBookCell : ICrossCellViewHolder<IBooklist>
+        {
+            private readonly ProjectNavigationBaseViewModel _baseViewModel;
+
+            public CategoryBookCell(ProjectNavigationBaseViewModel viewModel)
+            {
+                _baseViewModel = viewModel;
+            }
+
+            [CrossView]
+            public IView CellContentRootView { get; set; }
+
+            [CrossView]
+            public IText TitleText { get; set; }
+
+            [CrossView]
+            public IText AuthorText { get; set; }
+
+            [CrossView]
+            public IText DetailText { get; set; }
+
+            [CrossView]
+            public IImage ShadowImage { get; set; }
+
+            [CrossView]
+            public IImage BookImage { get; set; }
+
+            public void OnCreate() { }
+
+            public void Bind(IBooklist model)
+            {
+                InitViews();
+
+                if (TitleText != null)
+                {
+                    TitleText.SetTextColor(ColorConstants.DarkColor);
+                    TitleText.SetFont(FontsConstant.MontserratSemiBold, FontsConstant.Size15);
+                    TitleText.Text = model.title;
+                }
+
+                if (AuthorText != null)
+                {
+                    AuthorText.SetTextColor(ColorConstants.BlueColor);
+                    AuthorText.SetFont(FontsConstant.MontserratLight, FontsConstant.Size15);
+                    AuthorText.Text = model.author;
+                }
+
+            }
+            private void InitViews()
+            {
+                CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
+                ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
+                DetailText.Click += cellContentIsClucked;
+            }
+
+            private void cellContentIsClucked(object sender, EventArgs e)
+            {
+                if (!((sender as IView)?.Tag is string categoryName)) return;
+
+                var categ = BooksManager.Instance.GetOneCategory(categoryName);
+                _baseViewModel.GoPage(PageConstants.BooksCategory);
+            }
+        }
+
+
+
+
+        #endregion
+
+
+
+
+
+
+
 
     }
 }
