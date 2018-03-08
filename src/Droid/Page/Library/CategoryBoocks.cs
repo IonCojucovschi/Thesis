@@ -65,15 +65,5 @@ namespace Droid.Page
         [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.CellContentRootView))]
         [InjectView(Resource.Id.cell_content_root_view)]
         public View CellContent { get; set; }
-
-
-
     }
-
-
-
-
-
-
-
 }

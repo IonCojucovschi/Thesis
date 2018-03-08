@@ -2,7 +2,6 @@
 using iOS.Storyboard;
 #else
 using Droid.Page;
-using Droid.Page.Library;
 
 #endif
 
@@ -20,5 +19,6 @@ namespace Core.Helpers
 
         public static string LibraryName => nameof(Library_base);
         public static string BooksCategory => nameof(CategoryBoocks);
+        public static string DetailBook => nameof(BoockDetails);
     }
 }

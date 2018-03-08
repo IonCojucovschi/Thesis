@@ -34,7 +34,6 @@ namespace Core.ViewModels.Library
         {
             base.UpdateData();
             CellModel = new CategoryBookCell(this);
-            //Test if categori is initialized  :)))
             var curentCategory = BooksManager.Instance._curentCategory;
             LoadBooks();
 
@@ -128,7 +127,7 @@ namespace Core.ViewModels.Library
                 if (!((sender as IView)?.Tag is int BookID)) return;
 
                 var categ = BooksManager.Instance.GetOneBook(BookID);
-                _baseViewModel.GoPage(PageConstants.BooksCategory);
+                _baseViewModel.GoPage(PageConstants.DetailBook);
             }
         }
 
