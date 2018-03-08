@@ -12,6 +12,7 @@ using Core.Resources.Colors;
 using Core.Helpers;
 using Core.Resources.Drawables;
 using Core.Extensions;
+using System.Threading;
 
 namespace Core.ViewModels.Library
 {
@@ -35,10 +36,29 @@ namespace Core.ViewModels.Library
             CellModel = new CategoryBookCell(this);
             //Test if categori is initialized  :)))
             var curentCategory = BooksManager.Instance._curentCategory;
-
+            LoadBooks();
 
 
         }
+
+
+        private void LoadBooks()
+        {
+            Show();
+            ThreadPool.QueueUserWorkItem(_ =>
+                BooksManager.Instance.GetBooks(
+                    comunicatesList =>
+                    {
+                        ListData = comunicatesList;
+                        OnPropertyChanged(nameof(ListData));
+                        ListView?.UpdateDataSource(ListData);
+                        Hide();
+                    }, errorMessage => ShowError(errorMessage)));
+        }
+
+
+
+
 
 
         #region cell binding

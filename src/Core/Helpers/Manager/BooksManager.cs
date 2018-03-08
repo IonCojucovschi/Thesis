@@ -38,15 +38,43 @@ namespace Core.Helpers.Manager
                     success?.Invoke(_category_list);
                  },error);
         }
-
+        public void GetBooks(Action<IList<IBooklist>> success, Action<string> error)
+        {
+            _book_list = new List<IBooklist>();
+            GetCategoryBookList(books=> {
+                foreach (var item in books)
+                {
+                    _book_list.Add(new 
+                        Booklist()
+                    {
+                        id=item.id,
+                        title=item.title,
+                        author=item.author,
+                        category=item.category,
+                        date=item.date,
+                        description=item.description,
+                        download_linq=item.download_linq,
+                        downloands_number=item.downloands_number,
+                        image_linq=item.image_linq,
+                        rating=item.rating,
+                        user_id=item.user_id,
+                        publication_date=item.publication_date
+                    });
+                }
+                success?.Invoke(_book_list);
+            },error);
+        }
 
         #region services
         private void GetCategoryList(Action<IList<CategoryContent>> success, Action<string> error)
         {
             GetCAtegoryServices.GetCategoryes(success,error);
         }
+        private void GetCategoryBookList(Action<IList<Booklist>> success, Action<string> error)
+        {
+            GetCAtegoryServices.GetBooksFromCategory(success, error);
+        }
 
-       
         #endregion
 
 
