@@ -14,6 +14,8 @@ namespace Core.Helpers.Manager
 
         public ICategoryContent _curentCategory;
 
+        public IBooklist _curentBook;
+
         private IList<IBooklist> _book_list;
 
         private static IBooksService GetCAtegoryServices =>
@@ -70,6 +72,7 @@ namespace Core.Helpers.Manager
         {
             GetCAtegoryServices.GetCategoryes(success,error);
         }
+
         private void GetCategoryBookList(Action<IList<Booklist>> success, Action<string> error)
         {
             GetCAtegoryServices.GetBooksFromCategory(success, error);
@@ -84,7 +87,11 @@ namespace Core.Helpers.Manager
             return _curentCategory;
         }
 
-
+        public IBooklist GetOneBook(int BookID)
+        {
+            _curentBook = _book_list.ToList().Where(x => x.id == BookID).FirstOrDefault();
+            return _curentBook;
+        }
 
     }
 }

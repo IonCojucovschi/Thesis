@@ -63,7 +63,7 @@ namespace Droid.Page
         public ImageView BookImage { get; set; }
 
         [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.CellContentRootView))]
-        [InjectView(Resource.Id.category_item_content)]
+        [InjectView(Resource.Id.cell_content_root_view)]
         public View CellContent { get; set; }
 
 

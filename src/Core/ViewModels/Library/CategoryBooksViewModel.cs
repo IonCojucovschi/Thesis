@@ -109,20 +109,25 @@ namespace Core.ViewModels.Library
                     AuthorText.SetFont(FontsConstant.MontserratLight, FontsConstant.Size15);
                     AuthorText.Text = model.author;
                 }
-
+                DetailText.Tag = model.id;
             }
             private void InitViews()
             {
                 CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
                 ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
-                DetailText.Click += cellContentIsClucked;
+
+                DetailText.SetTextColor(ColorConstants.WhiteColor);
+                DetailText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+                DetailText.SetBackgroundColor(ColorConstants.BlueColor, type: RadiusType.Aspect);
+                DetailText.Click -= cellContentIsClicked;
+                DetailText.Click += cellContentIsClicked;
             }
 
-            private void cellContentIsClucked(object sender, EventArgs e)
+            private void cellContentIsClicked(object sender, EventArgs e)
             {
-                if (!((sender as IView)?.Tag is string categoryName)) return;
+                if (!((sender as IView)?.Tag is int BookID)) return;
 
-                var categ = BooksManager.Instance.GetOneCategory(categoryName);
+                var categ = BooksManager.Instance.GetOneBook(BookID);
                 _baseViewModel.GoPage(PageConstants.BooksCategory);
             }
         }

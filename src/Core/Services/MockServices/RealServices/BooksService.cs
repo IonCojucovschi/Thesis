@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Core.Helpers.Manager;
 using Core.Models.DAL;
 using Core.Models.DAL.CategoryBooks;
 using Core.Services.MockServices.Interfaces;
@@ -25,9 +26,7 @@ namespace Core.Services.MockServices.RealServices
 
         public void GetBooksFromCategory(Action<IList<Booklist>> success, Action<string> error)
         {
-            CategoryContent somevalue = new CategoryContent();
-            somevalue.category = "Dragoste";
-            somevalue.id = 3;
+            ICategoryContent somevalue = BooksManager.Instance._curentCategory;
 
             var response =
                 RequestFactory.ExecuteRequest<MResponse<IList<Booklist>>>(RestCalls.Instance.GetBooksFromCategory(somevalue));

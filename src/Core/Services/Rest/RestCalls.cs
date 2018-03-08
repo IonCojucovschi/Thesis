@@ -115,10 +115,11 @@ namespace Core.Services
             return Request(RestConstants.GetBooksCategory, Method.GET,
                 RestConstants.MediaTypeJson, requestTo: RequestTo.Key);
         }
-        public IRestCallbackClient GetBooksFromCategory(CategoryContent model)
+        public IRestCallbackClient GetBooksFromCategory(ICategoryContent model)
         {
-            return Request(RestConstants.GetBooksForCategory, Method.GET,JsonConvert.SerializeObject(model.category),
+            var somedata=Request(RestConstants.GetBooksForCategory+"/"+model.category, Method.GET,
                 RestConstants.MediaTypeJson, requestTo: RequestTo.Key);
+            return somedata;
         }
 
 
