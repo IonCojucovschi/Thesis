@@ -22,8 +22,6 @@ namespace Core.ViewModels.Library
         {
             base.UpdateData();
             curenBook = BooksManager.Instance._curentBook;
-
-
             InitializeView();
         }
 

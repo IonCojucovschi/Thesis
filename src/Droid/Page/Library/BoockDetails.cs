@@ -9,6 +9,7 @@ using Int.Droid.Wrappers;
 using Android.Views;
 using Com.Bumptech.Glide;
 using Core.Services;
+using Core.Helpers.Manager;
 
 namespace Droid.Page
 {
@@ -32,7 +33,7 @@ namespace Droid.Page
 
             if (BookImage != null)
             {
-                string download_imageurl = RestConstants.BaseUrl + ModelView.curenBook?.download_linq;
+                string download_imageurl = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
                 Glide.With(this)
                      .Load(download_imageurl)
                      .CenterCrop()
