@@ -9,6 +9,7 @@ using Int.Core.Application.Widget.Contract;
 using Core.Resources.Colors;
 using Core.Helpers;
 using Core.Resources.Drawables;
+using Core.Services;
 
 namespace Core.ViewModels.Library
 {
@@ -59,6 +60,9 @@ namespace Core.ViewModels.Library
         private void InitializeView()
         {
             ItemContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
+            ReadText.Click -= QuickReadBook;
+            ReadText.Click += QuickReadBook;
+
 
             if(BookImage!=null)
             {
@@ -110,5 +114,12 @@ namespace Core.ViewModels.Library
             }
 
         }
+
+        private void QuickReadBook(object sender,EventArgs e)
+        {
+            string url = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
+            this.OpenLink(url);
+        }
+
     }
 }
