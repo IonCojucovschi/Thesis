@@ -4,121 +4,126 @@
     android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:orientation="horizontal"
-        android:id="@+id/image_wrapper"
-        android:weightSum="10">
-        <ImageView
-            android:id="@+id/book_image_view"
-            android:layout_width="0dp"
-            android:layout_weight="4"
-            android:background="@color/abc_search_url_text_normal"
-            android:layout_height="match_parent" />
-        <LinearLayout
-            android:gravity="center"
-            android:layout_width="0dp"
-            android:layout_weight="6"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <TextView
-                android:layout_marginTop="10dp"
-                android:id="@+id/download_book"
-                android:text="Download"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@android:color/holo_green_light"
-                android:layout_marginBottom="20dp" />
-            <TextView
-                android:id="@+id/read_book"
-                android:text="Citeste"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@android:color/holo_green_light"
-                android:layout_marginBottom="10dp" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:text="Titlul: "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="_Title of book"
-                android:id="@+id/title_book_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:text="Autorul: "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="_author of book"
-                android:id="@+id/author_book_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:text="Category: "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="_Category of book"
-                android:id="@+id/category_book_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:text="Rating: "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="_3_"
-                android:id="@+id/rating_book_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="  Nmb downloands: "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="_13234_"
-                android:id="@+id/downloads_book_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:id="@+id/image_wrapper"
+            android:weightSum="10">
+            <ImageView
+                android:id="@+id/book_image_view"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:background="@color/abc_search_url_text_normal"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/download_book"
+                    android:text="Download"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@android:color/holo_green_light"
+                    android:layout_marginBottom="20dp" />
+                <TextView
+                    android:id="@+id/read_book"
+                    android:text="Citeste"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@android:color/holo_green_light"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:text="Description: "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="_Category of book"
-                android:id="@+id/description_book_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Titlul: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="_Title of book"
+                    android:id="@+id/title_book_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Autorul: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="_author of book"
+                    android:id="@+id/author_book_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Category: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="_Category of book"
+                    android:id="@+id/category_book_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Rating: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="_3_"
+                    android:id="@+id/rating_book_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="  Nmb downloands: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="_13234_"
+                    android:id="@+id/downloads_book_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Description: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="_Category of book"
+                    android:id="@+id/description_book_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
