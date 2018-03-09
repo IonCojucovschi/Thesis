@@ -6,6 +6,9 @@ using Core.Models.DAL.CategoryBooks;
 using Core.Helpers.Manager;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
 using Int.Core.Application.Widget.Contract;
+using Core.Resources.Colors;
+using Core.Helpers;
+using Core.Resources.Drawables;
 
 namespace Core.ViewModels.Library
 {
@@ -20,6 +23,8 @@ namespace Core.ViewModels.Library
             base.UpdateData();
             curenBook = BooksManager.Instance._curentBook;
 
+
+            InitializeView();
         }
 
         [CrossView]
@@ -49,6 +54,63 @@ namespace Core.ViewModels.Library
         [CrossView]
         public IText DescriptionText { get; set; }
 
+        [CrossView]
+        public IView ItemContentRootView { get; set; }
 
+
+        private void InitializeView()
+        {
+            ItemContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
+
+            if(BookImage!=null)
+            {
+                // to do download image from srv and show   it
+            }
+
+            if(ReadText!=null)
+            {
+                ReadText.SetTextColor(ColorConstants.WhiteColor);
+                ReadText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+                ReadText.SetBackgroundColor(ColorConstants.BlueColor, type: RadiusType.Aspect);
+            }
+            if(DownloadText != null)
+            {
+                DownloadText.SetTextColor(ColorConstants.WhiteColor);
+                DownloadText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+                DownloadText.SetBackgroundColor(ColorConstants.BlueColor, type: RadiusType.Aspect);
+            }
+            if (TitleText!=null)
+            {
+                TitleText.Text = curenBook?.title;
+                TitleText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+            }
+
+            if (AuthorText != null)
+            {
+                AuthorText.Text = curenBook?.author;
+                AuthorText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+            }
+            if (CategoryText != null)
+            {
+                CategoryText.Text = curenBook?.category;
+                CategoryText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+            }
+            if (RatingText != null)
+            {
+                RatingText.Text = curenBook?.rating;
+                RatingText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+            }
+            if (NmbDownloadText != null)
+            {
+                NmbDownloadText.Text = curenBook?.downloands_number;
+                NmbDownloadText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+            }
+            if(DescriptionText!=null)
+            {
+                DescriptionText.Text = curenBook?.description;
+                DescriptionText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+            }
+
+        }
     }
 }

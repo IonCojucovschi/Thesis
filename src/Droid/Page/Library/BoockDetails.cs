@@ -6,6 +6,7 @@ using Droid.Page.Base;
 using Core.ViewModels.Library;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
 using Int.Droid.Wrappers;
+using Android.Views;
 
 namespace Droid.Page
 {
@@ -67,9 +68,9 @@ namespace Droid.Page
         [InjectView(Resource.Id.description_book_view)]
         public TextView DescriptionText { get; set; }
 
-        //[CrossView(nameof(BookDetailsViewModel.CellContentRootView))]
-        //[InjectView(Resource.Id.category_item_content)]
-        //public View CellContent { get; set; }
+        [CrossView(nameof(BookDetailsViewModel.ItemContentRootView))]
+        [InjectView(Resource.Id.detail_item_wrapper)]
+        public View ItemContentRootView { get; set; }
 
     }
 
