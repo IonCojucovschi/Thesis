@@ -249,6 +249,15 @@
     <Reference Include="Xamarin.Android.Support.Exif">
       <HintPath>..\..\packages\Xamarin.Android.Support.Exif.26.1.0.1\lib\MonoAndroid80\Xamarin.Android.Support.Exif.dll</HintPath>
     </Reference>
+    <Reference Include="FFImageLoading">
+      <HintPath>..\..\packages\Xamarin.FFImageLoading.2.3.4\lib\MonoAndroid10\FFImageLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Platform">
+      <HintPath>..\..\packages\Xamarin.FFImageLoading.2.3.4\lib\MonoAndroid10\FFImageLoading.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Svg.Platform">
+      <HintPath>..\..\packages\Xamarin.FFImageLoading.Svg.2.3.4\lib\MonoAndroid10\FFImageLoading.Svg.Platform.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\ProductsAdapter.cs" />

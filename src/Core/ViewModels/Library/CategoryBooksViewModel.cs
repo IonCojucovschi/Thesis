@@ -13,12 +13,14 @@ using Core.Helpers;
 using Core.Resources.Drawables;
 using Core.Extensions;
 using System.Threading;
+using Com.Bumptech.Glide;
+using Core.Services;
 
 namespace Core.ViewModels.Library
 {
     public class CategoryBooksViewModel : ProjectNavigationBaseViewModel
     {
-        protected override string HeaderText => "Toate cartile";
+        protected override string HeaderText => BooksManager.Instance._curentCategory.category;
 
         protected override HeaderAreaActionType HeaderAreaAction =>HeaderAreaActionType.LeftBack;
 
@@ -108,10 +110,23 @@ namespace Core.ViewModels.Library
                     AuthorText.SetFont(FontsConstant.MontserratLight, FontsConstant.Size15);
                     AuthorText.Text = model.author;
                 }
+
+
+                if (BookImage != null)
+                {
+                    string download_imageurl = RestConstants.BaseUrl + model.image_linq;
+
+                    BookImage?.SetImageFromUrl(download_imageurl);
+                }
+
+
                 DetailText.Tag = model.id;
             }
             private void InitViews()
             {
+
+
+
                 CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
                 ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
 

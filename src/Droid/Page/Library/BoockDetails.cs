@@ -33,10 +33,10 @@ namespace Droid.Page
 
             if (BookImage != null)
             {
-                string download_imageurl = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
+                string download_imageurl = RestConstants.BaseUrl + BooksManager.Instance._curentBook.image_linq;
                 Glide.With(this)
                      .Load(download_imageurl)
-                     .CenterCrop()
+                     .FitCenter()
                      .Into(BookImage);
             }
         }

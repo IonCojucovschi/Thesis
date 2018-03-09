@@ -11,7 +11,7 @@
         android:layout_margin="5dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="200dp"
             android:orientation="horizontal"
             android:id="@+id/image_wrapper"
             android:weightSum="10">
@@ -19,7 +19,7 @@
                 android:id="@+id/book_image_view"
                 android:layout_width="0dp"
                 android:layout_weight="4"
-                android:background="@color/abc_search_url_text_normal"
+                android:scaleType="fitCenter"
                 android:layout_height="match_parent" />
             <LinearLayout
                 android:gravity="center"

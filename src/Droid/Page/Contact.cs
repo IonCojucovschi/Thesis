@@ -8,8 +8,6 @@ using Core.ViewModels;
 using Droid.Page.Base;
 using Int.Core.Application.Widget.Contract.Table.Adapter;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
-using Int.Droid;
-using Int.Droid.Extensions;
 using Int.Droid.Factories.Adapter.RecyclerView;
 using Int.Droid.Wrappers;
 
