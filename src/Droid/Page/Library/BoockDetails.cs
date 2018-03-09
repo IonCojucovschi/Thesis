@@ -7,6 +7,8 @@ using Core.ViewModels.Library;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
 using Int.Droid.Wrappers;
 using Android.Views;
+using Com.Bumptech.Glide;
+using Core.Services;
 
 namespace Droid.Page
 {
@@ -27,6 +29,15 @@ namespace Droid.Page
         protected override void InitViews()
         {
             base.InitViews();
+
+            if (BookImage != null)
+            {
+                string download_imageurl = RestConstants.BaseUrl + ModelView.curenBook?.download_linq;
+                Glide.With(this)
+                     .Load(download_imageurl)
+                     .CenterCrop()
+                     .Into(BookImage);
+            }
         }
     }
 
