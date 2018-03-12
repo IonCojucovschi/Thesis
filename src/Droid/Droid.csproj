@@ -377,6 +377,11 @@
     <AndroidResource Include="Resources\layout\item_list_book.axml" />
     <AndroidResource Include="Resources\layout\item_list_category_boock.axml" />
     <AndroidResource Include="Resources\layout\read_book_view.axml" />
+    <None Include="lib\arm64-v8a\libvudroid.so" />
+    <None Include="lib\armeabi\libvudroid.so" />
+    <None Include="lib\armeabi-v7a\libvudroid.so" />
+    <None Include="lib\armeabiasdfasd-v7a\libvudroid.so" />
+    <None Include="lib\x86\libvudroid.so" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -475,6 +480,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\arm64-v8a\" />
+    <Folder Include="lib\armeabi\" />
+    <Folder Include="lib\armeabi-v7a\" />
+    <Folder Include="lib\armeabiasdfasd-v7a\" />
+    <Folder Include="lib\x86\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="AndHUD">

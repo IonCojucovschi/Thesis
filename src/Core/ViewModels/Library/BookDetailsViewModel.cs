@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Net;
+using System.IO;
 using Core.ViewModels.Base;
 using Core.Models.DAL.CategoryBooks;
 using Core.Helpers.Manager;
@@ -126,8 +128,11 @@ namespace Core.ViewModels.Library
         private void DownloadBook(object sender, EventArgs e)
         {
             ///TO DO there must implemet code to download pdf filw
+            var webClient = new WebClient();
+            string urlString = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
 
-
+            var url = new Uri(urlString); // Html home page
+            webClient.DownloadStringAsync(url);
         }
     }
 }
