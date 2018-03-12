@@ -63,6 +63,8 @@ namespace Core.ViewModels.Library
             ReadText.Click -= QuickReadBook;
             ReadText.Click += QuickReadBook;
 
+            DownloadText.Click -= DownloadBook;
+            DownloadText.Click += DownloadBook;
 
             if(BookImage!=null)
             {
@@ -117,9 +119,15 @@ namespace Core.ViewModels.Library
 
         private void QuickReadBook(object sender,EventArgs e)
         {
+            //there i use google service to open pdf file 
             string url = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
-            this.OpenLink(url);
+            this.OpenLink("http://docs.google.com/gview?embedded=true&url="+url);
         }
+        private void DownloadBook(object sender, EventArgs e)
+        {
+            ///TO DO there must implemet code to download pdf filw
 
+
+        }
     }
 }
