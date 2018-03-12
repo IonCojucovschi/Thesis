@@ -36,7 +36,7 @@
     <MandroidI18n>
     </MandroidI18n>
     <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
-    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86;x86_64</AndroidSupportedAbis>
+    <AndroidSupportedAbis>x86_64;arm64-v8a;x86;armeabi-v7a;armeabi</AndroidSupportedAbis>
     <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -258,6 +258,9 @@
     <Reference Include="FFImageLoading.Svg.Platform">
       <HintPath>..\..\packages\Xamarin.FFImageLoading.Svg.2.3.4\lib\MonoAndroid10\FFImageLoading.Svg.Platform.dll</HintPath>
     </Reference>
+    <Reference Include="PdfViewBinding">
+      <HintPath>..\..\packages\Xamarin.PdfView.Android.1.0.4\lib\PdfViewBinding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\ProductsAdapter.cs" />
@@ -318,6 +321,7 @@
     <Compile Include="Page\Contact.designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page\Library\ReadBook.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
@@ -377,11 +381,7 @@
     <AndroidResource Include="Resources\layout\item_list_book.axml" />
     <AndroidResource Include="Resources\layout\item_list_category_boock.axml" />
     <AndroidResource Include="Resources\layout\read_book_view.axml" />
-    <None Include="lib\arm64-v8a\libvudroid.so" />
-    <None Include="lib\armeabi\libvudroid.so" />
-    <None Include="lib\armeabi-v7a\libvudroid.so" />
-    <None Include="lib\armeabiasdfasd-v7a\libvudroid.so" />
-    <None Include="lib\x86\libvudroid.so" />
+    <AndroidResource Include="Resources\layout\read_book.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -545,6 +545,7 @@
     <AndroidAsset Include="..\Core\Resources\Fonts\Montserrat-SemiBold.otf">
       <Link>Assets\Fonts\Montserrat-SemiBold.otf</Link>
     </AndroidAsset>
+    <AndroidAsset Include="Assets\Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\splash_logo.png" />
@@ -566,6 +567,13 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Include="lib\arm64-v8a\libvudroid.so" />
+    <AndroidNativeLibrary Include="lib\armeabi\libvudroid.so" />
+    <AndroidNativeLibrary Include="lib\armeabiasdfasd-v7a\libvudroid.so" />
+    <AndroidNativeLibrary Include="lib\armeabi-v7a\libvudroid.so" />
+    <AndroidNativeLibrary Include="lib\x86\libvudroid.so" />
   </ItemGroup>
   <Import Project="..\Core\Core.projitems" Label="Shared" Condition="Exists('..\Core\Core.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

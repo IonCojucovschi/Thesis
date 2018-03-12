@@ -65,8 +65,8 @@ namespace Core.ViewModels.Library
             ReadText.Click -= QuickReadBook;
             ReadText.Click += QuickReadBook;
 
-            DownloadText.Click -= DownloadBook;
-            DownloadText.Click += DownloadBook;
+            //DownloadText.Click -= DownloadBook;
+            //DownloadText.Click += DownloadBook;
 
             if(BookImage!=null)
             {
@@ -127,12 +127,12 @@ namespace Core.ViewModels.Library
         }
         private void DownloadBook(object sender, EventArgs e)
         {
-            ///TO DO there must implemet code to download pdf filw
-            var webClient = new WebClient();
-            string urlString = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
+            /////TO DO there must implemet code to download pdf filw
+            //var webClient = new WebClient();
+            //string urlString = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
 
-            var url = new Uri(urlString); // Html home page
-            webClient.DownloadStringAsync(url);
+            //var url = new Uri(urlString); // Html home page
+            //webClient.DownloadStringAsync(url);
         }
     }
 }

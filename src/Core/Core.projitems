@@ -133,6 +133,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\BookDetailsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\CategoryBooksViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\LibraryViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\ReadBookViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\en\en.txt" />

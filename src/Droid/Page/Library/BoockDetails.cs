@@ -26,6 +26,7 @@ namespace Droid.Page
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+           /// Button downloadTest = FindViewByID<Button>(LayoutContentResource.);
         }
         protected override void InitViews()
         {
