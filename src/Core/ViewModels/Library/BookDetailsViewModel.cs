@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Net;
 using System.IO;
+using Core.Extensions;
 using Core.ViewModels.Base;
 using Core.Models.DAL.CategoryBooks;
 using Core.Helpers.Manager;
@@ -65,8 +66,8 @@ namespace Core.ViewModels.Library
             ReadText.Click -= QuickReadBook;
             ReadText.Click += QuickReadBook;
 
-            //DownloadText.Click -= DownloadBook;
-            //DownloadText.Click += DownloadBook;
+            DownloadText.Click -= DownloadBook;
+            DownloadText.Click += DownloadBook;
 
             if(BookImage!=null)
             {
@@ -133,6 +134,7 @@ namespace Core.ViewModels.Library
 
             //var url = new Uri(urlString); // Html home page
             //webClient.DownloadStringAsync(url);
+            this.GoPage(PageConstants.ReadContentBook);
         }
     }
 }
