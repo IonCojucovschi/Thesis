@@ -263,7 +263,7 @@ namespace Droid
 			global::Int.Droid.Resource.Dimension.notification_top_pad = global::Droid.Resource.Dimension.notification_top_pad;
 			global::Int.Droid.Resource.Dimension.notification_top_pad_large_text = global::Droid.Resource.Dimension.notification_top_pad_large_text;
 			global::Int.Droid.Resource.Drawable.error = global::Droid.Resource.Drawable.error;
-			global::Int.Droid.Resource.Drawable.loadingDefault = global::Droid.Resource.Drawable.loadingDefault;
+			global::Int.Droid.Resource.Drawable.loading_default = global::Droid.Resource.Drawable.loading_default;
 			global::Int.Droid.Resource.Drawable.notification_action_background = global::Droid.Resource.Drawable.notification_action_background;
 			global::Int.Droid.Resource.Drawable.notification_bg = global::Droid.Resource.Drawable.notification_bg;
 			global::Int.Droid.Resource.Drawable.notification_bg_low = global::Droid.Resource.Drawable.notification_bg_low;
@@ -341,7 +341,7 @@ namespace Droid
 			global::Int.Droid.Resource.Layout.notification_template_media_custom = global::Droid.Resource.Layout.notification_template_media_custom;
 			global::Int.Droid.Resource.Layout.notification_template_part_chronometer = global::Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Int.Droid.Resource.Layout.notification_template_part_time = global::Droid.Resource.Layout.notification_template_part_time;
-			global::Int.Droid.Resource.Layout.WindowView = global::Droid.Resource.Layout.WindowView;
+			global::Int.Droid.Resource.Layout.window_view = global::Droid.Resource.Layout.window_view;
 			global::Int.Droid.Resource.Layout.ZoomView = global::Droid.Resource.Layout.ZoomView;
 			global::Int.Droid.Resource.String.library_name = global::Droid.Resource.String.library_name;
 			global::Int.Droid.Resource.String.status_bar_notification_info_overflow = global::Droid.Resource.String.status_bar_notification_info_overflow;
@@ -2515,7 +2515,7 @@ namespace Droid
 			public const int line = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int loadingDefault = 2130837630;
+			public const int loading_default = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
 			public const int logo = 2130837631;
@@ -2755,8 +2755,8 @@ namespace Droid
 			// aapt resource value: 0x7f0b00cb
 			public const int author_item = 2131427531;
 			
-			// aapt resource value: 0x7f0b0113
-			public const int background_view = 2131427603;
+			// aapt resource value: 0x7f0b011a
+			public const int background_view = 2131427610;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int beginning = 2131427363;
@@ -2769,6 +2769,12 @@ namespace Droid
 			
 			// aapt resource value: 0x7f0b0031
 			public const int bottom = 2131427377;
+			
+			// aapt resource value: 0x7f0b0112
+			public const int bottomVrapperReadBook = 2131427602;
+			
+			// aapt resource value: 0x7f0b0114
+			public const int butonWrapper = 2131427604;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int buttonPanel = 2131427392;
@@ -2848,6 +2854,9 @@ namespace Droid
 			// aapt resource value: 0x7f0b0043
 			public const int contentPanel = 2131427395;
 			
+			// aapt resource value: 0x7f0b0117
+			public const int curentPage = 2131427607;
+			
 			// aapt resource value: 0x7f0b004a
 			public const int custom = 2131427402;
 			
@@ -2893,11 +2902,11 @@ namespace Droid
 			// aapt resource value: 0x7f0b00e7
 			public const int email = 2131427559;
 			
-			// aapt resource value: 0x7f0b0116
-			public const int email_text = 2131427606;
+			// aapt resource value: 0x7f0b011d
+			public const int email_text = 2131427613;
 			
-			// aapt resource value: 0x7f0b0117
-			public const int email_underline = 2131427607;
+			// aapt resource value: 0x7f0b011e
+			public const int email_underline = 2131427614;
 			
 			// aapt resource value: 0x7f0b0024
 			public const int end = 2131427364;
@@ -2919,6 +2928,12 @@ namespace Droid
 			
 			// aapt resource value: 0x7f0b00b7
 			public const int frameLayout1 = 2131427511;
+			
+			// aapt resource value: 0x7f0b0115
+			public const int goPageButton = 2131427605;
+			
+			// aapt resource value: 0x7f0b0116
+			public const int go_pageText = 2131427606;
 			
 			// aapt resource value: 0x7f0b00d3
 			public const int header_cell_text_view = 2131427539;
@@ -2956,14 +2971,14 @@ namespace Droid
 			// aapt resource value: 0x7f0b00b8
 			public const int imageView1 = 2131427512;
 			
-			// aapt resource value: 0x7f0b0125
-			public const int imageViewClose = 2131427621;
+			// aapt resource value: 0x7f0b012c
+			public const int imageViewClose = 2131427628;
 			
-			// aapt resource value: 0x7f0b0126
-			public const int imageViewShare = 2131427622;
+			// aapt resource value: 0x7f0b012d
+			public const int imageViewShare = 2131427629;
 			
-			// aapt resource value: 0x7f0b0124
-			public const int imageViewZoom = 2131427620;
+			// aapt resource value: 0x7f0b012b
+			public const int imageViewZoom = 2131427627;
 			
 			// aapt resource value: 0x7f0b00c9
 			public const int image_for_book_item = 2131427529;
@@ -3004,8 +3019,8 @@ namespace Droid
 			// aapt resource value: 0x7f0b00b3
 			public const int label_author = 2131427507;
 			
-			// aapt resource value: 0x7f0b0118
-			public const int label_cancel = 2131427608;
+			// aapt resource value: 0x7f0b011f
+			public const int label_cancel = 2131427615;
 			
 			// aapt resource value: 0x7f0b00b4
 			public const int label_date = 2131427508;
@@ -3016,11 +3031,11 @@ namespace Droid
 			// aapt resource value: 0x7f0b009b
 			public const int label_message = 2131427483;
 			
-			// aapt resource value: 0x7f0b011c
-			public const int label_no = 2131427612;
+			// aapt resource value: 0x7f0b0123
+			public const int label_no = 2131427619;
 			
-			// aapt resource value: 0x7f0b0119
-			public const int label_send = 2131427609;
+			// aapt resource value: 0x7f0b0120
+			public const int label_send = 2131427616;
 			
 			// aapt resource value: 0x7f0b00b5
 			public const int label_text = 2131427509;
@@ -3031,8 +3046,8 @@ namespace Droid
 			// aapt resource value: 0x7f0b00b0
 			public const int label_version = 2131427504;
 			
-			// aapt resource value: 0x7f0b011b
-			public const int label_yes = 2131427611;
+			// aapt resource value: 0x7f0b0122
+			public const int label_yes = 2131427618;
 			
 			// aapt resource value: 0x7f0b007d
 			public const int left_button_container = 2131427453;
@@ -3052,8 +3067,8 @@ namespace Droid
 			// aapt resource value: 0x7f0b008a
 			public const int line_image_header = 2131427466;
 			
-			// aapt resource value: 0x7f0b0114
-			public const int linearLayout1 = 2131427604;
+			// aapt resource value: 0x7f0b011b
+			public const int linearLayout1 = 2131427611;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int listMode = 2131427346;
@@ -3088,20 +3103,20 @@ namespace Droid
 			// aapt resource value: 0x7f0b00e5
 			public const int logo = 2131427557;
 			
-			// aapt resource value: 0x7f0b011a
-			public const int logout_background_image_view = 2131427610;
+			// aapt resource value: 0x7f0b0121
+			public const int logout_background_image_view = 2131427617;
 			
 			// aapt resource value: 0x7f0b0082
 			public const int main_content = 2131427458;
 			
-			// aapt resource value: 0x7f0b0115
-			public const int main_window_view = 2131427605;
+			// aapt resource value: 0x7f0b011c
+			public const int main_window_view = 2131427612;
 			
 			// aapt resource value: 0x7f0b00f7
 			public const int media_actions = 2131427575;
 			
-			// aapt resource value: 0x7f0b0112
-			public const int message = 2131427602;
+			// aapt resource value: 0x7f0b0119
+			public const int message = 2131427609;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int middle = 2131427365;
@@ -3202,11 +3217,14 @@ namespace Droid
 			// aapt resource value: 0x7f0b010c
 			public const int product_name = 2131427596;
 			
-			// aapt resource value: 0x7f0b0123
-			public const int progressBar = 2131427619;
+			// aapt resource value: 0x7f0b012a
+			public const int progressBar = 2131427626;
 			
 			// aapt resource value: 0x7f0b00ba
 			public const int progressBar1 = 2131427514;
+			
+			// aapt resource value: 0x7f0b0113
+			public const int progressPage = 2131427603;
 			
 			// aapt resource value: 0x7f0b0006
 			public const int progress_circular = 2131427334;
@@ -3439,6 +3457,9 @@ namespace Droid
 			// aapt resource value: 0x7f0b00d7
 			public const int top_space = 2131427543;
 			
+			// aapt resource value: 0x7f0b0118
+			public const int totalPages = 2131427608;
+			
 			// aapt resource value: 0x7f0b0021
 			public const int uniform = 2131427361;
 			
@@ -3472,23 +3493,23 @@ namespace Droid
 			// aapt resource value: 0x7f0b00bf
 			public const int welcome_text_view = 2131427519;
 			
-			// aapt resource value: 0x7f0b0122
-			public const int window_bottom_label = 2131427618;
+			// aapt resource value: 0x7f0b0129
+			public const int window_bottom_label = 2131427625;
 			
-			// aapt resource value: 0x7f0b0121
-			public const int window_center_image = 2131427617;
+			// aapt resource value: 0x7f0b0128
+			public const int window_center_image = 2131427624;
 			
-			// aapt resource value: 0x7f0b0120
-			public const int window_center_label = 2131427616;
+			// aapt resource value: 0x7f0b0127
+			public const int window_center_label = 2131427623;
 			
-			// aapt resource value: 0x7f0b011d
-			public const int window_content_view = 2131427613;
+			// aapt resource value: 0x7f0b0124
+			public const int window_content_view = 2131427620;
 			
-			// aapt resource value: 0x7f0b011f
-			public const int window_top_label = 2131427615;
+			// aapt resource value: 0x7f0b0126
+			public const int window_top_label = 2131427622;
 			
-			// aapt resource value: 0x7f0b011e
-			public const int window_view_center = 2131427614;
+			// aapt resource value: 0x7f0b0125
+			public const int window_view_center = 2131427621;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int withText = 2131427376;
@@ -3823,7 +3844,7 @@ namespace Droid
 			public const int window_logout = 2130968664;
 			
 			// aapt resource value: 0x7f040059
-			public const int WindowView = 2130968665;
+			public const int window_view = 2130968665;
 			
 			// aapt resource value: 0x7f04005a
 			public const int ZoomView = 2130968666;

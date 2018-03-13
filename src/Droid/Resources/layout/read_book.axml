@@ -1,10 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <com.joanzapata.pdfview.PDFView
+    <com.joanzapata.pdfview.PDFView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/read_book_view" />
-</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottomVrapperReadBook"
+        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <SeekBar
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:id="@+id/progressPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/butonWrapper"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+            <Button
+                android:id="@+id/goPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="GO Page" />
+            <EditText
+                android:id="@+id/go_pageText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:text="exa" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/curentPage"
+            android:layout_width="wrap_content"
+            android:layout_height="38.0dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:text="exe"
+            android:gravity="center" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/totalPages"
+            android:layout_width="wrap_content"
+            android:layout_height="33.0dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:text="exe"
+            android:gravity="center" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -484,7 +484,6 @@
     <Folder Include="lib\arm64-v8a\" />
     <Folder Include="lib\armeabi\" />
     <Folder Include="lib\armeabi-v7a\" />
-    <Folder Include="lib\armeabiasdfasd-v7a\" />
     <Folder Include="lib\x86\" />
   </ItemGroup>
   <ItemGroup>
@@ -571,7 +570,6 @@
   <ItemGroup>
     <AndroidNativeLibrary Include="lib\arm64-v8a\libvudroid.so" />
     <AndroidNativeLibrary Include="lib\armeabi\libvudroid.so" />
-    <AndroidNativeLibrary Include="lib\armeabiasdfasd-v7a\libvudroid.so" />
     <AndroidNativeLibrary Include="lib\armeabi-v7a\libvudroid.so" />
     <AndroidNativeLibrary Include="lib\x86\libvudroid.so" />
   </ItemGroup>
