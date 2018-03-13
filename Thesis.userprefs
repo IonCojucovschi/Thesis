@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Core/Int.Droid/Factories/Activity/ComponentActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="src/Droid/Page/Library/ReadBook.cs" Line="47" Column="25" />
+      <File FileName="src/Droid/Page/Library/ReadBook.cs" Line="41" Column="52" />
       <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="21" Column="28" />
       <File FileName="src/Core/ViewModels/Library/ReadBookViewModel.cs" Line="1" Column="1" />
       <File FileName="src/Core/ViewModels/Library/BookDetailsViewModel.cs" Line="81" Column="45" />
       <File FileName="src/Droid/Page/Library/BoockDetails.cs" Line="50" Column="13" />
       <File FileName="src/Droid/Page/Product.cs" Line="47" Column="1" />
       <File FileName="src/Core/Resources/Colors/ColorConstants.cs" Line="10" Column="41" />
-      <File FileName="../Core/Int.Droid/Factories/Activity/ComponentActivity.cs" Line="108" Column="33" />
+      <File FileName="../Core/Int.Droid/Factories/Activity/ComponentActivity.cs" Line="105" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -21,6 +21,11 @@
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="53" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Product.cs" relfile="src/Droid/Page/Product.cs" line="47" column="79" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="27" column="9" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="118" column="57" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="116" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="122" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="167" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="157" column="11" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
