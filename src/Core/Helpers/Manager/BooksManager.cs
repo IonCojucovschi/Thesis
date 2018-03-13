@@ -12,9 +12,9 @@ namespace Core.Helpers.Manager
     {
         public  IList<ICategoryContent> _category_list;
 
-        public ICategoryContent _curentCategory;
+        public  ICategoryContent _curentCategory;
 
-        public IBooklist _curentBook;
+        public   IBooklist _curentBook;
 
         private IList<IBooklist> _book_list;
 

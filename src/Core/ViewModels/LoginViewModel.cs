@@ -230,7 +230,7 @@ namespace Core.ViewModels
                 {
                     Hide();
                     var usr=UserManager.Instance.CurrentUser() as UserModel;
-                    usr.Remember = true;
+                    //usr.Remember = true;
                     if(usr.active==1)this.GoPage(PageConstants.DashboardName);
                    
                 }, message => ShowError(message));
