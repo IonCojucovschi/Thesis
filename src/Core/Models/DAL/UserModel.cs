@@ -12,9 +12,10 @@ namespace Core.Models.DAL
 
         public string TokenDevice { get; set; }
 
-       // public string NameAgent => Profile.Agent;
+        // public string NameAgent => Profile.Agent;
         [JsonProperty("name")]
         public string Name => Profile.Name;
+
         [JsonProperty("surname")]
         public string Surname => Profile.Surname;
        // public string Phone => Profile.Phone;
@@ -29,8 +30,15 @@ namespace Core.Models.DAL
 
         public string FullName => Profile.Name + " " + Profile.Surname;
 
+        [JsonProperty("profile")]
         public ProfileModel Profile { get; set; } = new ProfileModel();
-        public int Id { get; set; }
+
+        public int Id 
+        { 
+            get => Profile.Id;
+            set => Profile.Id = value;
+        }
+
         [JsonProperty("login")]
         public string Username
         {
@@ -38,7 +46,11 @@ namespace Core.Models.DAL
             set => Profile.Username = value;
         }
         [JsonProperty("pasword")]
-        public string Password { get; set; }
+        public string Password 
+        {
+            get => Profile.Password;
+            set => Profile.Password = value;
+        }
         [JsonProperty("active")]
         public int active => Profile.active;
         public bool Remember { get; set; }

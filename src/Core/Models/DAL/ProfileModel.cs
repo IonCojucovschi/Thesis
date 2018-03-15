@@ -1,9 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using Int.Core.Data.Repository.Akavache.Contract;
+using Newtonsoft.Json;
 
 namespace Core.Models.DAL
 {
-    public class ProfileModel
+    public class ProfileModel:IBaseEntity
     {
+        [JsonProperty("id")]
+        public int Id { get; set; }
+
         [JsonProperty("name")]
         public string Name { get; set; }
 
@@ -18,6 +22,9 @@ namespace Core.Models.DAL
 
         [JsonProperty("login")]
         public string Username { get; set; }
+
+        [JsonProperty("pasword")]
+        public string Password { get; set; }
 
         //[JsonProperty("vat_number")]////delete
         //public string VatNumber { get; set; }

@@ -133,6 +133,7 @@ namespace Core.Helpers.Manager
 
         public void ToogleRememberMe(bool? value = null)
         {
+            var usrtest = CurrentUser();
             var user = CurrentUser() as UserModel ?? new UserModel
             {
                 Remember = true

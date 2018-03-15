@@ -1,18 +1,24 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.39DE4518-562E-4D70-9B30-F04711EF8001" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Models/DAL/UserModel.cs">
     <Files>
-      <File FileName="src/Droid/Page/Library/ReadBook.cs" Line="41" Column="52" />
-      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="21" Column="28" />
-      <File FileName="src/Core/ViewModels/Library/ReadBookViewModel.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ViewModels/Library/BookDetailsViewModel.cs" Line="81" Column="45" />
-      <File FileName="src/Droid/Page/Library/BoockDetails.cs" Line="50" Column="13" />
-      <File FileName="src/Droid/Page/Product.cs" Line="47" Column="1" />
-      <File FileName="src/Core/Resources/Colors/ColorConstants.cs" Line="10" Column="41" />
-      <File FileName="../Core/Int.Droid/Factories/Activity/ComponentActivity.cs" Line="105" Column="10" />
+      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="190" Column="1" />
+      <File FileName="src/Droid/Page/Login.cs" Line="38" Column="50" />
+      <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="229" Column="1" />
+      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="52" Column="43" />
+      <File FileName="src/Core/Services/Response/MResponse.cs" Line="38" Column="25" />
+      <File FileName="../Core/Int.Core/Application/Login/Contract/ILogin.cs" Line="30" Column="35" />
+      <File FileName="src/Core/Models/DTO/LoginModelServer.cs" Line="28" Column="18" />
+      <File FileName="src/Core/Models/DTO/OnLoginModel.cs" Line="4" Column="18" />
+      <File FileName="src/Core/Models/DAL/UserModel.cs" Line="7" Column="36" />
+      <File FileName="src/Core/Models/DAL/ProfileModel.cs" Line="22" Column="34" />
+      <File FileName="src/Core/Models/Contract/IUserRepository.cs" Line="27" Column="41" />
+      <File FileName="../Core/Int.Core/Application/Contract/IUser.cs" Line="25" Column="22" />
+      <File FileName="../Core/Int.Core/Data/Repository/Akavache/Contract/IBaseEntity.cs" Line="25" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Application.Droid PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="29" column="1" />
@@ -21,11 +27,19 @@
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="53" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Product.cs" relfile="src/Droid/Page/Product.cs" line="47" column="79" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="27" column="9" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="118" column="57" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="116" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="122" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="167" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="157" column="11" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="120" column="57" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="118" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="124" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="137" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="179" column="29" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="143" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="142" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="147" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="211" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="212" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="229" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="190" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Services/MockServices/RealServices/AuthenticateService.cs" relfile="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" line="63" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

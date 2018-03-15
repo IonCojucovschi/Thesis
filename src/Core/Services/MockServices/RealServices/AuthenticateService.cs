@@ -42,7 +42,7 @@ namespace Core.Services.RealServices
         public void OnLogin(Action<string> success, Action<string> error)
         {
             if (GetValue(error, out var myUser)) return;
-            var response = RequestFactory.ExecuteRequest<MResponse<object>>(RestCalls.Instance.Login(
+            var response = RequestFactory.ExecuteRequest<MResponse<UserModel>>(RestCalls.Instance.Login(
                 new LoginModelServer
                 {
                     Username = myUser.Username,
@@ -50,20 +50,10 @@ namespace Core.Services.RealServices
                     Language = "it"
                 }));
                 var userdataString = response.ServerContent.Item1;
-            OnLoginModel data = JsonConvert.DeserializeObject<OnLoginModel>(userdataString);
-            UserModel newUser = new UserModel() 
-            {
-                Profile=new ProfileModel(){Name=data.data.name,
-                    Surname=data.data.surname,
-                    Email=data.data.Email,
-                    Mobile=data.data.cellphone,
-                    Username=data.data.login,
-                    active=Convert.ToInt32(data.data.active)}
-            }; 
+          
             response.OnResponse(() =>
             {
-               
-               UserManager.Instance.UpdateUser(newUser);
+               UserManager.Instance.UpdateUser(response.Data);
                 ///SetToken();
                 success?.Invoke("Success!");
             }, exception => error?.Invoke(exception.Message));
@@ -119,13 +109,9 @@ namespace Core.Services.RealServices
                     {
                         Name = UserManager.Instance.ChangeUserModel.Name,
                         Surname = UserManager.Instance.ChangeUserModel.Lastname,
-                       // Address = UserManager.Instance.ChangeUserModel.Address,
                         Email = UserManager.Instance.ChangeUserModel.Email,
                         Mobile = UserManager.Instance.ChangeUserModel.Mobile,
-                      //  Phone = UserManager.Instance.ChangeUserModel.Phone,
-                      //  Language = currentUser.Language,
                         Username = currentUser.Username,
-                      //  VatNumber = currentUser.VatNumber
                     };
 
                     UserManager.Instance.UpdateUser(currentUser);
