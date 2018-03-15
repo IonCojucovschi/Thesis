@@ -1,20 +1,22 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
   <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.39DE4518-562E-4D70-9B30-F04711EF8001" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Models/DAL/UserModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Helpers/Manager/UserManager.cs">
     <Files>
-      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="190" Column="1" />
+      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="191" Column="29" />
       <File FileName="src/Droid/Page/Login.cs" Line="38" Column="50" />
-      <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="229" Column="1" />
-      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="52" Column="43" />
+      <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="230" Column="1" />
+      <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="52" Column="16" />
       <File FileName="src/Core/Services/Response/MResponse.cs" Line="38" Column="25" />
-      <File FileName="../Core/Int.Core/Application/Login/Contract/ILogin.cs" Line="30" Column="35" />
+      <File FileName="../Core/Int.Core/Application/Login/Contract/ILogin.cs" Line="30" Column="14" />
       <File FileName="src/Core/Models/DTO/LoginModelServer.cs" Line="28" Column="18" />
       <File FileName="src/Core/Models/DTO/OnLoginModel.cs" Line="4" Column="18" />
-      <File FileName="src/Core/Models/DAL/UserModel.cs" Line="7" Column="36" />
-      <File FileName="src/Core/Models/DAL/ProfileModel.cs" Line="22" Column="34" />
+      <File FileName="src/Core/Models/DAL/UserModel.cs" Line="38" Column="31" />
+      <File FileName="src/Core/Models/DAL/ProfileModel.cs" Line="9" Column="35" />
       <File FileName="src/Core/Models/Contract/IUserRepository.cs" Line="27" Column="41" />
       <File FileName="../Core/Int.Core/Application/Contract/IUser.cs" Line="25" Column="22" />
       <File FileName="../Core/Int.Core/Data/Repository/Akavache/Contract/IBaseEntity.cs" Line="25" Column="22" />
+      <File FileName="src/Core/ViewModels/Base/ProjectBaseViewModel.cs" Line="94" Column="1" />
+      <File FileName="src/Core/Services/MockServices/AuthenticateServiceMock.cs" Line="40" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -35,11 +37,11 @@
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="143" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="142" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="147" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="211" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="212" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="229" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="230" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/UserManager.cs" relfile="src/Core/Helpers/Manager/UserManager.cs" line="190" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Services/MockServices/RealServices/AuthenticateService.cs" relfile="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" line="63" column="1" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Base/ProjectBaseViewModel.cs" relfile="src/Core/ViewModels/Base/ProjectBaseViewModel.cs" line="89" column="30" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Base/ProjectBaseViewModel.cs" relfile="src/Core/ViewModels/Base/ProjectBaseViewModel.cs" line="94" column="50" />
+      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/LoginViewModel.cs" relfile="src/Core/ViewModels/LoginViewModel.cs" line="233" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

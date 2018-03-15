@@ -226,14 +226,15 @@ namespace Core.ViewModels
 
             ThreadPool.QueueUserWorkItem(_ =>
             {
+                UserModel usr=new UserModel();
                 UserManager.Instance.Login(obj =>
                 {
                     Hide();
-                    var usr=UserManager.Instance.CurrentUser() as UserModel;
+                    usr=UserManager.Instance.CurrentUser() as UserModel;
                     //usr.Remember = true;
                     if(usr.active==1)this.GoPage(PageConstants.DashboardName);
                    
-                }, message => ShowError(message));
+                }, (obj)=>ShowError(obj));
             });
         }
 

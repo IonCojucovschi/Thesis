@@ -33,6 +33,7 @@ using Int.Core.Application.Login.Contract;
 using Int.Core.Extensions;
 using Int.Core.Network.Response;
 using Newtonsoft.Json;
+using Plugin.Connectivity;
 
 namespace Core.Services.RealServices
 {
@@ -49,14 +50,17 @@ namespace Core.Services.RealServices
                     Password = myUser.Password,
                     Language = "it"
                 }));
-                var userdataString = response.ServerContent.Item1;
-          
             response.OnResponse(() =>
             {
                UserManager.Instance.UpdateUser(response.Data);
                 ///SetToken();
                 success?.Invoke("Success!");
-            }, exception => error?.Invoke(exception.Message));
+            }, exception => {
+                if (CrossConnectivity.Current.IsConnected)
+                    error?.Invoke("Credentiale invalide!");
+                else
+                    error?.Invoke(exception.Message);
+            } );
         }
 
         public void OnLogout(Action<string> success, Action<string> error)
