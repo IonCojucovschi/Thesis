@@ -70,6 +70,9 @@ namespace Core.ViewModels.Library
             public IView CellContentRootView { get; set; }
 
             [CrossView]
+            public IImage CategoryImage { get; set; }
+
+            [CrossView]
             public IText CategoryText { get; set; }
 
             [CrossView]
@@ -98,6 +101,7 @@ namespace Core.ViewModels.Library
                     QuantityText.Text = model.quantity;
                 }
                 CellContentRootView.Tag=CategoryText.Text;
+                CategoryImage?.SetImageFromResource(model.category.ToLowerInvariant());
             }
             private void InitViews()
             {

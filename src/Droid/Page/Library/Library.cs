@@ -49,6 +49,10 @@ namespace Droid.Page
                                      ICrossCellViewHolder<ICategoryContent> cellModel)
             : base(inflator.Inflate(Resource.Layout.item_list_category_boock, parent, false), cellModel) { }
 
+        [CrossView(nameof(LibraryViewModel.LibraryCell.CategoryImage))]
+        [InjectView(Resource.Id.category_image_item)]
+        public ImageView CategoryImage { get; set; }
+
         [CrossView(nameof(LibraryViewModel.LibraryCell.CategoryText))]
         [InjectView(Resource.Id.category_name_item)]
         public TextView CategoryText { get; set; }
