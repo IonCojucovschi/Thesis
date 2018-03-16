@@ -107,6 +107,8 @@ namespace Core.ViewModels.Library
             {
                CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
                ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
+
+                CellContentRootView.Click -= cellContentIsClucked;
                 CellContentRootView.Click += cellContentIsClucked;
             }
 
