@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/ViewModels/Library/CategoryBooksViewModel.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="src/Core/Services/MockServices/RealServices/BooksService.cs" Line="44" Column="1" />
       <File FileName="src/Droid/Page/WantRead.cs" Line="87" Column="6" />
@@ -23,7 +23,6 @@
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="120" column="57" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="118" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="124" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Services/MockServices/RealServices/BooksService.cs" relfile="src/Core/Services/MockServices/RealServices/BooksService.cs" line="44" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
