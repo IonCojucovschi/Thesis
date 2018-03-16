@@ -21,13 +21,17 @@
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 using Android.Widget;
+using Core.ViewModels;
+using Int.Core.Wrappers.Widget.CrossViewInjection;
+using Int.Droid.Factories.Adapter.RecyclerView;
 using Int.Droid.Wrappers;
 
 namespace Droid.Page
 {
-    partial class Product
+    partial class WantRead
     {
-        [InjectView(Resource.Id.list_view)]
-        public ListView ListView { get; set; }
+        [CrossView(nameof(WantReadViewModel.ListView))]
+        [InjectView(Resource.Id.category_list)]
+        public BaseRecyclerView ListView { get; set; }
     }
 }

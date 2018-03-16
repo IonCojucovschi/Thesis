@@ -263,7 +263,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapters\ProductsAdapter.cs" />
     <Compile Include="Page\Comunication.cs" />
     <Compile Include="Page\Comunication.designer.cs">
       <DependentUpon>Comunication.cs</DependentUpon>
@@ -272,9 +271,9 @@
     <Compile Include="Page\Library\BoockDetails.cs" />
     <Compile Include="Page\Library\CategoryBoocks.cs" />
     <Compile Include="Page\Library\Library.cs" />
-    <Compile Include="Page\Product.cs" />
-    <Compile Include="Page\Product.designer.cs">
-      <DependentUpon>Product.cs</DependentUpon>
+    <Compile Include="Page\WantRead.cs" />
+    <Compile Include="Page\WantRead.designer.cs">
+      <DependentUpon>WantRead.cs</DependentUpon>
     </Compile>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -382,6 +381,18 @@
     <AndroidResource Include="Resources\layout\item_list_category_boock.axml" />
     <AndroidResource Include="Resources\layout\read_book_view.axml" />
     <AndroidResource Include="Resources\layout\read_book.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\dragoste.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\istorice.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\bucatarie.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\detective.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\copii.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\elevi.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\fantastice.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\horor.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\politica.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\programare.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\sanatate.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -485,6 +496,7 @@
     <Folder Include="lib\armeabi\" />
     <Folder Include="lib\armeabi-v7a\" />
     <Folder Include="lib\x86\" />
+    <Folder Include="Adapters\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="AndHUD">

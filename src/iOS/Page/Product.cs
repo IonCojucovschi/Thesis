@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 namespace iOS.Storyboard
 {
-    public partial class Product : BasePageSideMenu<ProductViewModel>
+    public partial class Product : BasePageSideMenu<WantReadViewModel>
     {
         private ProductSource _source;
 

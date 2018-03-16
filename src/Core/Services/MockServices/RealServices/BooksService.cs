@@ -35,5 +35,14 @@ namespace Core.Services.MockServices.RealServices
                 exception => error?.Invoke(exception.Message));
         }
 
+        public void GetWishedBooks(Action<IList<Booklist>> succes, Action<string> error)
+        {
+            var usr = UserManager.Instance.CurrentUser() as UserModel;
+          var response =
+                RequestFactory.ExecuteRequest<MResponse<IList<Booklist>>>(RestCalls.Instance.GetWishedBooksSelected(usr.Profile.Id));
+
+            response.OnResponse(() => { succes?.Invoke(response.Data); },
+                exception => error?.Invoke(exception.Message));
+        }
     }
 }

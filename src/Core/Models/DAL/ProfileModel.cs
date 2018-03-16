@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Core.Models.DAL
 {
-    public class ProfileModel:IBaseEntity
+    public class ProfileModel
     {
         [JsonProperty("id")]
         public int Id { get; set; }

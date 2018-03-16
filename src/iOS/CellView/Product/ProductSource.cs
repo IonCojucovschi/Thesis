@@ -41,9 +41,9 @@ namespace iOS.CellView.Document
 {
     public class ProductSource : ComponentViewSourceExpandable<IItemProducts, IProduct, ProductHeaderCell, ProductChildCell>, ICrossCell
     {
-        private IBaseViewModel ModelView => App.Instance.GetView(typeof(ProductViewModel));
-        public ICrossCellViewHolder CrossCellModel => (ModelView as ProductViewModel)?.CellModel;
-        private ProductViewModel ConcretViewModel => (ModelView as ProductViewModel);
+        private IBaseViewModel ModelView => App.Instance.GetView(typeof(WantReadViewModel));
+        public ICrossCellViewHolder CrossCellModel => (ModelView as WantReadViewModel)?.CellModel;
+        private WantReadViewModel ConcretViewModel => (ModelView as WantReadViewModel);
 
         public bool FirstLocal { get; set; }
 
@@ -82,17 +82,17 @@ namespace iOS.CellView.Document
 
         protected override void OnBindCell(ProductChildCell viewCell, ProductHeaderCell viewHeader, IProduct model, int position, int positionParent)
         {
-            (CrossCellModel as ProductViewModel.ProductCell)?
+            (CrossCellModel as WantReadViewModel.ProductCell)?
               .BindHeaderProductDetailSubItem(model, new CrossTextWrapper(viewCell.ProducDocName), new CrossTextWrapper(viewCell.ProductDocValue));
 
-            (CrossCellModel as ProductViewModel.ProductCell)?
+            (CrossCellModel as WantReadViewModel.ProductCell)?
                 .BindHeaderProductDocumentSubItem(model, new CrossImageWrapper(viewCell.ImagePdf), new CrossTextWrapper(viewCell.PdfValue));
 
             if (!model.FilePath.IsNullOrWhiteSpace() && !FirstLocal)
             {
                 FirstLocal = true;
 
-                (CrossCellModel as ProductViewModel.ProductCell)?
+                (CrossCellModel as WantReadViewModel.ProductCell)?
                     .BindListSeparator(new CrossViewWrapper(viewCell.ViewLineCell));
             }
 
@@ -135,22 +135,22 @@ namespace iOS.CellView.Document
             }
         }
 
-        [CrossView(nameof(ProductViewModel.ProductCell.ProductName))]
+        [CrossView(nameof(WantReadViewModel.ProductCell.ProductName))]
         UILabel propName1 => ProductName;
 
-        [CrossView(nameof(ProductViewModel.ProductCell.ProductCode))]
+        [CrossView(nameof(WantReadViewModel.ProductCell.ProductCode))]
         UILabel propName2 => ProducCode;
 
-        [CrossView(nameof(ProductViewModel.ProductCell.ArrowImage))]
+        [CrossView(nameof(WantReadViewModel.ProductCell.ArrowImage))]
         UIImageView propName3 => ImageArrow;
 
-        [CrossView(nameof(ProductViewModel.ProductCell.CellContentRootView))]
+        [CrossView(nameof(WantReadViewModel.ProductCell.CellContentRootView))]
         UIView propName4 => ViewCellHeader;
 
-        [CrossView(nameof(ProductViewModel.ProductCell.ProductDetailUnderline))]
+        [CrossView(nameof(WantReadViewModel.ProductCell.ProductDetailUnderline))]
         UIView propName5 => ViewCellHeaderLine;
 
-        [CrossView(nameof(ProductViewModel.ProductCell.ViewiOS))]
+        [CrossView(nameof(WantReadViewModel.ProductCell.ViewiOS))]
         UIView propName6 => ViewCellHeaderFooter;
     }
 }

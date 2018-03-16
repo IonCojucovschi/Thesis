@@ -33,11 +33,8 @@ namespace Core.Models.DAL
         [JsonProperty("profile")]
         public ProfileModel Profile { get; set; } = new ProfileModel();
 
-        public int Id 
-        { 
-            get => Profile.Id;
-            set => Profile.Id = value;
-        }
+        public int Id { get; set; }
+
 
         [JsonProperty("login")]
         public string Username

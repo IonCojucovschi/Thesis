@@ -78,7 +78,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ComunicationViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ContactViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WantReadViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SplashViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RShare.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\Rest\RestCalls.cs" />
@@ -165,6 +165,17 @@
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\bg_dashboard.png" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\uncheck.png" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\check.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\copii.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\detective.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\dragoste.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\elevi.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\fantastice.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\horor.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\istorice.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\autoformare.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\bucatarie.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\politica.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\programare.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-Bold.otf" />

@@ -26,5 +26,11 @@
         public const string PDF = "PDF.svg";
         public const string PdfStatusOk = "PDF_status_ok.svg";
         public const string ShadowImage = "Shadow";
+
+
+        //categories images
+        public const string All = "icon";
+        public const string Dragoste = "dragoste";
+        public const string Fantastice="fantastice";
     }
 }

@@ -53,6 +53,7 @@ namespace Core.Services.RealServices
             response.OnResponse(() =>
             {
                UserManager.Instance.UpdateUser(response.Data);
+                UserManager.Instance.UserID(response.Data);
                 ///SetToken();
                 success?.Invoke("Success!");
             }, exception => {

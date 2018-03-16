@@ -121,7 +121,12 @@ namespace Core.Services
                 RestConstants.MediaTypeJson, requestTo: RequestTo.Key);
             return somedata;
         }
-
+        public IRestCallbackClient GetWishedBooksSelected(int id)
+        {
+            var somedata = Request(RestConstants.GetWishedBook + "/" + id, Method.GET,
+                RestConstants.MediaTypeJson, requestTo: RequestTo.Key);
+            return somedata;
+        }
 
 
 

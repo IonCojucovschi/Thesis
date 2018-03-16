@@ -70,7 +70,7 @@ namespace Core.Services
 
             ServiceViewModel.RegisterViewModel(new ContactViewModel());
             ServiceViewModel.RegisterViewModel(new ComunicationViewModel());
-            ServiceViewModel.RegisterViewModel(new ProductViewModel());
+            ServiceViewModel.RegisterViewModel(new WantReadViewModel());
 
             ServiceViewModel.RegisterViewModel(new LibraryViewModel());
             ServiceViewModel.RegisterViewModel(new CategoryBooksViewModel());
