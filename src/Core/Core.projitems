@@ -76,7 +76,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\ProjectBaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\FontsConstant.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ComunicationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UserAddedBooksViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ContactViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WantReadViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SplashViewModel.cs" />

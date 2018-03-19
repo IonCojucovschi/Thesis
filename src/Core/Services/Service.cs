@@ -69,7 +69,7 @@ namespace Core.Services
             ServiceViewModel.RegisterViewModel(new AccountDescriptionsViewModel());
 
             ServiceViewModel.RegisterViewModel(new ContactViewModel());
-            ServiceViewModel.RegisterViewModel(new ComunicationViewModel());
+            ServiceViewModel.RegisterViewModel(new UserAddedBooksViewModel());
             ServiceViewModel.RegisterViewModel(new WantReadViewModel());
 
             ServiceViewModel.RegisterViewModel(new LibraryViewModel());

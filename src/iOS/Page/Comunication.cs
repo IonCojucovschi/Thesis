@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace iOS.Storyboard
 {
-    public partial class Comunication : BasePageSideMenu<ComunicationViewModel>
+    public partial class Comunication : BasePageSideMenu<UserAddedBooksViewModel>
     {
 
         private ComponentViewSource<IItemComunication> _source;
@@ -25,7 +25,7 @@ namespace iOS.Storyboard
                                                                 new List<IItemComunication>(),
                                                                 TableView,
                                                                 crossCellModel:
-                                                                new ComunicationViewModel.ComunicationCell(ModelView));
+                                                                new UserAddedBooksViewModel.ComunicationCell(ModelView));
 
             TableView.Source = _source;
             _source.AutoResize();
@@ -34,7 +34,7 @@ namespace iOS.Storyboard
 
     partial class Comunication
     {
-        [CrossView(nameof(ComunicationViewModel.ListView))]
+        [CrossView(nameof(UserAddedBooksViewModel.ListView))]
         UITableView propname1 => TableView;
     }
 }

@@ -263,9 +263,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page\Comunication.cs" />
-    <Compile Include="Page\Comunication.designer.cs">
-      <DependentUpon>Comunication.cs</DependentUpon>
+    <Compile Include="Page\UserAddedBooks.cs" />
+    <Compile Include="Page\UserAddedBooks.designer.cs">
+      <DependentUpon>UserAddedBooks.cs</DependentUpon>
     </Compile>
     <Compile Include="Page\Contact.cs" />
     <Compile Include="Page\Library\BoockDetails.cs" />

@@ -13,13 +13,13 @@ namespace iOS.Storyboard
     {
         public ComunicationCell(IntPtr handle) : base(handle) { }
 
-        [CrossView(nameof(ComunicationViewModel.ComunicationCell.CellContentRootView))]
+        [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.CellContentRootView))]
         UIView propname1 => viewMain;
 
-        [CrossView(nameof(ComunicationViewModel.ComunicationCell.ComunicationText))]
+        [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.ComunicationText))]
         UILabel propname2 => lblContent;
 
-        [CrossView(nameof(ComunicationViewModel.ComunicationCell.ComunicationDate))]
+        [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.ComunicationDate))]
         UITextField propname3 => lblDate;
     }
 }

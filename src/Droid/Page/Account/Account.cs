@@ -29,7 +29,6 @@ using Android.Content.PM;
 using Android.Views;
 using Android.Widget;
 using Core.Models.DAL.Account;
-using Core.Resources.Locales.Page;
 using Core.ViewModels.Account;
 using Droid.Page.Base;
 using Int.Core.Application.Widget.Contract.Table.Adapter;

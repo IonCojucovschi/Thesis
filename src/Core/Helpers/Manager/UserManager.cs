@@ -51,16 +51,7 @@ namespace Core.Helpers.Manager
         private string NoPhone => RUserManager.NoPhone;
         private string NoEmail => RUserManager.NoEmail;
 
-        public int User_ID;
-        public  void UserID(UserModel user)
-        {
-            User_ID=user.Id;
-        }
-        public int ReturnUserID()
-        {
-            return User_ID;
-        }
-        public ChangeUserDataModel ChangeUserModel
+       public ChangeUserDataModel ChangeUserModel
         {
             get
             {

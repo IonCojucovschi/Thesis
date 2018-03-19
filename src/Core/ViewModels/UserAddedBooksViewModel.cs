@@ -15,7 +15,7 @@ using Core.Helpers.Manager;
 
 namespace Core.ViewModels
 {
-    public class ComunicationViewModel : ProjectNavigationBaseViewModel
+    public class UserAddedBooksViewModel : ProjectNavigationBaseViewModel
     {
         protected override string HeaderText => RDetailItems.ComunicationHeaderText.ToUpperInvariant();
         protected override HeaderAreaActionType HeaderAreaAction => HeaderAreaActionType.RightSideMenu;

@@ -1,22 +1,25 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/ViewModels/Library/LibraryViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Droid/Page/Comunication.cs">
     <Files>
       <File FileName="src/Core/Services/MockServices/RealServices/BooksService.cs" Line="44" Column="1" />
       <File FileName="src/Droid/Page/WantRead.cs" Line="87" Column="6" />
-      <File FileName="src/Core/ViewModels/WantReadViewModel.cs" Line="84" Column="32" />
+      <File FileName="src/Core/ViewModels/WantReadViewModel.cs" Line="117" Column="38" />
       <File FileName="src/Droid/Page/Library/CategoryBoocks.cs" Line="45" Column="16" />
       <File FileName="src/Droid/Page/Library/Library.cs" Line="42" Column="24" />
       <File FileName="src/Droid/Page/WantRead.designer.cs" Line="33" Column="47" />
       <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="23" Column="75" />
       <File FileName="src/Droid/Page/Splash.cs" Line="1" Column="1" />
       <File FileName="src/Droid/Page/Library/ReadBook.cs" Line="97" Column="31" />
-      <File FileName="src/Core/Helpers/Manager/BooksManager.cs" Line="115" Column="38" />
+      <File FileName="src/Core/Helpers/Manager/BooksManager.cs" Line="41" Column="13" />
       <File FileName="src/Core/Models/DAL/CategoryBooks/ICategoryBook.cs" Line="19" Column="17" />
-      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="117" Column="49" />
+      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="119" Column="1" />
+      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="54" Column="8" />
+      <File FileName="src/Droid/Page/Account/Account.cs" Line="48" Column="45" />
+      <File FileName="src/Droid/Page/Comunication.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.LGD3208d8fdaf7" />
+  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="29" column="1" />
@@ -25,12 +28,6 @@
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="53" column="1" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Product.cs" relfile="src/Droid/Page/Product.cs" line="47" column="79" />
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="27" column="9" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="120" column="57" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="118" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/ReadBook.cs" relfile="src/Droid/Page/Library/ReadBook.cs" line="124" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/BooksManager.cs" relfile="src/Core/Helpers/Manager/BooksManager.cs" line="31" column="20" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/Helpers/Manager/BooksManager.cs" relfile="src/Core/Helpers/Manager/BooksManager.cs" line="117" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Core/ViewModels/Library/LibraryViewModel.cs" relfile="src/Core/ViewModels/Library/LibraryViewModel.cs" line="117" column="49" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

@@ -27,9 +27,9 @@ using Int.Droid.Wrappers;
 
 namespace Droid.Page
 {
-    public partial class Comunication
+    public partial class UserAddedBooks
     {
-        [CrossView(nameof(ComunicationViewModel.ListView))]
+        [CrossView(nameof(UserAddedBooksViewModel.ListView))]
         [InjectView(Resource.Id.list_view)]
         public BaseRecyclerView ListView { get; set; }
     }
