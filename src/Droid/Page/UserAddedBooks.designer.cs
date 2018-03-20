@@ -30,7 +30,7 @@ namespace Droid.Page
     public partial class UserAddedBooks
     {
         [CrossView(nameof(UserAddedBooksViewModel.ListView))]
-        [InjectView(Resource.Id.list_view)]
+        [InjectView(Resource.Id.category_list)]
         public BaseRecyclerView ListView { get; set; }
     }
 }

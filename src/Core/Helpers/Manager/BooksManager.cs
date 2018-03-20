@@ -92,7 +92,32 @@ namespace Core.Helpers.Manager
                 success?.Invoke(_book_list);
             }, error);
         }
-
+        public void GetUserAddedBooks(Action<IList<IBooklist>> success, Action<string> error)
+        {
+            _book_list = new List<IBooklist>();
+            GetAddedBooks(books => {
+                foreach (var item in books)
+                {
+                    _book_list.Add(new
+                        Booklist()
+                    {
+                        id = item.id,
+                        title = item.title,
+                        author = item.author,
+                        category = item.category,
+                        date = item.date,
+                        description = item.description,
+                        download_linq = item.download_linq,
+                        downloands_number = item.downloands_number,
+                        image_linq = item.image_linq,
+                        rating = item.rating,
+                        user_id = item.user_id,
+                        publication_date = item.publication_date
+                    });
+                }
+                success?.Invoke(_book_list);
+            }, error);
+        }
         #region services
         private void GetCategoryList(Action<IList<CategoryContent>> success, Action<string> error)
         {
@@ -108,7 +133,10 @@ namespace Core.Helpers.Manager
         {
             GetCAtegoryServices.GetWishedBooks(succes,error);
         }
-
+        private void GetAddedBooks(Action<IList<Booklist>> succes, Action<string> error)
+        {
+            GetCAtegoryServices.GetAddedBooks(succes, error);
+        }
         #endregion
 
 

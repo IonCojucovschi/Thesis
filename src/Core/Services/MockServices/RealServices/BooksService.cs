@@ -44,5 +44,15 @@ namespace Core.Services.MockServices.RealServices
             response.OnResponse(() => { succes?.Invoke(response.Data); },
                 exception => error?.Invoke(exception.Message));
         }
+
+        public void GetAddedBooks(Action<IList<Booklist>> succes, Action<string> error)
+        {
+            var usr = UserManager.Instance.CurrentUser() as UserModel;
+            var response =
+                RequestFactory.ExecuteRequest<MResponse<IList<Booklist>>>(RestCalls.Instance.GetAddedBooks(usr.Profile.Id));
+
+            response.OnResponse(() => { succes?.Invoke(response.Data); },
+                exception => error?.Invoke(exception.Message));
+        }
     }
 }

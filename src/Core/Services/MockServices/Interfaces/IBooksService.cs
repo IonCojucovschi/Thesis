@@ -9,6 +9,6 @@ namespace Core.Services.MockServices.Interfaces
         void GetCategoryes(Action<IList<CategoryContent>> success, Action<string> error);
         void GetBooksFromCategory(Action<IList<Booklist>> succes, Action<string> error);
         void GetWishedBooks(Action<IList<Booklist>> succes, Action<string> error);
-
+        void GetAddedBooks(Action<IList<Booklist>> succes, Action<string> error);
     }
 }

@@ -1,25 +1,20 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Droid/Page/Comunication.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Core/Int.Droid/Wrappers/Widget/FactoryConcreteProducts/CrossImageWrapper.cs">
     <Files>
-      <File FileName="src/Core/Services/MockServices/RealServices/BooksService.cs" Line="44" Column="1" />
-      <File FileName="src/Droid/Page/WantRead.cs" Line="87" Column="6" />
-      <File FileName="src/Core/ViewModels/WantReadViewModel.cs" Line="117" Column="38" />
-      <File FileName="src/Droid/Page/Library/CategoryBoocks.cs" Line="45" Column="16" />
-      <File FileName="src/Droid/Page/Library/Library.cs" Line="42" Column="24" />
-      <File FileName="src/Droid/Page/WantRead.designer.cs" Line="33" Column="47" />
-      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="23" Column="75" />
-      <File FileName="src/Droid/Page/Splash.cs" Line="1" Column="1" />
-      <File FileName="src/Droid/Page/Library/ReadBook.cs" Line="97" Column="31" />
-      <File FileName="src/Core/Helpers/Manager/BooksManager.cs" Line="41" Column="13" />
-      <File FileName="src/Core/Models/DAL/CategoryBooks/ICategoryBook.cs" Line="19" Column="17" />
-      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="119" Column="1" />
-      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="54" Column="8" />
-      <File FileName="src/Droid/Page/Account/Account.cs" Line="48" Column="45" />
-      <File FileName="src/Droid/Page/Comunication.cs" Line="1" Column="1" />
+      <File FileName="src/Droid/Page/UserAddedBooks.cs" Line="60" Column="33" />
+      <File FileName="src/Core/ViewModels/UserAddedBooksViewModel.cs" Line="24" Column="91" />
+      <File FileName="src/Droid/Page/WantRead.cs" Line="57" Column="86" />
+      <File FileName="src/Core/ViewModels/WantReadViewModel.cs" Line="78" Column="72" />
+      <File FileName="src/Core/Helpers/Manager/BooksManager.cs" Line="69" Column="27" />
+      <File FileName="src/Core/Services/MockServices/Interfaces/IBooksService.cs" Line="12" Column="14" />
+      <File FileName="src/Core/Services/MockServices/RealServices/BooksService.cs" Line="48" Column="34" />
+      <File FileName="src/Core/Services/Rest/RestCalls.cs" Line="135" Column="10" />
+      <File FileName="src/Core/Services/Rest/RestRutes.cs" Line="42" Column="60" />
+      <File FileName="../Core/Int.Droid/Wrappers/Widget/FactoryConcreteProducts/CrossImageWrapper.cs" Line="141" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.LGD3208d8fdaf7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/bss/Documents/Projects/ReadAbook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="29" column="1" />

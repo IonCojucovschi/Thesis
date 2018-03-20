@@ -29,6 +29,7 @@ using Android.Content.PM;
 using Android.Views;
 using Android.Widget;
 using Core.Models.DAL;
+using Core.Models.DAL.CategoryBooks;
 using Core.ViewModels;
 using Droid.Page.Base;
 using Int.Core.Application.Widget.Contract.Table.Adapter;
@@ -42,38 +43,43 @@ namespace Droid.Page
         ScreenOrientation = ScreenOrientation.Portrait,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         Theme = "@style/AppTheme")]
-    public partial class Comunication : NavigationBasePage<ComunicationViewModel>
+    public partial class UserAddedBooks : NavigationBasePage<UserAddedBooksViewModel>
     {
-        protected override int LayoutContentResource => Resource.Layout.comunication;
+        protected override int LayoutContentResource => Resource.Layout.category_books_view;
 
         protected override void InitViews()
         {
             base.InitViews();
 
             ListView.SetAdapter(ComponentAdapterRecyclerFactory.CreateAdapter((inflater, parent) =>
-                                new ComunicationCellViewHolder(inflater,
-                                               parent,
-                                               ModelView.CellModel)));
+                                                                              new AddUserBooksCellViewHolder(inflater, parent, ModelView.CellModel)));
+
+            // Create your application here
         }
-
-        public override void OnBackPressed() { }
     }
-
-    public class ComunicationCellViewHolder : ComponentViewHolder<IItemComunication>
+    public class AddUserBooksCellViewHolder : ComponentViewHolder<IBooklist>
     {
-        public ComunicationCellViewHolder(LayoutInflater inflator, ViewGroup parent,
-            ICrossCellViewHolder<IItemComunication> cellModel)
-            : base(inflator.Inflate(Resource.Layout.item_comunication, parent, false), cellModel) { }
+        public AddUserBooksCellViewHolder(LayoutInflater inflator, ViewGroup parent,
+                                     ICrossCellViewHolder<IBooklist> cellModel)
+            : base(inflator.Inflate(Resource.Layout.item_list_book, parent, false), cellModel) { }
 
-        [CrossView(nameof(ComunicationViewModel.ComunicationCell.ComunicationText))]
-        [InjectView(Resource.Id.comunication_text)]
-        public TextView ComunicationText { get; set; }
+        [CrossView(nameof(WantReadViewModel.WishBookCell.TitleText))]
+        [InjectView(Resource.Id.title_item)]
+        public TextView TitleText { get; set; }
 
-        [CrossView(nameof(ComunicationViewModel.ComunicationCell.ComunicationDate))]
-        [InjectView(Resource.Id.comunication_date)]
-        public TextView ComunicationDate { get; set; }
+        [CrossView(nameof(WantReadViewModel.WishBookCell.AuthorText))]
+        [InjectView(Resource.Id.author_item)]
+        public TextView AuthorText { get; set; }
 
-        [CrossView(nameof(ComunicationViewModel.ComunicationCell.CellContentRootView))]
+        [CrossView(nameof(WantReadViewModel.WishBookCell.DetailText))]
+        [InjectView(Resource.Id.detail_item)]
+        public TextView DetailText { get; set; }
+
+        [CrossView(nameof(WantReadViewModel.WishBookCell.BookImage))]
+        [InjectView(Resource.Id.image_for_book_item)]
+        public FFImageLoading.Views.ImageViewAsync BookImage { get; set; }
+
+        [CrossView(nameof(WantReadViewModel.WishBookCell.CellContentRootView))]
         [InjectView(Resource.Id.cell_content_root_view)]
         public View CellContent { get; set; }
     }

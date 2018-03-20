@@ -39,6 +39,7 @@ namespace Core.Services
         public const string GetBooksCategory= "api/allcategory";
         public const string GetBooksForCategory = "api/books/category";
         public const string GetWishedBook = "api/wishedbook/id";
+        public const string GetAddedBook = "api/iaddthis/id";
 
 
 
