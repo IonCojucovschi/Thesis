@@ -16,8 +16,8 @@ namespace Core.Helpers
         public static string ContactName => nameof(Contact);
 
 
-        public static string ComunicationName =>nameof(UserAddedBooks);
-        public static string ProductName => nameof(WantRead);
+        public static string UserAddedBooksCon =>nameof(UserAddedBooks);
+        public static string WantReadCon => nameof(WantRead);
         public static string LibraryName => nameof(Library_base);
         public static string BooksCategory => nameof(CategoryBoocks);
         public static string DetailBook => nameof(BoockDetails);
