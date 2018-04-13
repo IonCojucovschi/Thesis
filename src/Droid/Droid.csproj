@@ -321,6 +321,7 @@
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
     <Compile Include="Page\Library\ReadBook.cs" />
+    <Compile Include="Page\LocalBooks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
