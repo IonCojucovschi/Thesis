@@ -1,25 +1,89 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Helpers/Manager/UserManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/App.cs">
     <Files>
-      <File FileName="src/Droid/Page/Library/ReadBook.cs" Line="31" Column="30" />
+      <File FileName="src/Droid/Page/Library/ReadBook.cs" Line="86" Column="13" />
       <File FileName="src/Core/ViewModels/LoginViewModel.cs" Line="235" Column="1" />
       <File FileName="src/Core/Resources/Colors/ColorConstants.cs" Line="11" Column="51" />
       <File FileName="src/Droid/Resources/Anim/bottom_to_top.xml" Line="8" Column="9" />
-      <File FileName="src/Droid/Resources/Anim/top_to_bottom.xml" Line="5" Column="40" />
+      <File FileName="src/Droid/Resources/Anim/top_to_bottom.xml" Line="8" Column="7" />
       <File FileName="Source Not Available" />
       <File FileName="src/Droid/Page/Base/BasePage.cs" Line="9" Column="43" />
       <File FileName="src/Droid/Page/Base/NavigationBasePage.cs" Line="1" Column="1" />
       <File FileName="src/Droid/Resources/values/style.xml" Line="4" Column="27" />
       <File FileName="src/Droid/Page/Library/Library.cs" Line="20" Column="33" />
       <File FileName="src/Core/Services/Repository/User/UserRepository.cs" Line="28" Column="59" />
-      <File FileName="src/Core/Models/DAL/UserModel.cs" Line="7" Column="18" />
+      <File FileName="src/Core/Models/DAL/UserModel.cs" Line="7" Column="49" />
       <File FileName="src/Core/Services/MockServices/AuthenticateServiceMock.cs" Line="1" Column="1" />
       <File FileName="src/Core/Services/MockServices/RealServices/AuthenticateService.cs" Line="1" Column="1" />
-      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="42" Column="34" />
+      <File FileName="src/Core/Helpers/Manager/UserManager.cs" Line="43" Column="90" />
+      <File FileName="src/Core/Helpers/Manager/BooksManager.cs" Line="69" Column="27" />
+      <File FileName="src/Core/Helpers/Manager/LocalBooksManager.cs" Line="32" Column="46" />
+      <File FileName="src/Core/Helpers/Manager/MenuManager.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Models/DAL/CategoryBooks/ICategoryBook.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Models/DAL/LocalBooks/LocalBook.cs" Line="6" Column="27" />
+      <File FileName="src/Core/Models/Contract/IUserRepository.cs" Line="27" Column="22" />
+      <File FileName="../Core/Int.Core/Data/Service/Service.cs" Line="44" Column="35" />
+      <File FileName="../Core/Int.Core/Data/Service/IService.cs" Line="51" Column="21" />
+      <File FileName="../Core/Int.Core/Data/Repository/Akavache/Contract/IUnitOfWork.cs" Line="30" Column="36" />
+      <File FileName="src/Core/Models/DAL/BE/EntityBaseBE.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Models/DAL/Dashboard/ItemDashboard.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Services/MockServices/RealServices/DocumentService.cs" Line="3" Column="23" />
+      <File FileName="src/Core/Helpers/Manager/ContractManager.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Services/MockServices/Interfaces/IDocumentService.cs" Line="25" Column="23" />
+      <File FileName="src/Core/App.cs" Line="93" Column="10" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Thesis" expanded="True">
+            <Node name="Application" expanded="True">
+              <Node name="Core" expanded="True">
+                <Node name="Helpers" expanded="True">
+                  <Node name="Manager" expanded="True" />
+                </Node>
+                <Node name="Resources" expanded="True">
+                  <Node name="Colors" expanded="True" />
+                </Node>
+                <Node name="Services" expanded="True">
+                  <Node name="MockServices" expanded="True">
+                    <Node name="Interfaces" expanded="True" />
+                    <Node name="RealServices" expanded="True" />
+                  </Node>
+                  <Node name="Repository" expanded="True">
+                    <Node name="User" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="App.cs" selected="True" />
+              </Node>
+              <Node name="Droid" expanded="True">
+                <Node name="Page" expanded="True">
+                  <Node name="Library" expanded="True" />
+                </Node>
+                <Node name="Resources" expanded="True">
+                  <Node name="layout" expanded="True" />
+                  <Node name="values" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Core" expanded="True">
+              <Node name="Int.Core" expanded="True">
+                <Node name="Data" expanded="True">
+                  <Node name="Repository" expanded="True">
+                    <Node name="Akavache" expanded="True">
+                      <Node name="Contract" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Service" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4df1efa97c4e5fa7" />
+  <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.LGD3208d8fdaf7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/bss/Documents/Projects/ReadABook/src/Droid/Page/Library/Library_base.cs" relfile="src/Droid/Page/Library/Library_base.cs" line="29" column="1" />

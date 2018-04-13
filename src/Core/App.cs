@@ -90,16 +90,7 @@ namespace Core
             Locator.CurrentMutable.RegisterConstant(
                 new AuthenticateService(), typeof(ILogin), ServiceContract);
 
-            Locator.CurrentMutable.RegisterConstant(
-                new ContractService(), typeof(IContractService), ServiceContract);
-
-            Locator.CurrentMutable.RegisterConstant(
-                new DocumentService(), typeof(IDocumentService), ServiceContract);
-
-            Locator.CurrentMutable.RegisterConstant(
-                 new ComunicationService(), typeof(IComunicationService), ServiceContract);
-
-            Locator.CurrentMutable.RegisterConstant(
+           Locator.CurrentMutable.RegisterConstant(
                 new BooksService(), typeof(IBooksService), ServiceContract);
         }
 
@@ -109,12 +100,7 @@ namespace Core
                 new AuthenticateServiceMock(), typeof(ILogin), ServiceContractMock);
             Locator.CurrentMutable.RegisterConstant(
                 new MenuService(), typeof(IMenu<IItemMenu>), ServiceContractMock);
-            Locator.CurrentMutable.RegisterConstant(
-                new ContractService(), typeof(IContractService), ServiceContractMock);
-            Locator.CurrentMutable.RegisterConstant(
-                new DocumentService(), typeof(IDocumentService), ServiceContractMock);
-            Locator.CurrentMutable.RegisterConstant(
-                new ComunicationService(), typeof(IComunicationService), ServiceContractMock);
+
             Locator.CurrentMutable.RegisterConstant(
                 new BooksService(),typeof(IBooksService),ServiceContractMock);
         }

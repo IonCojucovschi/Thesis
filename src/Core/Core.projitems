@@ -35,31 +35,20 @@
     </Folder>
     <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\Account\">
     </Folder>
-    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\BeContractsInProgress\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\Documents\">
-    </Folder>
     <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\BE\">
     </Folder>
     <Folder Include="$(MSBuildThisFileDirectory)Resources\Settings\">
     </Folder>
     <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\CategoryBooks\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\LocalBooks\">
+      <DependentUpon>LocalBooks</DependentUpon>
+    </Folder>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BeContractsListItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\EnergySourceType.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\IItemContract.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\ItemContract.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contacts\IItemContact.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\IItemInvoices.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\IItemInvoicesDetail.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\ItemInvoices.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Invoices\ItemInvoicesDetail.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contacts\ItemContact.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\ItemComunication.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\ItemProducts.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\ProfileModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\ChangeUserDataModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BeComunicationModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Drawables\DrawableConstants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RAccount.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RContact.cs" />
@@ -69,9 +58,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RStatusProduct.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RUserManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RWindow.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IComunicationService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\ComunicationService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\DocumentService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\Service.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base\ProjectBaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\FontsConstant.cs" />
@@ -113,16 +99,8 @@
       <DependentUpon>ItemDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Account\ItemAccount.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Documents\IItemDocument.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Documents\ItemDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\ChangePasswordModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Locales\Page\RDetailItems.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\RealServices\ContractService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Manager\ContractManager.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IContractService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BeContractsInProgress\BeItemContract.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\MockServices\Interfaces\IDocumentService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contracts\Documents\BeItemDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\BE\EntityBaseBE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\Settings\ProjectSettingWindow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DTO\OnLoginModel.cs" />
@@ -134,6 +112,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\CategoryBooksViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\LibraryViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\ReadBookViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Manager\LocalBooksManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\LocalBooks\LocalBook.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\en\en.txt" />
