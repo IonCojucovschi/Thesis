@@ -22,80 +22,96 @@ using Com.Joanzapata.Pdfview;
 using System.Timers;
 using Android.Support.V7.App;
 using static Android.Widget.SeekBar;
+using Android.Views.Animations;
 
 namespace Droid.Page
 {
-    [Activity(Label = "ReadBook", ScreenOrientation = ScreenOrientation.Portrait,
-        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
-        Theme = "@style/AppTheme")]
-    public partial class ReadBook : AppCompatActivity, IOnSeekBarChangeListener////NavigationBasePage<ReadBookViewModel>
+    [Activity(Label = "ReadBook", 
+              Theme = "@style/AppTheme")]
+    public partial class ReadBook : Activity, IOnSeekBarChangeListener
     {
-        ///protected override int LayoutContentResource => Resource.Layout.read_book;
+        
         private static int totalPagesINT;
         private static int curentPagesINT;
-
+        private bool IsOpenedCounder=false;
         public PDFView pdfView { get; set; }
-        public RelativeLayout BottomWrapper { get; set; }
+        public LinearLayout BottomWrapper { get; set; }
         public SeekBar seekBar { get; set; }
-        //public Button GoPageButton { get; set; }
-        //public EditText GoPagheText { get; set; }
         public TextView CurrentPage { get; set; }
         public TextView TotalPages { get; set; }
 
-        private Timer WhenMakeElementsInvisible;
+
+        private float diplayHeightvar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.read_book);
-                  
-         
-            GetPages();
+
+            diplayHeightvar = Resources.DisplayMetrics.HeightPixels; /// Resources.DisplayMetrics.Density;
+
             InitViews();
+            GetPages();
 
             //string url = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
 
             //BookView.LoadUrl(url);
+            /////pdfView.FromFile(file with pdf)
             // Create your application here
         }
 
-        private void InitViews()
+        private void GetPages()
         {
 
-
-            //GoPageButton.SetBackgroundColor(Android.Graphics.Color.Blue);
-            //GoPagheText.Text = "";
-            CurrentPage.Text =""+ curentPagesINT;
+            pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").Load();
+            CurrentPage.Text ="1"+ curentPagesINT;
             TotalPages.Text = "" + totalPagesINT;
+            seekBar.SetOnSeekBarChangeListener(this);
+
+            pdfView.Click -= WhenBookIsLoaded;
+            pdfView.Click += WhenBookIsLoaded;
         }
 
 
 
-        protected void GetPages()
+        protected void InitViews()
         {
 
             pdfView = FindViewById<PDFView>(Resource.Id.read_book_view);
-            BottomWrapper = FindViewById<RelativeLayout>(Resource.Id.bottomVrapperReadBook);
             seekBar = FindViewById<SeekBar>(Resource.Id.progressPage);
-            //GoPageButton = FindViewById<Button>(Resource.Id.goPageButton);
-            //GoPagheText = FindViewById<EditText>(Resource.Id.go_pageText);
             CurrentPage = FindViewById<TextView>(Resource.Id.curentPage);
             TotalPages = FindViewById<TextView>(Resource.Id.totalPages);
-
+            BottomWrapper = FindViewById<LinearLayout>(Resource.Id.pagewrapperCounter);
             ///load book into view 
-
-            pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").Load();
-            pdfView.Click -= WhenBookIsLoaded;
-            pdfView.Click += WhenBookIsLoaded;
-
-
-            seekBar.SetOnSeekBarChangeListener(this);
-            //GoPageButton.Click -= GoToLoadInputPage;
-            //GoPageButton.Click += GoToLoadInputPage;
+                      
           }
     
         private void WhenBookIsLoaded(object sender,EventArgs e)
         {
+            //if(IsOpenedCounder)
+            //{
+            //    Animation anim=AnimationUtils.LoadAnimation(this,Resource.Animation.top_to_bottom);
+            //    BottomWrapper.StartAnimation(anim);
+            //    IsOpenedCounder = false;
+            //}
+            //else
+            //{
+            //    Animation anim = AnimationUtils.LoadAnimation(this, Resource.Animation.bottom_to_top);
+            //    BottomWrapper.StartAnimation(anim);
+            //    IsOpenedCounder = true;
+            //}
+            if (IsOpenedCounder)
+            {
+                BottomWrapper.SetY(0);
+                IsOpenedCounder = false;
+            }
+            else
+            {
+                BottomWrapper.SetY(-100);
+                IsOpenedCounder = true;
+            }
+
+
             if (pdfView != null)
             {
                 curentPagesINT = pdfView.CurrentPage + 1;
@@ -104,55 +120,9 @@ namespace Droid.Page
             CurrentPage.Text = "" + curentPagesINT;
             TotalPages.Text = "" + totalPagesINT;
 
-            WhenMakeElementsInvisible = new Timer();
-            WhenMakeElementsInvisible.Interval = 4000;/// 4 sec
-            WhenMakeElementsInvisible.AutoReset = false;
-            WhenMakeElementsInvisible.Elapsed -= MakeInvisible_Visible;
-            WhenMakeElementsInvisible.Elapsed += MakeInvisible_Visible;
-            WhenMakeElementsInvisible.Start();
 
          }
 
-        private void MakeInvisible_Visible(object sender, EventArgs e)
-        {
-            //if(GoPageButton.Visibility == ViewStates.Visible)
-            //{
-            //    GoPageButton.Visibility = ViewStates.Invisible;
-            //}
-            //else
-            //{
-            //    GoPageButton.Visibility = ViewStates.Visible;
-            //    GoPageButton.SetBackgroundColor(Android.Graphics.Color.Blue);
-            //}
-
-        }
-
-
-
-        //private void GoToLoadInputPage(object sender,EventArgs e)
-        //{
-        //    if (pdfView != null)
-        //    {
-        //        curentPagesINT = pdfView.CurrentPage + 1;
-        //        totalPagesINT = pdfView.PageCount + 1;
-        //    }
-           
-        //    if(GoPagheText.Text!="")
-        //    {
-        //        var inpPage = Convert.ToInt32(GoPagheText.Text);
-        //        pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").DefaultPage(inpPage).Load();
-
-        //        curentPagesINT = pdfView.CurrentPage + 1;
-        //        totalPagesINT = pdfView.PageCount + 1;
-        //        CurrentPage.Text = "" + curentPagesINT;
-
-        //    }else{
-        //        TotalPages.Text = "" + totalPagesINT;
-        //        CurrentPage.Text = "" + curentPagesINT;
-
-        //    }
-        
-        //}
 
         public void OnProgressChanged(SeekBar seekBar, int progress, bool fromUser)
         {
@@ -164,6 +134,7 @@ namespace Droid.Page
         private async void GoPage(int progress)
         {
             pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").DefaultPage(progress).Load();
+            ///pdfView.FromFile
         }
 
         public void OnStartTrackingTouch(SeekBar seekBar)
