@@ -64,7 +64,7 @@ namespace Droid.Page
         {
 
             pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").Load();
-            CurrentPage.Text ="1"+ curentPagesINT;
+            CurrentPage.Text =""+ curentPagesINT;
             TotalPages.Text = "" + totalPagesINT;
             seekBar.SetOnSeekBarChangeListener(this);
 
@@ -107,7 +107,7 @@ namespace Droid.Page
             }
             else
             {
-                BottomWrapper.SetY(-100);
+                BottomWrapper.SetY(-160);
                 IsOpenedCounder = true;
             }
 
