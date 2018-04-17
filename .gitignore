@@ -1,3 +1,6 @@
 src/Droid/bin/Debug/
 src/Droid/obj/Debug/
 .vs/Thesis/v15/
+packages/
+src/Droid/bin/
+src/Droid/obj/
