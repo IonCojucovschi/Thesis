@@ -14,12 +14,11 @@ namespace Core.Helpers.Manager
         private readonly IRepositoryWithId<LocalBook> _LocalBookRep =
             Service.Instance.ServiceRepository.UnitOfWork.GetFeedRepository<LocalBook>();
 
-        public string parentDir = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//main root folder
+        //public string parentDir = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//main root folder
         public List<LocalBook> inFiles = new List<LocalBook>();
 
         public List<LocalBook> GetAllBooksListFromDevidce(File parentDir, string PathToParentDir)
         {
-            //List<Melody> inFiles = new List<Melody>();
             string[] fileNames = parentDir.List();
             foreach (string fileName in fileNames)
             {

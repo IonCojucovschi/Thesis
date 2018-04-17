@@ -13,6 +13,8 @@ using Android.Views;
 using Android.Widget;
 using Core.ViewModels.Library;
 using Droid.Page.Base;
+using Core.Helpers.Manager;
+using Java.IO;
 
 namespace Droid.Page
 {
@@ -27,8 +29,18 @@ namespace Droid.Page
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            LoadLocalBooks();
             // Create your application here
         }
+        LocalBooksManager bookManger=new LocalBooksManager();
+        string pathDIR = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//Android.App.Application.Context.FilesDir.AbsolutePath.ToString();
+        private void LoadLocalBooks()
+        {
+            var books = bookManger.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
+            string dir = "some text";
+        }
+
+
+
     }
 }
