@@ -322,6 +322,9 @@
     </Compile>
     <Compile Include="Page\Library\ReadBook.cs" />
     <Compile Include="Page\LocalBooks.cs" />
+    <Compile Include="Page\LocalBooks.designer.cs">
+      <DependentUpon>LocalBooks.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
@@ -343,17 +346,7 @@
     <AndroidResource Include="..\Core\Resources\Drawables\bg_dashboard.png">
       <Link>Resources\drawable-nodpi\bg_dashboard.png</Link>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\item_comunication.axml" />
-    <AndroidResource Include="Resources\layout\comunication.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\item_list_acount_footer.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\product.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\item_product_detail_list.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\item_product_underline.axml">
@@ -369,7 +362,6 @@
       <Link>Resources\drawable\PDF_status_ok.svg</Link>
     </AndroidResource>
     <None Include="FodyWeavers.xml" />
-    <AndroidResource Include="Resources\layout\item_product_document_list.axml" />
     <AndroidResource Include="Resources\layout\library.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -501,7 +493,6 @@
     <Folder Include="lib\x86\" />
     <Folder Include="Adapters\" />
     <Folder Include="Resources\Anim\">
-      <DependentUpon>Anim</DependentUpon>
     </Folder>
   </ItemGroup>
   <ItemGroup>
@@ -531,11 +522,6 @@
       <Project>{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}</Project>
       <Name>Int.Droid</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\item_part_contract.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\color.xml" />
