@@ -28,8 +28,8 @@ namespace Core.ViewModels.Library
             curenBook = BooksManager.Instance._curentBook;
             InitializeView();
         }
-
-        [CrossView]
+		
+		[CrossView]
         public IImage BookImage { get; set; }
 
         [CrossView]
@@ -128,13 +128,12 @@ namespace Core.ViewModels.Library
         }
         private void DownloadBook(object sender, EventArgs e)
         {
-            /////TO DO there must implemet code to download pdf filw
+            /////TO DO there must implemet code to download pdf file
             //var webClient = new WebClient();
             //string urlString = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
 
-            //var url = new Uri(urlString); // Html home page
-            //webClient.DownloadStringAsync(url);
-            this.GoPage(PageConstants.ReadContentBook);
+            string url = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
+            this.OpenLink(url);
         }
     }
 }

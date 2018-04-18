@@ -162,7 +162,7 @@ namespace Core.ViewModels.Base
 
         protected virtual void BackAction(object sender, EventArgs e)
         {
-            GoBack();
+                this.GoBack();
         }
 
         protected virtual void MenuAction(object sender, EventArgs e)

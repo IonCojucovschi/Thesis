@@ -63,7 +63,10 @@ namespace Droid.Page
         private void GetPages()
         {
 
-            pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").Load();
+            //pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").Load();
+            pdfView.FromFile(LocalBooksManager.Instance.CurentBook.FileContent).DefaultPage(LocalBooksManager.Instance.CurentBook.LastPage+1).Load();
+      
+
             CurrentPage.Text =""+ curentPagesINT;
             TotalPages.Text = "" + totalPagesINT;
             seekBar.SetOnSeekBarChangeListener(this);
@@ -133,8 +136,8 @@ namespace Droid.Page
         }
         private async void GoPage(int progress)
         {
-            pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").DefaultPage(progress).Load();
-            ///pdfView.FromFile
+            ///pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").DefaultPage(progress).Load();
+            pdfView.FromFile(LocalBooksManager.Instance.CurentBook.FileContent).DefaultPage(progress).Load();
         }
 
         public void OnStartTrackingTouch(SeekBar seekBar)

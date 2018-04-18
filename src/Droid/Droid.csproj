@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Droid</RootNamespace>
     <AssemblyName>Droid</AssemblyName>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -388,6 +388,7 @@
     <AndroidResource Include="Resources\drawable-nodpi\sanatate.png" />
     <AndroidResource Include="Resources\Anim\bottom_to_top.xml" />
     <AndroidResource Include="Resources\Anim\top_to_bottom.xml" />
+    <AndroidResource Include="Resources\layout\local_book_item_list.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />

@@ -30,6 +30,12 @@ namespace Droid.Page
 
             // Create your application here
         }
+
+        protected override void GoToBackActivity()
+        {
+            base.GoToBackActivity();
+            ModelView.GoBack();
+        }
     }
     public partial class CategoryBoocks
     {

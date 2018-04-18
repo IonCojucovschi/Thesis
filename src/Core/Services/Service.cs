@@ -75,6 +75,7 @@ namespace Core.Services
             ServiceViewModel.RegisterViewModel(new LibraryViewModel());
             ServiceViewModel.RegisterViewModel(new CategoryBooksViewModel());
             ServiceViewModel.RegisterViewModel(new BookDetailsViewModel());
+            ServiceViewModel.RegisterViewModel(new LocalBooksViewModel());
         }
     }
 }

@@ -41,7 +41,13 @@ namespace Droid.Page
                      .Into(BookImage);
             }
         }
-    }
+
+		protected override void GoToBackActivity()
+		{
+            base.GoToBackActivity();
+            ModelView.GoBack();
+		}
+	}
 
     public partial class BoockDetails
     {

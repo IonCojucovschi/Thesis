@@ -4,7 +4,7 @@ using Java.IO;
 
 namespace Core.Models.DAL.LocalBooks
 {
-    public class LocalBook : IBaseEntity
+    public class LocalBook : ILocalBook
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -14,7 +14,7 @@ namespace Core.Models.DAL.LocalBooks
         public string SomeInfo { get; set; }
     }
 
-    public interface ILocalBook
+    public interface ILocalBook:IBaseEntity
     {
         string Name { get; set; }
         int LastPage { get; set; }
