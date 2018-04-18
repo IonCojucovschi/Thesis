@@ -31,7 +31,7 @@ namespace Core.ViewModels.Library
         {
             base.UpdateData();
 
-
+            //if(LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR))
             List<LocalBook> books = LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
             CellModel = new LocalBooksCell(this);
 
