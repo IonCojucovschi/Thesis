@@ -24,7 +24,7 @@ namespace Core.ViewModels.Library
         public virtual ICrossCellViewHolder<LocalBook> CellModel { get; protected set; }
 
          
-        string pathDIR = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//Android.App.Application.Context.FilesDir.AbsolutePath.ToString();
+        string pathDIR = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;//Android.App.Application.Context.FilesDir.AbsolutePath.ToString();
 
 
         public override void UpdateData()

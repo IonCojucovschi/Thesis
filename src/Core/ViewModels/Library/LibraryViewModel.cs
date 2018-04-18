@@ -100,7 +100,7 @@ namespace Core.ViewModels.Library
                     QuantityText.SetFont(FontsConstant.MontserratLight, FontsConstant.Size15);
                     QuantityText.Text = model.quantity;
                 }
-                CellContentRootView.Tag=CategoryText.Text;
+                CellContentRootView.Tag=model.category;
                 CategoryImage?.SetImageFromResource(model.category.ToLowerInvariant());
             }
             private void InitViews()
@@ -108,11 +108,11 @@ namespace Core.ViewModels.Library
                CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
                ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
 
-                CellContentRootView.Click -= cellContentIsClucked;
-                CellContentRootView.Click += cellContentIsClucked;
+                CellContentRootView.Click -= CellContentIsClicked;
+                CellContentRootView.Click += CellContentIsClicked;
             }
 
-            private void cellContentIsClucked(object sender,EventArgs e)
+            private void CellContentIsClicked(object sender,EventArgs e)
             {
                 if (!((sender as IView)?.Tag is string categoryName)) return;
                
