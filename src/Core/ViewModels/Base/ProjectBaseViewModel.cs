@@ -1,4 +1,4 @@
-﻿//
+﻿
 
 using System;
 using Core.Helpers.Manager;

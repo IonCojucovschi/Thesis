@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{1D9B8820-DFB9-4334-A47D-2413116CF333}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Droid/Page/WantRead.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/ViewModels/Library/BookDetailsViewModel.cs">
     <Files>
       <File FileName="src/Droid/Page/LocalBooks.cs" Line="38" Column="27" />
       <File FileName="src/Core/ViewModels/Library/LocalBooksViewModel.cs" Line="35" Column="103" />
@@ -19,11 +19,16 @@
       <File FileName="src/Droid/Page/Library/BoockDetails.cs" Line="45" Column="3" />
       <File FileName="src/Droid/Page/Library/CategoryBoocks.cs" Line="34" Column="9" />
       <File FileName="src/Droid/Page/Contact.cs" Line="1" Column="1" />
-      <File FileName="src/Droid/Page/Dashboard.cs" Line="1" Column="1" />
-      <File FileName="src/Droid/Page/Login.cs" Line="1" Column="1" />
-      <File FileName="src/Droid/Page/Splash.cs" Line="1" Column="1" />
-      <File FileName="src/Droid/Page/UserAddedBooks.cs" Line="1" Column="1" />
-      <File FileName="src/Droid/Page/WantRead.cs" Line="1" Column="1" />
+      <File FileName="src/Droid/Page/Dashboard.cs" Line="18" Column="10" />
+      <File FileName="src/Droid/Page/Login.cs" Line="14" Column="31" />
+      <File FileName="src/Droid/Page/Splash.cs" Line="20" Column="2" />
+      <File FileName="src/Droid/Page/UserAddedBooks.cs" Line="24" Column="27" />
+      <File FileName="src/Droid/Page/WantRead.cs" Line="24" Column="22" />
+      <File FileName="src/Droid/Page/Account/Account.cs" Line="1" Column="1" />
+      <File FileName="src/Droid/Page/Account/AccountDescriptions.cs" Line="1" Column="1" />
+      <File FileName="src/Droid/Page/Base/BasePage.cs" Line="1" Column="1" />
+      <File FileName="src/Droid/Page/Base/NavigationBasePage.cs" Line="1" Column="1" />
+      <File FileName="src/Core/ViewModels/Library/ReadBookViewModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
