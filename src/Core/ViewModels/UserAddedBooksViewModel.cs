@@ -21,7 +21,7 @@ namespace Core.ViewModels
 {
     public class UserAddedBooksViewModel : ProjectNavigationBaseViewModel
     {
-        protected override string HeaderText => RDetailItems.ComunicationHeaderText.ToUpperInvariant();
+        protected override string HeaderText => "Am adaugat".ToUpperInvariant();
         protected override HeaderAreaActionType HeaderAreaAction => HeaderAreaActionType.RightSideMenu;
 
 

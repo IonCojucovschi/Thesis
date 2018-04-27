@@ -15,7 +15,7 @@ namespace Core.Services.RealServices
                 new MenuItem {Name = Dashboard, ClickArgument = PageConstants.DashboardName},
                 new MenuItem{Name=Library,ClickArgument=PageConstants.LibraryName},
                 new MenuItem {Name = BibliotecaMea, ClickArgument = PageConstants.WantReadCon},
-                new MenuItem {Name = Comunication, ClickArgument = PageConstants.UserAddedBooksCon},
+                new MenuItem {Name = DownloadedBooks, ClickArgument = PageConstants.DowloandedBooks},
                 new MenuItem {Name = Account, ClickArgument = PageConstants.AccountName},
                 new MenuItem {Name = Contacts, ClickArgument = PageConstants.ContactName}
             };
@@ -24,7 +24,7 @@ namespace Core.Services.RealServices
         private string Dashboard => RMenu.Dashboard;
         private string Contacts => "Contacte";//RMenu.Contacts;
         private string BibliotecaMea => "Vreau sa citesc";///RMenu.Products;
-        private string Comunication => "Am Adaugat";//RMenu.Comunication;
+        private string DownloadedBooks => "Carti descarcate";//RMenu.Comunication;
         private string Account => "Contul Meu";///RMenu.Account;
 
 

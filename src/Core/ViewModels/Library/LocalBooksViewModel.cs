@@ -18,7 +18,7 @@ namespace Core.ViewModels.Library
     public class LocalBooksViewModel: ProjectNavigationBaseViewModel
     {
         protected override string HeaderText => "Carti Descarcate";
-        protected override HeaderAreaActionType HeaderAreaAction => HeaderAreaActionType.LeftBack;
+        protected override HeaderAreaActionType HeaderAreaAction => HeaderAreaActionType.RightSideMenu;
         public List<LocalBook> localBooksList;
 
         public virtual ICrossCellViewHolder<LocalBook> CellModel { get; protected set; }
@@ -30,9 +30,14 @@ namespace Core.ViewModels.Library
         public override void UpdateData()
         {
             base.UpdateData();
-
-            //if(LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR))
-            List<LocalBook> books = LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
+            List<LocalBook> books;
+            if(LocalBooksManager.Instance.inFiles.Count ==0)
+            {
+                 books = LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
+            }else
+            {
+                books = LocalBooksManager.Instance.inFiles;
+            }
             CellModel = new LocalBooksCell(this);
 
             ListView?.UpdateDataSource(books); 
