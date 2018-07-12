@@ -10,6 +10,7 @@ using Android.Views;
 using Com.Bumptech.Glide;
 using Core.Services;
 using Core.Helpers.Manager;
+using Com.Bumptech.Glide.Request;
 
 namespace Droid.Page
 {
@@ -37,7 +38,7 @@ namespace Droid.Page
                 string download_imageurl = RestConstants.BaseUrl + BooksManager.Instance._curentBook.image_linq;
                 Glide.With(this)
                      .Load(download_imageurl)
-                     .FitCenter()
+                     .Apply(RequestOptions.FitCenterTransform())
                      .Into(BookImage);
             }
         }
