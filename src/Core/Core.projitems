@@ -42,6 +42,9 @@
     <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\CategoryBooks\" />
     <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\LocalBooks\">
     </Folder>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Repository\Book\">
+      <DependentUpon>Book</DependentUpon>
+    </Folder>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\Contacts\IItemContact.cs" />
@@ -114,6 +117,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Manager\LocalBooksManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DAL\LocalBooks\LocalBook.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Library\LocalBooksViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Repository\Book\LocalBookRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\Locales\en\en.txt" />

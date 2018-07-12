@@ -136,6 +136,9 @@ namespace Droid.Page
         }
         private async void GoPage(int progress)
         {
+            var itm = LocalBooksManager.Instance.CurentBook;
+            itm.LastPage = curentPagesINT;
+            LocalBooksManager.Instance.UpdateLocalBook(itm);
             ///pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").DefaultPage(progress).Load();
             pdfView.FromFile(LocalBooksManager.Instance.CurentBook.FileContent).DefaultPage(progress).Load();
         }

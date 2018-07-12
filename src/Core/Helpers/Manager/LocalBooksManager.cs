@@ -11,8 +11,8 @@ namespace Core.Helpers.Manager
 {
     public class LocalBooksManager:Singleton<LocalBooksManager>
     {
-        //private readonly IRepositoryWithId<LocalBook> _LocalBookRep =
-             //Service.Instance.ServiceRepository.UnitOfWork.GetFeedRepository<LocalBook>();
+        private readonly IRepositoryWithId<LocalBook> _LocalBookRep =
+             Service.Instance.ServiceRepository.UnitOfWork.GetFeedRepository<LocalBook>();
 
         //public string parentDir = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//main root folder
         public List<LocalBook> inFiles = new List<LocalBook>();
@@ -25,20 +25,20 @@ namespace Core.Helpers.Manager
             {
                 if (fileName.ToLower().EndsWith(".pdf"))
                 {
-                    inFiles.Add(new LocalBook
+                    //inFiles.Add(new LocalBook
+                    //{ Id=BookCounter,
+                    //    Name = fileName,
+                    //    FileContent = new File(parentDir.Path + "/" + fileName),
+                    //    PathFile = parentDir.Path + "/" + fileName,
+                    //});
+                    //BookCounter++;
+                    ///with dataBase
+                    AddBook(new LocalBook
                     { Id=BookCounter,
                         Name = fileName,
                         FileContent = new File(parentDir.Path + "/" + fileName),
                         PathFile = parentDir.Path + "/" + fileName,
                     });
-                    BookCounter++;
-                    ///with dataBase
-                    //AddLocalBook(new LocalBook
-                    //{ 
-                    //    Name = fileName,
-                    //    FileContent = new File(parentDir.Path + "/" + fileName),
-                    //    PathFile = parentDir.Path + "/" + fileName,
-                    //});
                 }
                 else
                 {
@@ -57,29 +57,38 @@ namespace Core.Helpers.Manager
             CurentBook = inFiles.Where(bk=>bk.Id==id).FirstOrDefault();
         }
 
+        public void UpdateLocalBook(LocalBook book)
+        {
+            var itm=inFiles.Where(it => it.Id == book.Id).Select(boo=>boo).FirstOrDefault();
+            itm.LastPage = book.LastPage;
 
+            _LocalBookRep.GetById(book.Id).LastPage = book.LastPage;    
+        }
 
+        public void AddBook(LocalBook bok)
+        {
+            _LocalBookRep.Add(bok);
+        }
 
-        //public void AddLocalBook(LocalBook book)
-        //{
-        //    _LocalBookRep.Add(book);
-        //}
+        public List<LocalBook> GetAllBookcsFromDB()
+        {
+            inFiles = _LocalBookRep.GetAll().ToList();
+            return inFiles;
+        }
 
-        //public void RemoveLocalBoock(LocalBook book)
-        //{
-        //    _LocalBookRep.Remove(book);
-        //}
-        //public void ClearAllLocalBooks()
-        //{
-        //    _LocalBookRep.RemoveAll();
-        //}
-        //public LocalBook GetBookById(int id)
-        //{
-        //    return _LocalBookRep.GetById(id);
-        //}
-        //public List<LocalBook> GetAllBookcsFromDB()
-        //{
-        //    return _LocalBookRep.GetAll().ToList();
-        //}
+       
+        public void RemoveLocalBoock(LocalBook book)
+        {
+            _LocalBookRep.Remove(book);
+        }
+        public void ClearAllLocalBooks()
+        {
+            _LocalBookRep.RemoveAll();
+        }
+        public LocalBook GetBookById(int id)
+        {
+            return _LocalBookRep.GetById(id);
+        }
+
     }
 }

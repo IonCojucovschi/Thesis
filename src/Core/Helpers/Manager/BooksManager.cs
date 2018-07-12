@@ -5,6 +5,7 @@ using Core.Services.MockServices.Interfaces;
 using Int.Core.Network.Singleton;
 using Splat;
 using System.Linq;
+using Int.Core.Data.Repository.Akavache.Contract;
 
 namespace Core.Helpers.Manager
 {
@@ -22,7 +23,6 @@ namespace Core.Helpers.Manager
         Locator.Current.GetService<IBooksService>(App.Instance.IsMock
                                                   ? App.ServiceContractMock
                                                   : App.ServiceContract);
-
 
 
 

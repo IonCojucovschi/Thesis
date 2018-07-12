@@ -25,6 +25,8 @@
 // THE SOFTWARE.
 
 using Core.Models.DAL;
+using Core.Models.DAL.LocalBooks;
+using Core.Services.Repository.Book;
 using Core.Services.Repository.User;
 using Core.ViewModels;
 using Core.ViewModels.Account;
@@ -40,6 +42,7 @@ namespace Core.Services
         #region Repository
 
         private readonly IRepository<UserModel> _userData = new UserRepository();
+        private readonly IRepository<LocalBook> _localBook = new LocalBookRepository();
 
         #endregion
 
@@ -54,6 +57,7 @@ namespace Core.Services
         private void AddRepository()
         {
             ServiceRepository.UnitOfWork.Add(typeof(UserModel), _userData);
+            ServiceRepository.UnitOfWork.Add(typeof(LocalBook), _localBook);
         }
 
         private void RegisterViewModel()
