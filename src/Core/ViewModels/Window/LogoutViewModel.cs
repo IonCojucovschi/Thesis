@@ -25,6 +25,7 @@ using System.Threading;
 using Core.Extensions;
 using Core.Helpers;
 using Core.Helpers.Manager;
+using Core.Models.DAL;
 using Core.Resources.Colors;
 using Core.Resources.Drawables;
 using Core.Resources.Locales.Page;
@@ -123,7 +124,7 @@ namespace Core.ViewModels.Window
         {
             Show();
             this.GoPage(PageConstants.LoginName);
-
+            UserManager.Instance.UpdateUser(new UserModel(){Remember=true});
             //ThreadPool.QueueUserWorkItem(_ =>
                 //UserManager.Instance.Logout(obj =>
                 //{
