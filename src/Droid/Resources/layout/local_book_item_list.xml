@@ -10,7 +10,7 @@
         android:id="@+id/cell_root_view"
         android:orientation="horizontal"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/margin_60_in_dp"
         android:layout_weight="9"
         android:weightSum="10">
         <TextView
