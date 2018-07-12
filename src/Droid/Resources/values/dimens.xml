@@ -26,4 +26,32 @@
   <dimen name="list_product_vertical_gap">10dp</dimen>
   <dimen name="list_product_separator_space">6dp</dimen>
   <dimen name="product_item_height">73dp</dimen>
+
+          <!--Dimens with hints -->
+    <dimen name="margin_2_in_dp">2dp</dimen>
+    <dimen name="margin_5_in_dp">5dp</dimen>
+    <dimen name="margin_8_in_dp">8dp</dimen>
+    <dimen name="margin_10_in_dp">10dp</dimen>
+    <dimen name="margin_13_in_dp">13dp</dimen>
+    <dimen name="margin_15_in_dp">15dp</dimen>
+    <dimen name="margin_20_in_dp">20dp</dimen>
+    <dimen name="margin_24_in_dp">24dp</dimen>
+    <dimen name="margin_30_in_dp">30dp</dimen>
+    <dimen name="margin_36_in_dp">36dp</dimen>
+    <dimen name="margin_50_in_dp">50dp</dimen>
+    <dimen name="margin_60_in_dp">60dp</dimen>
+    <dimen name="margin_70_in_dp">70dp</dimen>
+    <dimen name="margin_80_in_dp">80dp</dimen>
+    <dimen name="margin_100_in_dp">100dp</dimen>
+    <dimen name="margin_120_in_dp">120dp</dimen>
+    <dimen name="margin_150_in_dp">150dp</dimen>
+    <dimen name="margin_180_in_dp">180dp</dimen>
+    <dimen name="margin_200_in_dp">200dp</dimen>
+    <dimen name="margin_210_in_dp">210dp</dimen>
+    <dimen name="margin_230_in_dp">230dp</dimen>
+    <dimen name="margin_250_in_dp">250dp</dimen>
+
+
+
+    
 </resources>
