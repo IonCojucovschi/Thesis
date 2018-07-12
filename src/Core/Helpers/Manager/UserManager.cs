@@ -71,8 +71,11 @@ namespace Core.Helpers.Manager
 
         public bool IsRememberMe()
         {
-            return !CurrentUser().IsNull() &&
-                   ((UserModel)CurrentUser()).Remember;
+            bool tm=false;
+            UserModel user = ((UserModel)CurrentUser());
+            if (CurrentUser() != null)
+                tm = ((UserModel)CurrentUser()).Remember;
+            return tm;
         }
 
         private List<ItemAccount> _account;

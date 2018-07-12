@@ -13,7 +13,7 @@ namespace Core.Helpers
         public static string DashboardName => nameof(Dashboard);
         public static string AccountName => nameof(Account);
         public static string AccountDescriptionsName => nameof(AccountDescriptions);
-        public static string ContactName => nameof(LocalBooks);
+        public static string ContactName => nameof(Contact);
 
 
         public static string UserAddedBooksCon =>nameof(UserAddedBooks);
@@ -21,7 +21,7 @@ namespace Core.Helpers
         public static string LibraryName => nameof(Library_base);
         public static string BooksCategory => nameof(CategoryBoocks);
         public static string DetailBook => nameof(BoockDetails);
-        public static string ReadContentBook => nameof(Contact);
+        public static string ReadContentBook => nameof(ReadBook);
         public static string DowloandedBooks => nameof(LocalBooks);
     }
 }

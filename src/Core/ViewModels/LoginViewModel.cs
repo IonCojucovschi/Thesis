@@ -131,10 +131,10 @@ namespace Core.ViewModels
             {
                 if (UserManager.Instance.IsRememberMe())
                 {
-                    if (EmailTextView != null)
-                        EmailTextView.Text = ConcreteCurrentUser?.Username;
-                    PasswordTextView.Text = ConcreteCurrentUser?.Password;
+                    if(EmailTextView!=null)EmailTextView.Text = ConcreteCurrentUser?.Username;
+                        PasswordTextView.Text = ConcreteCurrentUser?.Password;
                 }
+                UserModel temp = ConcreteCurrentUser;
 
                 PasswordTextView.Hint = PasswordHint;
                 PasswordTextView.SetTextColor(ColorConstants.TextGreyColor);
@@ -215,6 +215,9 @@ namespace Core.ViewModels
                 return;
             }
 
+            UserModel usr= UserManager.Instance.CurrentUser() as UserModel;
+            if (usr.active == 1 && usr.Remember) { this.GoPage(PageConstants.DashboardName); return; }
+
             UserManager.Instance.UpdateUser(new UserModel
             {
                 Username = EmailTextView.Text,
@@ -222,11 +225,11 @@ namespace Core.ViewModels
                 Remember = UserManager.Instance.IsRememberMe()
             });
 
-            ///Show();
+            Show();
 
             ThreadPool.QueueUserWorkItem(_ =>
             {
-                UserModel usr=new UserModel();
+                //usr=new UserModel();
                 UserManager.Instance.Login(obj =>
                 {
                     Hide();

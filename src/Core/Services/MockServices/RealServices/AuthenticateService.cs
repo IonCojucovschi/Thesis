@@ -30,7 +30,9 @@ namespace Core.Services.RealServices
                 }));
             response.OnResponse(() =>
             {
-               UserManager.Instance.UpdateUser(response.Data);
+                var tmp = response.Data;
+                tmp.Remember = UserManager.Instance.IsRememberMe();
+               UserManager.Instance.UpdateUser(tmp);
                 ///SetToken();
                 success?.Invoke("Success!");
             }, exception => {

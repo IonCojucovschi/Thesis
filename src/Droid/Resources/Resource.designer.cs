@@ -2216,6 +2216,72 @@ namespace Droid
 			// aapt resource value: 0x7f0a0078
 			public const int list_vertical_gap = 2131361912;
 			
+			// aapt resource value: 0x7f0a009c
+			public const int margin_100_in_dp = 2131361948;
+			
+			// aapt resource value: 0x7f0a0091
+			public const int margin_10_in_dp = 2131361937;
+			
+			// aapt resource value: 0x7f0a009d
+			public const int margin_120_in_dp = 2131361949;
+			
+			// aapt resource value: 0x7f0a0092
+			public const int margin_13_in_dp = 2131361938;
+			
+			// aapt resource value: 0x7f0a009e
+			public const int margin_150_in_dp = 2131361950;
+			
+			// aapt resource value: 0x7f0a0093
+			public const int margin_15_in_dp = 2131361939;
+			
+			// aapt resource value: 0x7f0a009f
+			public const int margin_180_in_dp = 2131361951;
+			
+			// aapt resource value: 0x7f0a00a0
+			public const int margin_200_in_dp = 2131361952;
+			
+			// aapt resource value: 0x7f0a0094
+			public const int margin_20_in_dp = 2131361940;
+			
+			// aapt resource value: 0x7f0a00a1
+			public const int margin_210_in_dp = 2131361953;
+			
+			// aapt resource value: 0x7f0a00a2
+			public const int margin_230_in_dp = 2131361954;
+			
+			// aapt resource value: 0x7f0a0095
+			public const int margin_24_in_dp = 2131361941;
+			
+			// aapt resource value: 0x7f0a00a3
+			public const int margin_250_in_dp = 2131361955;
+			
+			// aapt resource value: 0x7f0a008e
+			public const int margin_2_in_dp = 2131361934;
+			
+			// aapt resource value: 0x7f0a0096
+			public const int margin_30_in_dp = 2131361942;
+			
+			// aapt resource value: 0x7f0a0097
+			public const int margin_36_in_dp = 2131361943;
+			
+			// aapt resource value: 0x7f0a0098
+			public const int margin_50_in_dp = 2131361944;
+			
+			// aapt resource value: 0x7f0a008f
+			public const int margin_5_in_dp = 2131361935;
+			
+			// aapt resource value: 0x7f0a0099
+			public const int margin_60_in_dp = 2131361945;
+			
+			// aapt resource value: 0x7f0a009a
+			public const int margin_70_in_dp = 2131361946;
+			
+			// aapt resource value: 0x7f0a009b
+			public const int margin_80_in_dp = 2131361947;
+			
+			// aapt resource value: 0x7f0a0090
+			public const int margin_8_in_dp = 2131361936;
+			
 			// aapt resource value: 0x7f0a0085
 			public const int margin_dash = 2131361925;
 			
