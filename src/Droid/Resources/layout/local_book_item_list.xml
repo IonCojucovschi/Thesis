@@ -3,7 +3,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
+    android:padding="@dimen/margin_10_in_dp"
     android:weightSum="10"
     android:gravity="center">
     <LinearLayout
@@ -19,7 +19,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/margin_10_in_dp"
             android:gravity="center_vertical" />
         <TextView
             android:layout_height="match_parent"

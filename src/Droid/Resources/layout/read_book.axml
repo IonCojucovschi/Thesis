@@ -8,12 +8,12 @@
         android:layout_height="match_parent"
         android:id="@+id/read_book_view" />
     <LinearLayout
-        android:paddingTop="10dp"
+        android:paddingTop="@dimen/margin_10_in_dp"
         android:layout_alignParentTop="true"
         android:background="#0055bd"
         android:id="@+id/pagewrapperCounter"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/margin_60_in_dp"
         android:orientation="vertical">
         <SeekBar
             android:id="@+id/progressPage"

@@ -124,14 +124,7 @@ namespace Core.ViewModels.Window
         {
             Show();
             this.GoPage(PageConstants.LoginName);
-            UserManager.Instance.UpdateUser(new UserModel(){Remember=true});
-            //ThreadPool.QueueUserWorkItem(_ =>
-                //UserManager.Instance.Logout(obj =>
-                //{
-                //    Hide();
-                //    CurrentPopupWindow?.Close();
-                //    this.GoPage(PageConstants.LoginName);
-                //}, message => ShowError(message)));
+            UserManager.Instance.UpdateUser(new UserModel(){Remember=true});      
         }
 
         private void LabelNo_Click(object sender, EventArgs e)

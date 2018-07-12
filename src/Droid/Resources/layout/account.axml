@@ -60,7 +60,7 @@
             <Space
                 android:id="@+id/space2"
                 android:layout_width="match_parent"
-                android:layout_height="24dp" />
+                android:layout_height="@dimen/margin_24_in_dp" />
         </RelativeLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -71,13 +71,13 @@
             <TextView
                 android:id="@+id/button_change_password"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="@dimen/margin_50_in_dp"
                 android:layout_weight="300"
                 android:gravity="center" />
         </LinearLayout>
         <Space
             android:id="@+id/space3"
             android:layout_width="match_parent"
-            android:layout_height="24dp" />
+            android:layout_height="@dimen/margin_24_in_dp" />
     </LinearLayout>
 </ScrollView>

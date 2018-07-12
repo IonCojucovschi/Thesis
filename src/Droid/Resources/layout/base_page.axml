@@ -83,7 +83,7 @@
 <!-- Side Menu -->
     <FrameLayout
         android:id="@+id/side_menu_root_view"
-        android:layout_width="240dp"
+        android:layout_width="@dimen/margin_230_in_dp"
         android:layout_height="match_parent"
         android:layout_gravity="start">
         <ImageView

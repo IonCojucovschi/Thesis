@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <LinearLayout
-        android:padding="5dp"
+        android:padding="@dimen/margin_5_in_dp"
         android:id="@+id/detail_item_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="5dp">
+        android:layout_margin="@dimen/margin_5_in_dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/margin_200_in_dp"
             android:orientation="horizontal"
             android:id="@+id/image_wrapper"
             android:weightSum="10">
@@ -28,22 +28,22 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/margin_10_in_dp"
                     android:id="@+id/download_book"
                     android:text="Download"
-                    android:padding="4dp"
+                    android:padding="@dimen/margin_5_in_dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:background="@android:color/holo_green_light"
-                    android:layout_marginBottom="20dp" />
+                    android:layout_marginBottom="@dimen/margin_20_in_dp" />
                 <TextView
                     android:id="@+id/read_book"
                     android:text="Citeste"
-                    android:padding="4dp"
+                    android:padding="@dimen/margin_5_in_dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:background="@android:color/holo_green_light"
-                    android:layout_marginBottom="10dp" />
+                    android:layout_marginBottom="@dimen/margin_10_in_dp" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
