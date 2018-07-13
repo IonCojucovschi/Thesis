@@ -51,14 +51,14 @@ namespace Core.ViewModels
                 new ItemContact
                 {
                     Label = Consultant,
-                    Value = ConcreteCurrentUser.Name+" "+ConcreteCurrentUser.Surname,
-                    ContactType = ContactType.None,
+                    Value ="UST - ITI" ,///ConcreteCurrentUser.Name+" "+ConcreteCurrentUser.Surname,
+            ContactType = ContactType.None,
                     ContactActivity = ""
                 },
                 new ItemContact
                 {
                     Label = GreenNumber,
-                    Value = "079-227-743",
+                    Value = "022-747-919",
                     ContactActivity = Call,
                     ContactType = ContactType.Phone
                 }

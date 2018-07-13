@@ -396,6 +396,7 @@
     <AndroidResource Include="Resources\Anim\bottom_to_top.xml" />
     <AndroidResource Include="Resources\Anim\top_to_bottom.xml" />
     <AndroidResource Include="Resources\layout\local_book_item_list.xml" />
+    <AndroidResource Include="Resources\layout\local_books_view.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />

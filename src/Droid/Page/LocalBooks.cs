@@ -29,7 +29,7 @@ namespace Droid.Page
         Theme = "@style/AppTheme")]
     public partial class LocalBooks : NavigationBasePage<LocalBooksViewModel>
     {
-        protected override int LayoutContentResource =>Resource.Layout.category_books_view;
+        protected override int LayoutContentResource =>Resource.Layout.local_books_view;
 
         protected override void InitViews()
         {
@@ -38,12 +38,9 @@ namespace Droid.Page
             LoadLocalBooks();
             // Create your application here
         }
-        //LocalBooksManager bookManger=new LocalBooksManager();
         string pathDIR = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//Android.App.Application.Context.FilesDir.AbsolutePath.ToString();
         private void LoadLocalBooks()
         {
-           // var books = bookManger.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
-            //var booksFromDB = bookManger.GetAllBookcsFromDB();
             ListView.SetAdapter(ComponentAdapterRecyclerFactory.CreateAdapter((inflater, parent) =>
                                                                               new LocalBooksCellViewHolder(inflater,
                                               parent,

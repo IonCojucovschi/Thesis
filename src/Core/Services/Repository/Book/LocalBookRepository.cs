@@ -5,7 +5,7 @@ namespace Core.Services.Repository.Book
 {
     public class LocalBookRepository:FeedRepository<LocalBook>
     {
-        public LocalBookRepository() : base(TypeRepository.InMemory)
+        public LocalBookRepository() : base(TypeRepository.UserAccount)
         {
         }
     }

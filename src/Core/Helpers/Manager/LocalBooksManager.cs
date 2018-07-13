@@ -11,10 +11,10 @@ namespace Core.Helpers.Manager
 {
     public class LocalBooksManager:Singleton<LocalBooksManager>
     {
-        private readonly IRepositoryWithId<LocalBook> _LocalBookRep =
+        private IRepositoryWithId<LocalBook> _LocalBookRep =
              Service.Instance.ServiceRepository.UnitOfWork.GetFeedRepository<LocalBook>();
 
-        //public string parentDir = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//main root folder
+        public string parentDir = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath.ToString();//main root folder
         public List<LocalBook> inFiles = new List<LocalBook>();
         public LocalBook CurentBook;
         private int BookCounter=0;
@@ -25,18 +25,12 @@ namespace Core.Helpers.Manager
             {
                 if (fileName.ToLower().EndsWith(".pdf"))
                 {
-                    //inFiles.Add(new LocalBook
-                    //{ Id=BookCounter,
-                    //    Name = fileName,
-                    //    FileContent = new File(parentDir.Path + "/" + fileName),
-                    //    PathFile = parentDir.Path + "/" + fileName,
-                    //});
-                    //BookCounter++;
+                   BookCounter++;
                     ///with dataBase
                     AddBook(new LocalBook
                     { Id=BookCounter,
                         Name = fileName,
-                        FileContent = new File(parentDir.Path + "/" + fileName),
+                        ///FileContent = new File(parentDir.Path + "/" + fileName),
                         PathFile = parentDir.Path + "/" + fileName,
                     });
                 }
@@ -59,10 +53,19 @@ namespace Core.Helpers.Manager
 
         public void UpdateLocalBook(LocalBook book)
         {
-            var itm=inFiles.Where(it => it.Id == book.Id).Select(boo=>boo).FirstOrDefault();
-            itm.LastPage = book.LastPage;
-
-            _LocalBookRep.GetById(book.Id).LastPage = book.LastPage;    
+            List<LocalBook> wevDb = new List<LocalBook>();
+            foreach(var itm in inFiles)
+            {
+                if(itm.Id==book.Id)
+                {
+                    wevDb.Add(book);
+                }else
+                {
+                    wevDb.Add(itm);
+                }
+            }
+            _LocalBookRep.RemoveAll();
+            _LocalBookRep.Add(wevDb);
         }
 
         public void AddBook(LocalBook bok)
@@ -76,6 +79,11 @@ namespace Core.Helpers.Manager
             return inFiles;
         }
 
+        public void RefreshBookDB()
+        {
+            _LocalBookRep.RemoveAll();
+            List<LocalBook> listbook=GetAllBooksListFromDevidce(new File(parentDir),parentDir);
+        }
        
         public void RemoveLocalBoock(LocalBook book)
         {

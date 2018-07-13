@@ -31,12 +31,13 @@ namespace Core.ViewModels.Library
         {
             base.UpdateData();
             List<LocalBook> books;
-            if(LocalBooksManager.Instance.GetAllBookcsFromDB().Count ==0)
+            if(LocalBooksManager.Instance.GetAllBookcsFromDB().Count == 0)
             {
                  books = LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
+                books = LocalBooksManager.Instance.GetAllBookcsFromDB();
             }else
             {
-                books = LocalBooksManager.Instance.inFiles;
+                books = LocalBooksManager.Instance.GetAllBookcsFromDB();
             }
             CellModel = new LocalBooksCell(this);
 
@@ -47,10 +48,51 @@ namespace Core.ViewModels.Library
         [CrossView]
         public IListView ListView { get; protected set; }
 
+        [CrossView]
+        public IText RefreshButton { get; set; }
+
+        [CrossView]
+        public IText DeleteButton { get; set; }
+
+
         private void InitializeView()
         {
+            if(RefreshButton!=null)
+            {
+                RefreshButton.Text = "Improspateaza"; 
+                RefreshButton.SetTextColor(ColorConstants.WhiteColor);
+                RefreshButton.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+                RefreshButton.SetBackgroundColor(ColorConstants.BlueColor, type: RadiusType.Aspect);
+
+                RefreshButton.Click -= RefreshClicked;
+                RefreshButton.Click += RefreshClicked;
+            }
+
+            if(DeleteButton!=null)
+            {
+                DeleteButton.Text = "Sterge";
+                DeleteButton.SetTextColor(ColorConstants.WhiteColor);
+                DeleteButton.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
+                DeleteButton.SetBackgroundColor(ColorConstants.BlueColor, type: RadiusType.Aspect);
+
+                DeleteButton.Click -= DeleteClicked;
+                DeleteButton.Click += DeleteClicked;
+            }
+
+
+
+
         }
 
+        private void RefreshClicked(object o,EventArgs e)
+        {
+            LocalBooksManager.Instance.RefreshBookDB();
+        }
+
+        private void DeleteClicked(object o, EventArgs e)
+        {
+            LocalBooksManager.Instance.ClearAllLocalBooks();
+        }
 
         #region cell binding
 

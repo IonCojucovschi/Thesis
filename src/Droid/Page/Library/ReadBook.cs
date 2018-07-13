@@ -23,6 +23,7 @@ using System.Timers;
 using Android.Support.V7.App;
 using static Android.Widget.SeekBar;
 using Android.Views.Animations;
+using Java.IO;
 
 namespace Droid.Page
 {
@@ -64,12 +65,13 @@ namespace Droid.Page
         {
 
             //pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").Load();
-            pdfView.FromFile(LocalBooksManager.Instance.CurentBook.FileContent).DefaultPage(LocalBooksManager.Instance.CurentBook.LastPage+1).Load();
-      
+            // pdfView.FromFile(new File(LocalBooksManager.Instance.CurentBook.PathFile)).DefaultPage(LocalBooksManager.Instance.CurentBook.LastPage+1).Load();
+            GoPage(LocalBooksManager.Instance.CurentBook.LastPage + 1);
 
             CurrentPage.Text =""+ curentPagesINT;
             TotalPages.Text = "" + totalPagesINT;
             seekBar.SetOnSeekBarChangeListener(this);
+            seekBar.SetProgress(LocalBooksManager.Instance.CurentBook.LastPage + 1,true);
 
             pdfView.Click -= WhenBookIsLoaded;
             pdfView.Click += WhenBookIsLoaded;
@@ -139,8 +141,7 @@ namespace Droid.Page
             var itm = LocalBooksManager.Instance.CurentBook;
             itm.LastPage = curentPagesINT;
             LocalBooksManager.Instance.UpdateLocalBook(itm);
-            ///pdfView.FromAsset("Jamie_McGuire_-_Fericirea_mea_esti_tu.pdf").DefaultPage(progress).Load();
-            pdfView.FromFile(LocalBooksManager.Instance.CurentBook.FileContent).DefaultPage(progress).Load();
+            pdfView.FromFile(new File(LocalBooksManager.Instance.CurentBook.PathFile)).DefaultPage(progress).Load();
         }
 
         public void OnStartTrackingTouch(SeekBar seekBar)

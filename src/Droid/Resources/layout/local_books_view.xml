@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Int.Droid.Factories.Adapter.RecyclerView.BaseRecyclerView
+        android:id="@+id/category_list"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="90" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <TextView
+            android:id="@+id/improspateaza_lista"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:layout_marginTop="@dimen/margin_5_in_dp"
+            android:layout_marginBottom="@dimen/margin_5_in_dp"
+            android:text="Improspateaza" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+        <TextView
+            android:id="@+id/sterge_lista"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:layout_marginTop="@dimen/margin_5_in_dp"
+            android:layout_marginBottom="@dimen/margin_5_in_dp"
+            android:text="Sterge" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+    </LinearLayout>
+</LinearLayout>
