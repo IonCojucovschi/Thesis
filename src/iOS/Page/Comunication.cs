@@ -14,21 +14,21 @@ namespace iOS.Storyboard
     public partial class Comunication : BasePageSideMenu<UserAddedBooksViewModel>
     {
 
-        private ComponentViewSource<IItemComunication> _source;
+        //private ComponentViewSource<IItemComunication> _source;
         public Comunication(IntPtr handle) : base(handle) { }
 
         protected override void BindViews()
         {
             base.BindViews();
 
-            _source = ComponentViewSourceFactory.CreateForTable(nameof(ComunicationCell),
-                                                                new List<IItemComunication>(),
-                                                                TableView,
-                                                                crossCellModel:
-                                                                new UserAddedBooksViewModel.ComunicationCell(ModelView));
+            //_source = ComponentViewSourceFactory.CreateForTable(nameof(ComunicationCell),
+            //                                                    new List<IItemComunication>(),
+            //                                                    TableView,
+            //                                                    crossCellModel:
+            //                                                    new UserAddedBooksViewModel.ComunicationCell(ModelView));
 
-            TableView.Source = _source;
-            _source.AutoResize();
+            //TableView.Source = _source;
+            //_source.AutoResize();
         }
     }
 

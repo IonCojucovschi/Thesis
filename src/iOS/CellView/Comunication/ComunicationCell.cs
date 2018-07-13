@@ -9,17 +9,17 @@ using UIKit;
 
 namespace iOS.Storyboard
 {
-    public partial class ComunicationCell : ComponentTableViewCell<IItemComunication>
-    {
-        public ComunicationCell(IntPtr handle) : base(handle) { }
+    //public partial class ComunicationCell : ComponentTableViewCell<IItemComunication>
+    //{
+    //    public ComunicationCell(IntPtr handle) : base(handle) { }
 
-        [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.CellContentRootView))]
-        UIView propname1 => viewMain;
+    //    [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.CellContentRootView))]
+    //    UIView propname1 => viewMain;
 
-        [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.ComunicationText))]
-        UILabel propname2 => lblContent;
+    //    [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.ComunicationText))]
+    //    UILabel propname2 => lblContent;
 
-        [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.ComunicationDate))]
-        UITextField propname3 => lblDate;
-    }
+    //    [CrossView(nameof(UserAddedBooksViewModel.ComunicationCell.ComunicationDate))]
+    //    UITextField propname3 => lblDate;
+    //}
 }

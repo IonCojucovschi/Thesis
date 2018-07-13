@@ -7,17 +7,17 @@ using UIKit;
 
 namespace iOS.Storyboard
 {
-    public partial class ProductHeaderCell : UIExpandableTableViewHeaderCell<IItemProducts>
-    {
-        public ProductHeaderCell(IntPtr handle) : base(handle) { }
+    //public partial class ProductHeaderCell : UIExpandableTableViewHeaderCell<IItemProducts>
+    //{
+    //    public ProductHeaderCell(IntPtr handle) : base(handle) { }
 
-        public UILabel ProductName => lblName;
-        public UILabel ProductCode => lblValue;
-        public UIImageView ImageArrow => imgArrow;
+    //    public UILabel ProductName => lblName;
+    //    public UILabel ProductCode => lblValue;
+    //    public UIImageView ImageArrow => imgArrow;
 
-        public UIView ViewCell => viewCell;
-        public UIView ViewLineCell => viewLineHeader;
+    //    public UIView ViewCell => viewCell;
+    //    public UIView ViewLineCell => viewLineHeader;
 
-        public UIView FooterView => viewLastView;
-    }
+    //    public UIView FooterView => viewLastView;
+    //}
 }

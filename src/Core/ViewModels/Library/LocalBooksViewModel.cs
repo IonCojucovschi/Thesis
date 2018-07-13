@@ -11,7 +11,7 @@ using Int.Core.Application.Widget.Contract;
 using Int.Core.Application.Widget.Contract.Table;
 using Int.Core.Application.Widget.Contract.Table.Adapter;
 using Int.Core.Wrappers.Widget.CrossViewInjection;
-using Java.IO;
+////using Java.IO;
 
 namespace Core.ViewModels.Library
 {
@@ -24,21 +24,21 @@ namespace Core.ViewModels.Library
         public virtual ICrossCellViewHolder<LocalBook> CellModel { get; protected set; }
 
          
-        string pathDIR = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;//Android.App.Application.Context.FilesDir.AbsolutePath.ToString();
+       // string pathDIR = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;//Android.App.Application.Context.FilesDir.AbsolutePath.ToString();
 
 
         public override void UpdateData()
         {
             base.UpdateData();
-            List<LocalBook> books;
-            if(LocalBooksManager.Instance.GetAllBookcsFromDB().Count == 0)
-            {
-                 books = LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
-                books = LocalBooksManager.Instance.GetAllBookcsFromDB();
-            }else
-            {
-                books = LocalBooksManager.Instance.GetAllBookcsFromDB();
-            }
+            List<LocalBook> books=new List<LocalBook>();
+            //if(LocalBooksManager.Instance.GetAllBookcsFromDB().Count == 0)
+            //{
+            //     books = LocalBooksManager.Instance.GetAllBooksListFromDevidce(new File(pathDIR), pathDIR);
+            //    books = LocalBooksManager.Instance.GetAllBookcsFromDB();
+            //}else
+            //{
+            //    books = LocalBooksManager.Instance.GetAllBookcsFromDB();
+            //}
             CellModel = new LocalBooksCell(this);
 
             ListView?.UpdateDataSource(books); 
@@ -86,12 +86,12 @@ namespace Core.ViewModels.Library
 
         private void RefreshClicked(object o,EventArgs e)
         {
-            LocalBooksManager.Instance.RefreshBookDB();
+           // LocalBooksManager.Instance.RefreshBookDB();
         }
 
         private void DeleteClicked(object o, EventArgs e)
         {
-            LocalBooksManager.Instance.ClearAllLocalBooks();
+            //LocalBooksManager.Instance.ClearAllLocalBooks();
         }
 
         #region cell binding
@@ -146,9 +146,9 @@ namespace Core.ViewModels.Library
             private void CellContentIsClicked(object sender, EventArgs e)
             {
                 if (!((sender as IView)?.Tag is int bookCurentID)) return;
-                LocalBooksManager.Instance.GetCurentBook(bookCurentID);
+               // LocalBooksManager.Instance.GetCurentBook(bookCurentID);
 
-                _baseViewModel.GoPage(PageConstants.ReadContentBook);
+               // _baseViewModel.GoPage(PageConstants.ReadContentBook);
             }
 
         }

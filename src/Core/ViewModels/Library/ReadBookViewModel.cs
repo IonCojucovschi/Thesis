@@ -13,7 +13,7 @@ using Core.Helpers;
 using Core.Resources.Drawables;
 using Core.Extensions;
 using System.Threading;
-using Com.Bumptech.Glide;
+///using Com.Bumptech.Glide;
 using Core.Services;
 namespace Core.ViewModels.Library
 {

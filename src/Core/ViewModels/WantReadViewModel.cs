@@ -170,7 +170,7 @@ namespace Core.ViewModels
                 if (!((sender as IView)?.Tag is int BookID)) return;
 
                 var categ = BooksManager.Instance.GetOneBook(BookID);
-                _baseViewModel.GoPage(PageConstants.DetailBook);
+                //_baseViewModel.GoPage(PageConstants.DetailBook);
             }
         }
 

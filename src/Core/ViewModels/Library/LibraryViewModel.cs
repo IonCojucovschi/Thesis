@@ -117,7 +117,7 @@ namespace Core.ViewModels.Library
                 if (!((sender as IView)?.Tag is string categoryName)) return;
                
                 var categ=BooksManager.Instance.GetOneCategory(categoryName);
-                _baseViewModel.GoPage(PageConstants.BooksCategory);
+               // _baseViewModel.GoPage(PageConstants.BooksCategory);
             }
         }
 

@@ -7,18 +7,18 @@ using UIKit;
 
 namespace iOS.Storyboard
 {
-    public partial class ProductChildCell : ComponentTableViewCell<IProduct>
-    {
-        public ProductChildCell(IntPtr handle) : base(handle) { }
+    //public partial class ProductChildCell : ComponentTableViewCell<IProduct>
+    //{
+    //    public ProductChildCell(IntPtr handle) : base(handle) { }
 
-        public UILabel ProducDocName => lblName;
-        public UILabel ProductDocValue => lblValue;
+    //    public UILabel ProducDocName => lblName;
+    //    public UILabel ProductDocValue => lblValue;
 
-        public UIImageView ImagePdf => imgPdf;
-        public UILabel PdfValue => lblPdf;
+    //    public UIImageView ImagePdf => imgPdf;
+    //    public UILabel PdfValue => lblPdf;
 
-        public UIView ViewCell => viewCellChild;
-        public UIView ViewLineCell => viewLineDoc;
+    //    public UIView ViewCell => viewCellChild;
+    //    public UIView ViewLineCell => viewLineDoc;
 
-    }
+    //}
 }

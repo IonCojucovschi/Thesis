@@ -3,7 +3,7 @@
 using System;
 using iOS.Page.BasePage;
 using Core.ViewModels;
-using iOS.CellView.Document;
+//using iOS.CellView.Document;
 using Core.Models.DAL;
 using Int.iOS.Factories.Adapter.V2.ExpandableSource;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace iOS.Storyboard
 {
     public partial class Product : BasePageSideMenu<WantReadViewModel>
     {
-        private ProductSource _source;
+  //      private ProductSource _source;
 
         public Product(IntPtr handle) : base(handle) { }
 
@@ -20,8 +20,8 @@ namespace iOS.Storyboard
         {
             base.BindViews();
 
-            _source = new ProductSource(TableView, new List<IItemProducts>());
-            TableView.Source = _source;
+            //_source = new ProductSource(TableView, new List<IItemProducts>());
+            //TableView.Source = _source;
         }
 
         protected override void HandlerViews()
@@ -31,25 +31,25 @@ namespace iOS.Storyboard
             ModelView.PropertyChanged -= ModelView_PropertyChanged;
             ModelView.PropertyChanged += ModelView_PropertyChanged;
 
-            _source.ParentRowClicked -= _source_ParentRowClicked;
-            _source.ParentRowClicked += _source_ParentRowClicked;
+            //_source.ParentRowClicked -= _source_ParentRowClicked;
+            //_source.ParentRowClicked += _source_ParentRowClicked;
         }
 
-        private void _source_ParentRowClicked(object sender, RowParentClickEventArgs<IItemProducts> e)
-        {
-            ((ItemProducts)e.Model).Expanded = true;
-            TableView.ReloadData();
-        }
+        //private void _source_ParentRowClicked(object sender, RowParentClickEventArgs<IItemProducts> e)
+        //{
+        //    //((ItemProducts)e.Model).Expanded = true;
+        //    //TableView.ReloadData();
+        //}
 
         private void SetAdapterData()
         {
-            _source.UpdateDataSource(ModelView.ListData);
+            //_source.UpdateDataSource(ModelView.ListData);
         }
 
         private void ModelView_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (e.PropertyName == nameof(ModelView.ListData))
-                SetAdapterData();
+            //if (e.PropertyName == nameof(ModelView.ListData))
+                //SetAdapterData();
         }
     }
 }

@@ -13,8 +13,8 @@ using Core.Helpers;
 using Core.Resources.Drawables;
 using Core.Extensions;
 using System.Threading;
-using Com.Bumptech.Glide;
 using Core.Services;
+//using Com.Bumptech.Glide;
 
 namespace Core.ViewModels.Library
 {
@@ -142,7 +142,7 @@ namespace Core.ViewModels.Library
                 if (!((sender as IView)?.Tag is int BookID)) return;
 
                 var categ = BooksManager.Instance.GetOneBook(BookID);
-                _baseViewModel.GoPage(PageConstants.DetailBook);
+                ///_baseViewModel.GoPage(PageConstants.DetailBook);
             }
         }
 
