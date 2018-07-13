@@ -1,32 +1,41 @@
 ﻿<Properties StartupConfiguration="{9F9DA645-8438-4B9D-A89B-1CB03595F208}|Default">
-  <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/ViewModels/WantReadViewModel.cs">
+  <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Page/Account/Account.cs">
     <Files>
-      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="145" Column="20" />
-      <File FileName="src/Core/ViewModels/Library/ReadBookViewModel.cs" Line="16" Column="4" />
-      <File FileName="src/Core/Helpers/Manager/LocalBooksManager.cs" Line="103" Column="1" />
-      <File FileName="src/Core/Models/DAL/LocalBooks/LocalBook.cs" Line="3" Column="5" />
-      <File FileName="src/Core/ViewModels/Library/LocalBooksViewModel.cs" Line="151" Column="18" />
-      <File FileName="src/iOS/CellView/Product/ProductSource.cs" Line="157" Column="1" />
-      <File FileName="src/iOS/Page/Product.cs" Line="42" Column="12" />
-      <File FileName="src/iOS/Page/Comunication.cs" Line="31" Column="16" />
-      <File FileName="src/iOS/CellView/Comunication/ComunicationCell.cs" Line="24" Column="8" />
-      <File FileName="src/iOS/CellView/Product/ProductChildCell.cs" Line="23" Column="8" />
-      <File FileName="src/iOS/CellView/Product/ProductHeaderCell.cs" Line="22" Column="8" />
-      <File FileName="src/Core/Helpers/PageConstants.cs" Line="25" Column="9" />
-      <File FileName="src/Core/Services/MockServices/RealServices/MenuService.cs" Line="18" Column="104" />
-      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="120" Column="18" />
-      <File FileName="src/Core/ViewModels/UserAddedBooksViewModel.cs" Line="146" Column="20" />
-      <File FileName="src/Core/ViewModels/WantReadViewModel.cs" Line="173" Column="19" />
+      <File FileName="src/iOS/Page/Dashboard.cs" Line="9" Column="25" />
+      <File FileName="src/iOS/Page/BasePage/BasePageSideMenu.cs" Line="1" Column="1" />
+      <File FileName="src/Core/ViewModels/Base/ProjectNavigationBaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Account/Account.cs" Line="24" Column="62" />
+      <File FileName="src/Core/ViewModels/Account/AccountViewModel.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Storyboard/Main.storyboard" />
+      <File FileName="src/iOS/Page/Librarys/Library.designer.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Helpers/PageConstants.cs" Line="21" Column="61" />
+      <File FileName="src/Core/Services/MockServices/RealServices/MenuService.cs" Line="31" Column="31" />
+      <File FileName="src/iOS/Page/Account/Account.designer.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Account/AccountDescriptions.cs" Line="43" Column="1" />
+      <File FileName="src/iOS/Page/Librarys/Library.cs" Line="21" Column="62" />
+      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="19" Column="34" />
+      <File FileName="src/iOS/CellView/AccountCell.cs" Line="21" Column="1" />
+      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.cs" Line="18" Column="1" />
+      <File FileName="src/iOS/CellView/AccountCell.designer.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Views/Cell/Account/AccountSaveData.cs" Line="37" Column="16" />
+      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.designer.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/BasePage/BasePage.cs" Line="45" Column="39" />
+      <File FileName="../Core/Int.iOS/Factories/Adapter/ComponentViewSourceFactory.cs" Line="46" Column="46" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Application.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.4df1efa97c4e5fa7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Core/Int.Core/Data/Repository/Akavache/RxFeedRepository.cs" line="73" column="23" />
-      <Breakpoint file="/Users/bss/Documents/Projects/Thesis/src/Core/Helpers/Manager/LocalBooksManager.cs" relfile="src/Core/Helpers/Manager/LocalBooksManager.cs" line="103" column="1" />
-      <Breakpoint file="/Users/bss/Documents/Projects/Thesis/src/iOS/CellView/Product/ProductSource.cs" relfile="src/iOS/CellView/Product/ProductSource.cs" line="78" column="71" />
+      <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Thesis/src/Core/Helpers/Manager/LocalBooksManager.cs" relfile="src/Core/Helpers/Manager/LocalBooksManager.cs" line="103" column="1" />
+      <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Thesis/src/iOS/CellView/Product/ProductSource.cs" relfile="src/iOS/CellView/Product/ProductSource.cs" line="78" column="71" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

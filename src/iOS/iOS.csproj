@@ -241,6 +241,12 @@
     </Folder>
     <Folder Include="CellView\Product\">
     </Folder>
+    <Folder Include="Page\Librarys\">
+      <DependentUpon>Librarys</DependentUpon>
+    </Folder>
+    <Folder Include="Views\Cell\Library\">
+      <DependentUpon>Library</DependentUpon>
+    </Folder>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Storyboard\Main.storyboard" />
@@ -349,6 +355,14 @@
       <DependentUpon>ProductHeaderCell.cs</DependentUpon>
     </Compile>
     <Compile Include="CellView\Product\ProductSource.cs" />
+    <Compile Include="Page\Librarys\Library.cs" />
+    <Compile Include="Page\Librarys\Library.designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cell\Library\CategoryCell.cs" />
+    <Compile Include="Views\Cell\Library\CategoryCell.designer.cs">
+      <DependentUpon>CategoryCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-Bold.ttf" />

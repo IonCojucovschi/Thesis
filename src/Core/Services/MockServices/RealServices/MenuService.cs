@@ -13,7 +13,7 @@ namespace Core.Services.RealServices
             Items = new List<IItemMenu>
             {
                 new MenuItem {Name = Dashboard, ClickArgument = PageConstants.DashboardName},
-                //new MenuItem{Name=Library,ClickArgument=PageConstants.LibraryName},
+                new MenuItem{Name=Library,ClickArgument=PageConstants.LibraryName},
                 //new MenuItem {Name = BibliotecaMea, ClickArgument = PageConstants.WantReadCon},
                 //new MenuItem {Name = DownloadedBooks, ClickArgument = PageConstants.DowloandedBooks},
                 new MenuItem {Name = Account, ClickArgument = PageConstants.AccountName},
