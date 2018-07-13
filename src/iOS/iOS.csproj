@@ -83,6 +83,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <CodesignProvision>VS: com.bss.energiaspaclient Development</CodesignProvision>
+<LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -217,45 +218,19 @@
     <ImageAsset Include="Assets.xcassets\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ItunesArtwork%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_ic_launcher.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_1ic_launcher.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_2ic_launcher.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_3ic_launcher.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_4ic_launcher.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_ic2_launcer-compressor.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_1ic2_launcer-compressor.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_2ic2_launcer-compressor.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_3ic2_launcer-compressor.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ic2_launcer-compressor.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_4ic2_launcer-compressor.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\rsz_5ic2_launcer-compressor.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />

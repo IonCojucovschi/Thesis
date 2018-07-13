@@ -1,109 +1,104 @@
 {
   "images": [
     {
-      "filename": "Icon-App-20x20@2x.png",
+      "filename": "rsz_ic_launcher.png",
       "size": "20x20",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-20x20@3x.png",
+      "filename": "rsz_1ic_launcher.png",
       "size": "20x20",
       "scale": "3x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-29x29@2x.png",
+      "filename": "rsz_2ic_launcher.png",
       "size": "29x29",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-29x29@3x.png",
+      "filename": "rsz_3ic_launcher.png",
       "size": "29x29",
       "scale": "3x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-40x40@2x.png",
+      "filename": "rsz_4ic_launcher.png",
       "size": "40x40",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-40x40@3x.png",
+      "filename": "rsz_ic2_launcer-compressor.png",
       "size": "40x40",
       "scale": "3x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-40x40@3x.png",
+      "filename": "rsz_ic2_launcer-compressor.png",
       "size": "60x60",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-60x60@3x.png",
+      "filename": "rsz_1ic2_launcer-compressor.png",
       "size": "60x60",
       "scale": "3x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-App-20x20@1x.png",
+      "filename": "rsz_2ic2_launcer-compressor.png",
       "size": "20x20",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-20x20@2x.png",
+      "filename": "rsz_3ic2_launcer-compressor.png",
       "size": "20x20",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-29x29@1x.png",
+      "filename": "rsz_4ic2_launcer-compressor.png",
       "size": "29x29",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-29x29@2x.png",
+      "filename": "rsz_5ic2_launcer-compressor.png",
       "size": "29x29",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-20x20@2x.png",
       "size": "40x40",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-40x40@2x.png",
       "size": "40x40",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-83.5x83.5@2x.png",
       "size": "83.5x83.5",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-76x76@1x.png",
       "size": "76x76",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-App-76x76@2x.png",
       "size": "76x76",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
-      "filename": "ItunesArtwork@2x.png",
+      "filename": "ic2_launcer-compressor.png",
       "size": "1024x1024",
       "scale": "1x",
       "idiom": "ios-marketing"
@@ -136,7 +131,7 @@
     },
     {
       "role": "appLauncher",
-      "filename": "Icon-App-40x40@2x.png",
+      "filename": "rsz_4ic_launcher.png",
       "size": "40x40",
       "subtype": "38mm",
       "scale": "2x",

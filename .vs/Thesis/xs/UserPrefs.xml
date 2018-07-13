@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{9F9DA645-8438-4B9D-A89B-1CB03595F208}|Default">
-  <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" />
+  <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" automaticSigning="False" />
   <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/ViewModels/WantReadViewModel.cs">
     <Files>
       <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="145" Column="20" />
