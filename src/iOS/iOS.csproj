@@ -242,10 +242,8 @@
     <Folder Include="CellView\Product\">
     </Folder>
     <Folder Include="Page\Librarys\">
-      <DependentUpon>Librarys</DependentUpon>
     </Folder>
     <Folder Include="Views\Cell\Library\">
-      <DependentUpon>Library</DependentUpon>
     </Folder>
   </ItemGroup>
   <ItemGroup>
@@ -467,6 +465,41 @@
     <BundleResource Include="..\Core\Resources\Drawables\PDF_status_ok.svg">
       <Link>Resources\PDF_status_ok.svg</Link>
     </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\sanatate.png">
+      <Link>Resources\sanatate.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\programare.png">
+      <Link>Resources\programare.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\politica.png">
+      <Link>Resources\politica.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\istorice.png">
+      <Link>Resources\istorice.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\horor.png">
+      <Link>Resources\horor.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\fantastice.png">
+      <Link>Resources\fantastice.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\elevi.png">
+      <Link>Resources\elevi.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\dragoste.png">
+      <Link>Resources\dragoste.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\detective.png">
+      <Link>Resources\detective.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\copii.png">
+      <Link>Resources\copii.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\ReadAbook\src\Core\Resources\Drawables\bucatarie.png">
+      <Link>Resources\bucatarie.png</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\toate.png" />
+    <BundleResource Include="Resources\autoformar.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Int.Core\Int.Core.csproj">

@@ -43,7 +43,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Models\DAL\LocalBooks\">
     </Folder>
     <Folder Include="$(MSBuildThisFileDirectory)Services\Repository\Book\">
-      <DependentUpon>Book</DependentUpon>
     </Folder>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +159,7 @@
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\bucatarie.png" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\politica.png" />
     <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\programare.png" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\Drawables\toate.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Resources\Fonts\Montserrat-Bold.otf" />
