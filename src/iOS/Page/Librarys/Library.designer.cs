@@ -15,7 +15,6 @@ namespace iOS.Storyboard
     partial class Library
     {
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView tableLibrary { get; set; }
 
         void ReleaseDesignerOutlets ()

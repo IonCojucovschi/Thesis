@@ -8,7 +8,7 @@ using UIKit;
 
 namespace iOS
 {
-    public partial class CategoryCell : ComponentTableViewCell<CategoryContent>
+    public partial class CategoryCell : ComponentTableViewCell<ICategoryContent>
     {
         public CategoryCell (IntPtr handle) : base (handle){}
 

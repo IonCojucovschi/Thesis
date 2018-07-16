@@ -8,8 +8,6 @@ using System;
 using System.Collections.Generic;
 using UIKit;
 
-using static Core.ViewModels.Library.LibraryViewModel;
-
 namespace iOS.Storyboard
 {
     public partial class Library : BasePageSideMenu<LibraryViewModel>
@@ -19,10 +17,12 @@ namespace iOS.Storyboard
         protected override void BindViews()
         {
             base.BindViews();
-            var sourceYour = ComponentViewSourceFactory.CreateForTable(nameof(LibraryCell),
+            var sourceYour = ComponentViewSourceFactory.CreateForTable(nameof(CategoryCell),
                                                                        new List<ICategoryContent>(),
                                                                        tableLibrary,
                                                                        crossCellModel: new LibraryViewModel.LibraryCell(ModelView));
+
+            tableLibrary.Source = sourceYour;
         }
     }
 

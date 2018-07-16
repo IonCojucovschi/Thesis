@@ -15,19 +15,15 @@ namespace iOS
     partial class CategoryCell
     {
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView categoryImage { get; set; }
 
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel categoryName { get; set; }
 
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel categoryQantity { get; set; }
 
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView Root { get; set; }
 
         void ReleaseDesignerOutlets ()
