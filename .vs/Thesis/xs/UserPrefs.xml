@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{9F9DA645-8438-4B9D-A89B-1CB03595F208}|Default">
   <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Storyboard/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Page/Comunication.cs">
     <Files>
-      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.cs" Line="11" Column="33" />
-      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="67" Column="1" />
-      <File FileName="src/iOS/Page/Librarys/Library.cs" Line="23" Column="95" />
-      <File FileName="src/Core/ViewModels/Account/AccountViewModel.cs" Line="106" Column="86" />
-      <File FileName="src/iOS/Page/Account/Account.cs" Line="33" Column="46" />
-      <File FileName="src/iOS/Page/Comunication.cs" Line="17" Column="66" />
+      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.cs" Line="1" Column="1" />
+      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Librarys/Library.cs" Line="1" Column="1" />
+      <File FileName="src/Core/ViewModels/Account/AccountViewModel.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Account/Account.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Comunication.cs" Line="1" Column="1" />
       <File FileName="src/iOS/CellView/Comunication/ComunicationCell.cs" Line="1" Column="1" />
       <File FileName="src/iOS/CellView/Comunication/ComunicationCell.designer.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/CellView/AccountCell.cs" Line="12" Column="26" />
-      <File FileName="../Core/Int.iOS/Factories/Activity/ComponentViewController.cs" Line="110" Column="1" />
-      <File FileName="../Core/Int.iOS/Factories/Activity/ComponentMVVMViewController.cs" Line="30" Column="1" />
+      <File FileName="src/iOS/CellView/AccountCell.cs" Line="1" Column="1" />
+      <File FileName="../Core/Int.iOS/Factories/Activity/ComponentViewController.cs" Line="1" Column="1" />
+      <File FileName="../Core/Int.iOS/Factories/Activity/ComponentMVVMViewController.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Views/Cell/Library/CategoryCell.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/CellView/ContactCell.cs" Line="1" Column="1" />
       <File FileName="src/iOS/CellView/ContactCell.designer.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/Librarys/Library.designer.cs" Line="20" Column="39" />
+      <File FileName="src/iOS/Page/Librarys/Library.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Storyboard/Main.storyboard" />
+      <File FileName="src/iOS/Page/Dashboard.designer.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Contact.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -27,8 +29,6 @@
       <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Core/Int.Core/Data/Repository/Akavache/RxFeedRepository.cs" line="73" column="23" />
       <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Thesis/src/Core/Helpers/Manager/LocalBooksManager.cs" relfile="src/Core/Helpers/Manager/LocalBooksManager.cs" line="103" column="1" />
       <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Thesis/src/iOS/CellView/Product/ProductSource.cs" relfile="src/iOS/CellView/Product/ProductSource.cs" line="78" column="71" />
-      <Breakpoint file="/Users/bss/Documents/Projects/Thesis/src/iOS/Page/Librarys/Library.cs" relfile="src/iOS/Page/Librarys/Library.cs" line="25" column="41" />
-      <Breakpoint file="/Users/bss/Documents/Projects/Thesis/src/Core/ViewModels/Library/LibraryViewModel.cs" relfile="src/Core/ViewModels/Library/LibraryViewModel.cs" line="66" column="11" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
