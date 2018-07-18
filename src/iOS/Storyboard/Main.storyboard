@@ -108,7 +108,7 @@
                                 <rect key="frame" x="19" y="343" width="337.5" height="49"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13T-dq-o1q">
-                                        <rect key="frame" x="20" y="15.5" width="297.5" height="18"/>
+                                        <rect key="frame" x="20" y="16" width="297.5" height="18"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -444,13 +444,13 @@
                         <viewControllerLayoutGuide type="bottom" id="4mp-Ct-j0J"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hYZ-zR-f6E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="66"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ES-wj-K4I">
-                                <rect key="frame" x="275" y="0.0" width="100" height="66.5"/>
+                                <rect key="frame" x="274" y="0.0" width="100" height="66.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbn-Rv-H2d">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbn-Rv-H2d" misplaced="YES">
                                         <rect key="frame" x="53" y="20" width="27" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rbn-Rv-H2d" secondAttribute="height" multiplier="1:1" id="cvW-cl-APN"/>
@@ -473,7 +473,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b63-Mp-PvZ">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="66.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C3a-0L-Uc0">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C3a-0L-Uc0" misplaced="YES">
                                         <rect key="frame" x="20" y="20" width="27" height="27"/>
                                     </imageView>
                                 </subviews>
@@ -512,7 +512,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLx-t8-a6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1404" y="-244"/>
+            <point key="canvasLocation" x="1332" y="178"/>
         </scene>
         <!--Account Descriptions-->
         <scene sceneID="ZZa-LM-xGC">
@@ -1172,13 +1172,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1070">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4231">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="66"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="bDf-id-j4W" kind="embed" id="4433"/>
+                                </connections>
+                            </containerView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="1071">
-                                <rect key="frame" x="0.0" y="73" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="73" width="375" height="700"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.69019607843137254" green="0.69019607843137254" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1194,10 +1196,12 @@
                                                     <rect key="frame" x="15" y="5" width="346" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="bg_image.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1077" layoutMarginsFollowReadableWidth="YES">
-                                                            <rect key="frame" x="10" y="20" width="60" height="60"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <directionalEdgeInsets key="directionalLayoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="1077">
+                                                            <rect key="frame" x="0.0" y="20" width="60" height="60"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                            </accessibility>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1078">
                                                             <rect key="frame" x="90" y="40" width="178" height="21"/>
@@ -1221,9 +1225,9 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="Root" destination="1076" id="name-outlet-1076"/>
-                                            <outlet property="categoryImage" destination="1077" id="name-outlet-1077"/>
                                             <outlet property="categoryName" destination="1078" id="name-outlet-1078"/>
                                             <outlet property="categoryQantity" destination="1079" id="name-outlet-1079"/>
+                                            <outlet property="categoryImage" destination="1077" id="name-outlet-1077"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1237,7 +1241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1057" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1611" y="77"/>
+            <point key="canvasLocation" x="1825" y="227"/>
         </scene>
     </scenes>
     <resources>
@@ -1245,6 +1249,6 @@
         <image name="logo_png.png" width="666" height="130"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xv6-ae-w3D"/>
+        <segue reference="4433"/>
     </inferredMetricsTieBreakers>
 </document>
