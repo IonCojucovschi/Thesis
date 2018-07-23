@@ -19,23 +19,15 @@ namespace iOS
 
         [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.AuthorText))]
         UILabel prrop1 => authorName;
+
         [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.DetailText))]
         UILabel prrop2 => detailsButton;
+
         [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.TitleText))]
         UILabel prrop3 => bookName;
+
         [CrossView(nameof(CategoryBooksViewModel.CategoryBookCell.BookImage))]
         UIImageView prrop4 => bookImage;
-        //[CrossWiew()]
-        //UILabel prop1=bookname
-
-
-
-
-
-
-
-
-
 
     }
 }

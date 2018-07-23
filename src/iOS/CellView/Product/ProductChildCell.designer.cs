@@ -38,35 +38,6 @@ namespace iOS.Storyboard
 
         void ReleaseDesignerOutlets ()
         {
-            if (imgPdf != null) {
-                imgPdf.Dispose ();
-                imgPdf = null;
-            }
-
-            if (lblName != null) {
-                lblName.Dispose ();
-                lblName = null;
-            }
-
-            if (lblPdf != null) {
-                lblPdf.Dispose ();
-                lblPdf = null;
-            }
-
-            if (lblValue != null) {
-                lblValue.Dispose ();
-                lblValue = null;
-            }
-
-            if (viewCellChild != null) {
-                viewCellChild.Dispose ();
-                viewCellChild = null;
-            }
-
-            if (viewLineDoc != null) {
-                viewLineDoc.Dispose ();
-                viewLineDoc = null;
-            }
         }
     }
 }
