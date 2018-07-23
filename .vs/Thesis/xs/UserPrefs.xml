@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{9F9DA645-8438-4B9D-A89B-1CB03595F208}|Default">
   <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/ViewModels/Base/ProjectNavigationBaseViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Storyboard/Main.storyboard">
     <Files>
       <File FileName="src/iOS/Storyboard/Main.storyboard" />
       <File FileName="src/iOS/Page/Librarys/CategoryBoocks.cs" Line="13" Column="72" />
       <File FileName="src/iOS/Page/Librarys/Library.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="23" Column="1" />
+      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="39" Column="1" />
       <File FileName="src/iOS/Page/Librarys/Library.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Page/Librarys/CategoryBoocks.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Views/Cell/Library/CategoryCell.cs" Line="1" Column="1" />
@@ -14,7 +14,7 @@
       <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="120" Column="17" />
       <File FileName="src/iOS/Views/Cell/Library/CategoryCell.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Views/Cell/Library/BookCell.designer.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ViewModels/Base/ProjectNavigationBaseViewModel.cs" Line="101" Column="1" />
+      <File FileName="src/Core/ViewModels/Base/ProjectNavigationBaseViewModel.cs" Line="49" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -24,7 +24,6 @@
       <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Core/Int.Core/Data/Repository/Akavache/RxFeedRepository.cs" line="73" column="23" />
       <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Thesis/src/Core/Helpers/Manager/LocalBooksManager.cs" relfile="src/Core/Helpers/Manager/LocalBooksManager.cs" line="103" column="1" />
       <Breakpoint enabled="false" file="/Users/bss/Documents/Projects/Thesis/src/iOS/CellView/Product/ProductSource.cs" relfile="src/iOS/CellView/Product/ProductSource.cs" line="78" column="71" />
-      <Breakpoint file="/Users/bss/Documents/Projects/Thesis/src/Core/ViewModels/Library/CategoryBooksViewModel.cs" relfile="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" line="23" column="79" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
