@@ -1,26 +1,18 @@
 ﻿<Properties StartupConfiguration="{9F9DA645-8438-4B9D-A89B-1CB03595F208}|Default">
   <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Storyboard/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Page/Librarys/Library.cs">
     <Files>
-      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/Librarys/Library.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ViewModels/Account/AccountViewModel.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/Account/Account.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/Comunication.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/CellView/Comunication/ComunicationCell.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/CellView/Comunication/ComunicationCell.designer.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/CellView/AccountCell.cs" Line="29" Column="1" />
-      <File FileName="../Core/Int.iOS/Factories/Activity/ComponentViewController.cs" Line="1" Column="1" />
-      <File FileName="../Core/Int.iOS/Factories/Activity/ComponentMVVMViewController.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.designer.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/CellView/ContactCell.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/CellView/ContactCell.designer.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/Librarys/Library.designer.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/Dashboard.designer.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/Contact.cs" Line="1" Column="1" />
-      <File FileName="src/iOS/Page/BasePage/HeaderPage.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Storyboard/Main.storyboard" />
+      <File FileName="src/iOS/Page/Librarys/CategoryBoocks.cs" Line="26" Column="10" />
+      <File FileName="src/iOS/Page/Librarys/Library.cs" Line="20" Column="82" />
+      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="21" Column="18" />
+      <File FileName="src/iOS/Page/Librarys/Library.designer.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Librarys/CategoryBoocks.designer.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.cs" Line="15" Column="1" />
+      <File FileName="src/iOS/Views/Cell/Library/BookCell.cs" Line="12" Column="65" />
+      <File FileName="src/Core/Helpers/PageConstants.cs" Line="10" Column="25" />
+      <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="120" Column="17" />
+      <File FileName="src/iOS/Views/Cell/Library/CategoryCell.designer.cs" Line="15" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

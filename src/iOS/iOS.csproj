@@ -361,6 +361,14 @@
     <Compile Include="Views\Cell\Library\CategoryCell.designer.cs">
       <DependentUpon>CategoryCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page\Librarys\CategoryBoocks.cs" />
+    <Compile Include="Page\Librarys\CategoryBoocks.designer.cs">
+      <DependentUpon>CategoryBoocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cell\Library\BookCell.cs" />
+    <Compile Include="Views\Cell\Library\BookCell.designer.cs">
+      <DependentUpon>BookCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Remove="..\Core\Resources\Fonts\MuktaMalar-Bold.ttf" />

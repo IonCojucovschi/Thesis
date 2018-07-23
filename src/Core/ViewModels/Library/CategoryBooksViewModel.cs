@@ -22,7 +22,7 @@ namespace Core.ViewModels.Library
     {
         protected override string HeaderText => BooksManager.Instance._curentCategory.category;
 
-        protected override HeaderAreaActionType HeaderAreaAction =>HeaderAreaActionType.LeftBack;
+        protected override HeaderAreaActionType HeaderAreaAction => HeaderAreaActionType.LeftBack;
 
         public virtual ICrossCellViewHolder<IBooklist> CellModel { get; protected set; }
 

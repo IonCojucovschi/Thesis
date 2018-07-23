@@ -19,7 +19,7 @@ namespace Core.Helpers
         //public static string UserAddedBooksCon =>nameof(UserAddedBooks);
         //public static string WantReadCon => nameof(WantRead);
         public static string LibraryName => nameof(Library);
-        //public static string BooksCategory => nameof(CategoryBoocks);
+        public static string BooksCategory => nameof(CategoryBoocks);
         //public static string DetailBook => nameof(BoockDetails);
         //public static string ReadContentBook => nameof(ReadBook);
         //public static string DowloandedBooks => nameof(LocalBooks);

@@ -87,37 +87,37 @@ namespace Core.ViewModels.Library
             {
                 InitViews();
 
-                if (CategoryText!=null)
+                if (CategoryText != null)
                 {
                     CategoryText.SetTextColor(ColorConstants.DarkColor);
                     CategoryText.SetFont(FontsConstant.MontserratSemiBold, FontsConstant.Size15);
                     CategoryText.Text = model.category;
                 }
 
-                if (QuantityText!=null)
+                if (QuantityText != null)
                 {
                     QuantityText.SetTextColor(ColorConstants.BlueColor);
                     QuantityText.SetFont(FontsConstant.MontserratLight, FontsConstant.Size15);
                     QuantityText.Text = model.quantity;
                 }
-                CellContentRootView.Tag=model.category;
+                CellContentRootView.Tag = model.category;
                 CategoryImage?.SetImageFromResource(model.category.ToLowerInvariant());
             }
             private void InitViews()
             {
-               CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
-               ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
+                CellContentRootView?.SetBackgroundColor(ColorConstants.WhiteColor, CornerRadiusBackground);
+                ShadowImage?.SetImageFromResource(DrawableConstants.ShadowImage);
 
                 CellContentRootView.Click -= CellContentIsClicked;
                 CellContentRootView.Click += CellContentIsClicked;
             }
 
-            private void CellContentIsClicked(object sender,EventArgs e)
+            private void CellContentIsClicked(object sender, EventArgs e)
             {
                 if (!((sender as IView)?.Tag is string categoryName)) return;
-               
-                var categ=BooksManager.Instance.GetOneCategory(categoryName);
-               // _baseViewModel.GoPage(PageConstants.BooksCategory);
+
+                var categ = BooksManager.Instance.GetOneCategory(categoryName);
+                _baseViewModel.GoPage(PageConstants.BooksCategory);
             }
         }
 
