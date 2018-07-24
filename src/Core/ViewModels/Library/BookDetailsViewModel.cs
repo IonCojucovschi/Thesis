@@ -28,8 +28,8 @@ namespace Core.ViewModels.Library
             curenBook = BooksManager.Instance._curentBook;
             InitializeView();
         }
-		
-		[CrossView]
+
+        [CrossView]
         public IImage BookImage { get; set; }
 
         [CrossView]
@@ -69,24 +69,24 @@ namespace Core.ViewModels.Library
             DownloadText.Click -= DownloadBook;
             DownloadText.Click += DownloadBook;
 
-            if(BookImage!=null)
+            if (BookImage != null)
             {
-                // to do download image from srv and show   it
+                BookImage.SetImageFromUrl(curenBook?.image_linq);
             }
 
-            if(ReadText!=null)
+            if (ReadText != null)
             {
                 ReadText.SetTextColor(ColorConstants.WhiteColor);
                 ReadText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
                 ReadText.SetBackgroundColor(ColorConstants.BlueColor, type: RadiusType.Aspect);
             }
-            if(DownloadText != null)
+            if (DownloadText != null)
             {
                 DownloadText.SetTextColor(ColorConstants.WhiteColor);
                 DownloadText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
                 DownloadText.SetBackgroundColor(ColorConstants.BlueColor, type: RadiusType.Aspect);
             }
-            if (TitleText!=null)
+            if (TitleText != null)
             {
                 TitleText.Text = curenBook?.title;
                 TitleText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
@@ -112,7 +112,7 @@ namespace Core.ViewModels.Library
                 NmbDownloadText.Text = curenBook?.downloands_number;
                 NmbDownloadText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
             }
-            if(DescriptionText!=null)
+            if (DescriptionText != null)
             {
                 DescriptionText.Text = curenBook?.description;
                 DescriptionText.SetFont(FontsConstant.MontserratMedium, FontsConstant.Size15);
@@ -120,11 +120,11 @@ namespace Core.ViewModels.Library
 
         }
 
-        private void QuickReadBook(object sender,EventArgs e)
+        private void QuickReadBook(object sender, EventArgs e)
         {
             //there i use google service to open pdf file 
             string url = RestConstants.BaseUrl + BooksManager.Instance._curentBook.download_linq;
-            this.OpenLink("http://docs.google.com/gview?embedded=true&url="+url);
+            this.OpenLink("http://docs.google.com/gview?embedded=true&url=" + url);
         }
         private void DownloadBook(object sender, EventArgs e)
         {
