@@ -1,20 +1,24 @@
 ﻿<Properties StartupConfiguration="{9F9DA645-8438-4B9D-A89B-1CB03595F208}|Default">
   <MonoDevelop.Ide.ItemProperties.Application.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3FF0FA9F-427C-473D-8E05-1C4173EF1A31" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Storyboard/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/iOS/Main.cs">
     <Files>
       <File FileName="src/iOS/Storyboard/Main.storyboard" />
-      <File FileName="src/iOS/Page/Librarys/CategoryBoocks.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Librarys/CategoryBoocks.cs" Line="13" Column="83" />
       <File FileName="src/iOS/Page/Librarys/Library.cs" Line="1" Column="1" />
-      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="23" Column="1" />
+      <File FileName="src/Core/ViewModels/Library/CategoryBooksViewModel.cs" Line="21" Column="18" />
       <File FileName="src/iOS/Page/Librarys/Library.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Page/Librarys/CategoryBoocks.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Views/Cell/Library/CategoryCell.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Views/Cell/Library/BookCell.cs" Line="1" Column="1" />
-      <File FileName="src/Core/Helpers/PageConstants.cs" Line="1" Column="1" />
+      <File FileName="src/Core/Helpers/PageConstants.cs" Line="23" Column="9" />
       <File FileName="src/Core/ViewModels/Library/LibraryViewModel.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Views/Cell/Library/CategoryCell.designer.cs" Line="1" Column="1" />
       <File FileName="src/iOS/Views/Cell/Library/BookCell.designer.cs" Line="1" Column="1" />
       <File FileName="src/Core/ViewModels/Base/ProjectNavigationBaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="src/iOS/Page/Librarys/BoockDetails.cs" Line="15" Column="52" />
+      <File FileName="src/iOS/Page/Librarys/BoockDetails.designer.cs" Line="77" Column="23" />
+      <File FileName="src/Core/ViewModels/Library/BookDetailsViewModel.cs" Line="131" Column="18" />
+      <File FileName="src/iOS/Main.cs" Line="37" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
