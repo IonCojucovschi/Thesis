@@ -71,7 +71,8 @@ namespace Core.ViewModels.Library
 
             if (BookImage != null)
             {
-                BookImage.SetImageFromUrl(curenBook?.image_linq);
+                string urlImage = RestConstants.BaseUrl + curenBook?.image_linq;
+                BookImage.SetImageFromUrl(urlImage);
             }
 
             if (ReadText != null)
